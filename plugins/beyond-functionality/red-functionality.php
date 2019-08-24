@@ -1,16 +1,16 @@
 <?php
  /**
  *
- * @package   [SITE NAME] Functionality
- * @author    Your Name <your_email@email.com>
+ * @package   beyond-functionality
+ * @author    Miri mirimarkovitzbl@gmail.com, Roberto robhhr@outlook.com, Jose jmvr37@hotmail.com
  * @license   GPL-2.0+
- * @copyright 2015 Your Name or Company
+ * @copyright RMJ 2019
  *
  * @wordpress-plugin
- * Plugin Name: [SITE NAME] Functionality
+ * Plugin Name: beyond-functionality
  * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
  * Version:     1.0.0
- * Author:      Your Name
+ * Author:      Miri, Roberto, Jose
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
