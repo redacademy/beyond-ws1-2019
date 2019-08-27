@@ -1,6 +1,6 @@
-# RED Starter
+# Beyond The Conversation
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A Community partner project
 
 ## Installation
 
