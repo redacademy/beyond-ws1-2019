@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Beyond The Conversation
  */
 
 ?><!DOCTYPE html>
