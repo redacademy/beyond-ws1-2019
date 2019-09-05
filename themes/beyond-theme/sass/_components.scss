@@ -12,6 +12,7 @@
         border-radius: 20px;
         height: 88px;
         font-size: $desktop-button;
+        width: 150px;
         &:hover {
             opacity: .2;
         }
@@ -30,6 +31,7 @@
     @include desktop {
         border-radius: 20px;
         height: 88px;
-        font-size: $desktop-version;
+        font-size: $desktop-button;
+        width: 150px;
     }
 }
