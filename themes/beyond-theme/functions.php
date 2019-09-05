@@ -39,6 +39,11 @@ function red_starter_setup() {
 endif; // red_starter_setup
 add_action( 'after_setup_theme', 'red_starter_setup' );
 
+function enqueue_fa(){
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
+}
+add_action('wp_enqueue_scripts','enqueue_fa');
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

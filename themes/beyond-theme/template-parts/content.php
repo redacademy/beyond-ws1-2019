@@ -24,8 +24,6 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
-		<button class="submit-btn">Submit</button>
-		<button class="nav-btn next">Next</button>
-		<button class="nav-btn back">Back</button>
+
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
