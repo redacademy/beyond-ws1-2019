@@ -8,19 +8,21 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="resources-card">
+	<div class="resources-card">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+		
+		<h1 class="blog-title"><a href='<?php echo esc_url( get_permalink() ) ?>'><?php echo wp_trim_words(get_the_title(), 4, null); ?></a></h1>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_posted_by(); ?>
+		<div class="blog-meta">
+			<?php red_starter_posted_on(); ?><?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->
-			<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+			
+		<i class="fa fa-comment"></i> <?php comments_number( '0', '1', '%' ); ?>
+		
 		<?php endif; ?>
 		<?php echo sprintf( '<div class="read-more"><a href="%s" rel="bookmark"><div class="button">', esc_url( get_permalink() )).'Read More &gt;</div></a></div>'; ?>
-	</header><!-- .entry-header -->
+	</div><!-- .entry-header -->
 </article><!-- #post-## -->

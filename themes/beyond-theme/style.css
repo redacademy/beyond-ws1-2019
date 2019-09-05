@@ -704,3 +704,23 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.resources-card {
+  color: #62284E;
+  border-radius: 20px; }
+
+.blog-title {
+  font-family: 'Poppins';
+  font-weight: initial;
+  font-size: 24px;
+  max-width: 530px; }
+  .blog-title a {
+    color: #000000;
+    text-decoration: none; }
+    .blog-title a:visited {
+      text-decoration: none;
+      color: #000000; }
+
+.blog-meta {
+  font-family: 'Poppins';
+  font-weight: lighter;
+  font-size: 16px; }

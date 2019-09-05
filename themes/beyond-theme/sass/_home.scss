@@ -1,0 +1,25 @@
+.resources-card {
+    color: $purple;
+    border-radius: 20px;
+}
+
+.blog-title {
+    font-family: 'Poppins';
+    font-weight: initial;
+    font-size: 24px;
+    max-width: 530px;
+    a {
+        color: $black;
+        text-decoration: none;
+        &:visited {
+            text-decoration: none;
+            color: $black;
+        }
+    }
+}
+
+.blog-meta {
+    font-family: 'Poppins';
+    font-weight: lighter;
+    font-size: 16px;
+}
