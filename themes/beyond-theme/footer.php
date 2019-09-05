@@ -13,7 +13,7 @@
 				<div class="site-info">
 				<div class="footer">
 				<h1>Let's Talk</h1>
-				<img src="<?php echo get_stylesheet_directory_uri();?>/Media/Images/Footer-images/footer@2x_mobile.jpg" alt="beyond-folder">
+				<button class="submit-btn">Submit</button>
 				</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->

@@ -1,11 +1,12 @@
 .home {
   .hfeed {
     .site-footer {
+      background-image: url('../../Media/Images/Footer-images/footer@2x_mobile.jpg');
+      width: 100%;
+      height: 350px;
+      background-size: cover;
       .site-info {
         .footer {
-          width: 100%;
-          height: 100%;
-          background-color: orange;
         }
       }
     }
