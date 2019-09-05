@@ -12,17 +12,20 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-		
-		<h1 class="blog-title"><a href='<?php echo esc_url( get_permalink() ) ?>'><?php echo wp_trim_words(get_the_title(), 4, null); ?></a></h1>
+		<div class="class-content">
+			<h1 class="blog-title"><a href='<?php echo esc_url( get_permalink() ) ?>'><?php echo wp_trim_words(get_the_title(), 4, null); ?></a></h1>
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="blog-meta">
-			<?php red_starter_posted_on(); ?><?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
+			<?php if ( 'post' === get_post_type() ) : ?>
+			<div class="blog-meta">
+				<span class="posted-on"><?php red_starter_posted_on(); ?></span><span class="posted-by"><?php red_starter_posted_by(); ?></span>
+			</div><!-- .entry-meta -->
 			
-		<i class="fa fa-comment"></i> <?php comments_number( '0', '1', '%' ); ?>
+			<div class="comment-card">
+				<i class="fa fa-comment"></i><span class="comment-number"><?php comments_number( '0', '1', '%' ); ?></span>
+			</div>
 		
-		<?php endif; ?>
-		<?php echo sprintf( '<div class="read-more"><a href="%s" rel="bookmark"><div class="button">', esc_url( get_permalink() )).'Read More &gt;</div></a></div>'; ?>
+			<?php endif; ?>
+			<?php echo sprintf( '<div class="read-more"><a href="%s" rel="bookmark"><div class="button">', esc_url( get_permalink() )).'Read more <span class="arrow">&gt;</span></div></a></div>'; ?>
+		</div>
 	</div><!-- .entry-header -->
 </article><!-- #post-## -->
