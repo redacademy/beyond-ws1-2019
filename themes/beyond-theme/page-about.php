@@ -1,5 +1,6 @@
 <?php
-/**
+/** 
+ * Template Name: About
  * The template for displaying all pages.
  *
  * @package Beyond The Conversation
