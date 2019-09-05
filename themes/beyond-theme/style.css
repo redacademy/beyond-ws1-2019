@@ -299,7 +299,8 @@ big {
     .submit-btn {
       border-radius: 20px;
       height: 88px;
-      font-size: 32px; }
+      font-size: 32px;
+      width: 150px; }
       .submit-btn:hover {
         opacity: .2; } }
 
@@ -317,7 +318,8 @@ big {
     .nav-btn {
       border-radius: 20px;
       height: 88px;
-      font-size: 30px; } }
+      font-size: 32px;
+      width: 150px; } }
 
 /*--------------------------------------------------------------
 # Elements
