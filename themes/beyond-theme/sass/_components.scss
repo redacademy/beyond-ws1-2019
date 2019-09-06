@@ -1,22 +1,22 @@
 .submit-btn {
-    background-color: $orange;
-    color: $white;
-    border-radius: 10px;
-    height: 60px;
-    font-family: 'Poppins Medium';
-    font-size: $mobile-button;
-    border: none;
-    box-shadow: 0 0;
-    filter: blur(6);
-    @include desktop {
-        border-radius: 20px;
-        height: 88px;
-        font-size: $desktop-button;
-        width: 150px;
-        &:hover {
-            opacity: .2;
-        }
+  background-color: $orange;
+  color: $white;
+  border-radius: 10px;
+  height: 60px;
+  font-family: 'Poppins Medium';
+  font-size: $mobile-button;
+  border: none;
+  box-shadow: 0 0;
+  filter: blur(6);
+  @include desktop {
+    border-radius: 20px;
+    height: 88px;
+    font-size: $desktop-button;
+    width: 150px;
+    &:hover {
+      opacity: 0.2;
     }
+  }
 }
 
 .nav-btn {
