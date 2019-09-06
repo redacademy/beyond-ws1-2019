@@ -99,6 +99,14 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
+
+function custom_load_font_awesome() {
+
+    wp_enqueue_style( 'red-starter-font-awesome-free', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css' );
+
+}
+add_action( 'wp_enqueue_scripts', 'custom_load_font_awesome' );
+
 /**
  * Custom template tags for this theme.
  */
