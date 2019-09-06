@@ -321,6 +321,28 @@ big {
       font-size: 32px;
       width: 150px; } }
 
+.search-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .search-pagination .page-numbers.current {
+    color: #fff;
+    background-color: #62284E;
+    border-radius: 100px;
+    padding: 0 15px; }
+  .search-pagination a, .search-pagination .current {
+    font-family: 'Poppins';
+    font-weight: regular;
+    font-size: 28px;
+    color: #62284E;
+    text-decoration: none;
+    margin: 0 20px; }
+  .search-pagination .next {
+    margin: 0; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
