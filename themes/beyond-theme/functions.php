@@ -116,3 +116,11 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+ // Function to modify the main query object
+ function query_ppp($query) {
+	if (is_home()){
+	$query->set('posts_per_page', '6');
+	}
+}
+add_action( 'pre_get_posts', 'query_ppp' );
