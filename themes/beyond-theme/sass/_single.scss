@@ -1,0 +1,27 @@
+.single-header {
+    position: relative;
+    height: 165px;
+}
+
+.single-navigation {
+	clear: both;
+	display: block;
+	ul {
+		display: none;
+		list-style: none;
+    }
+}
+
+.header-blog {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
