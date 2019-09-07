@@ -13,6 +13,14 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+	<?php
+		$loop = CFS()->get( 'member' );
+		foreach ( $loop as $row ) {
+    	echo '<img src="'.$row["photo"].'"/>';
+		echo $row['name'];
+		echo $row['role'];
+		echo $row['quote'];
+		}	?>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
