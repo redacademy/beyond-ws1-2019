@@ -49,9 +49,9 @@
   filter: blur(6);
   @include desktop {
     border-radius: 20px;
-    height: 88px;
-    font-size: $desktop-button;
-    width: 150px;
+    height: 70px;
+    font-size: 25px;
+    width: 250px;
     &:hover {
       opacity: 0.2;
     }

@@ -7,8 +7,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area-volunteer">
+		<main id="main" class="site-main-volunteer" role="main">
 			<div class="title-vol">
 			<h1>Join our team</h1>
 			<h2>We're looking for exceptional volunteers like you</h2>
