@@ -20,46 +20,69 @@
 } 
 
 .nav-btn {
-    background-color: $blue;
-    color: $white;
-    border-radius: 10px;
-    height: 33px;
-    font-family: 'Poppins Medium';
-    font-size: $mobile-blbtn;
-    border: none;
-    filter: blur(6);
-    @include desktop {
-        border-radius: 20px;
-        height: 88px;
-        font-size: $desktop-button;
-        width: 150px;
+  background-color: $blue;
+  color: $white;
+  border-radius: 10px;
+  height: 33px;
+  font-family: 'Poppins Medium';
+  font-size: $mobile-blbtn;
+  border: none;
+  filter: blur(6);
+  @include desktop {
+    border-radius: 20px;
+    height: 88px;
+    font-size: $desktop-button;
+    width: 150px;
+  }
+}
+
+.started-btn {
+  background-color: $orange;
+  color: $white;
+  border-radius: 10px;
+  height: 40px;
+  width: 110px;
+  font-family: 'Poppins Medium';
+  font-size: $mobile-started-btn;
+  border: none;
+  box-shadow: 0 0;
+  filter: blur(6);
+  @include desktop {
+    border-radius: 20px;
+    height: 88px;
+    font-size: $desktop-button;
+    width: 150px;
+    &:hover {
+      opacity: 0.2;
     }
+  }
 }
 
 //Pagination
 
 .search-pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    .page-numbers.current {
-        color: $white;
-        background-color: $purple;
-        border-radius: 50%;
-        width: 32px;
-        height: 32px;
-        font-size: 22px;
-    }
-    a, .current {
-        font-family: 'Poppins';
-        font-weight: regular;
-        font-size: 22px;
-        color: $purple;
-        text-decoration: none;
-        margin: 0 20px;
-    }
-    .next {
-        margin: 0;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .page-numbers.current {
+    color: $white;
+    background-color: $purple;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
+  }
+  a,
+  .current {
+    font-family: 'Poppins';
+    font-weight: regular;
+    font-size: 22px;
+    color: $purple;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+  .next {
+    margin: 0;
+  }
 }
