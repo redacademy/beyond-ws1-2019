@@ -27,3 +27,13 @@
         object-fit: cover;
     }
 }
+
+.singleblog-header {
+    padding: 0 15px;
+}
+
+.singleblog-title {
+    font-family: 'Helvetica Neue';
+    font-size: 20px;
+    color: $grey;
+}
