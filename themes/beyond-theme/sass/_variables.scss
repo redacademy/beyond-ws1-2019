@@ -21,14 +21,14 @@ $color__link-hover: midnightblue;
 
 // UX Colors
 
-$orange: #E38639;
-$light-orange: #EEB688;
-$clear: #FCF3EB;
-$purple: #62284E;
-$light-purple: #EFE9ED;
-$sky-blue: #2597BD;
-$blue: #1CB2CE;
-$clear-blue: #E8F4F8;
+$orange: #e38639;
+$light-orange: #eeb688;
+$clear: #fcf3eb;
+$purple: #62284e;
+$light-purple: #efe9ed;
+$sky-blue: #2597bd;
+$blue: #1cb2ce;
+$clear-blue: #e8f4f8;
 $black: #000000;
 $grey: #848484;
 $white: #fff;
@@ -36,8 +36,8 @@ $white: #fff;
 // Typography
 
 $font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+$font__pre: 'Courier 10 Pitch', Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
@@ -56,6 +56,7 @@ $body-fsize-mobile: 10px;
 $mobile-button: 24px;
 $mobile-blbtn: 13px;
 $desktop-button: 32px;
+$mobile-started-btn: 17px;
 
 // Breakpoints
 
