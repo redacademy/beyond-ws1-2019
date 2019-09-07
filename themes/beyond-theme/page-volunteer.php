@@ -40,7 +40,12 @@ get_header(); ?>
 			</div>
 			</div>
 
-
+		<div class="content">
+			<p>Complete an online form where we'll take some details from you to help us determine if you're suitable for the volunteer positions</p>
+			<p>It should only take a few minutes to complete, but if you have any problems filling out the information, please contact us at <a href="mailto:contact@beyondtheconversation.ca">contact@beyondtheconversation.ca</a> or give us a call.</p>
+			<p>Just fill in the details below and we will be in touch to discuss the next steps with you.</p>
+		</div>
+	
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

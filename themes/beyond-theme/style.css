@@ -810,3 +810,32 @@ object {
     .hfeed .site-footer .site-info .footer .social i {
       font-size: 50px;
       color: #62284E; }
+
+.page-template-default .hfeed .site-content .content-area .site-main .title-vol {
+  text-align: center; }
+  .page-template-default .hfeed .site-content .content-area .site-main .title-vol h1 {
+    font-family: Poppins, Helvetica Neue, sans-serif;
+    font-size: 40px; }
+
+.page-template-default .hfeed .site-content .content-area .site-main .grid-vol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  width: 350px;
+  margin: 0 auto; }
+  .page-template-default .hfeed .site-content .content-area .site-main .grid-vol .grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .page-template-default .hfeed .site-content .content-area .site-main .grid-vol .grid-container p {
+      text-align: center;
+      font-family: Helvetica Neue, sans-serif;
+      font-size: 10px; }
+    .page-template-default .hfeed .site-content .content-area .site-main .grid-vol .grid-container img {
+      width: 70px;
+      -ms-flex-item-align: center;
+          align-self: center; }
