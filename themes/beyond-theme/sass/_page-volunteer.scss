@@ -5,9 +5,14 @@
         .site-main {
           .title-vol {
             text-align: center;
+            margin-bottom: 50px;
             h1 {
               font-family: $h-ffamily;
               font-size: $h1-fsize-mobile;
+            }
+            h2 {
+              font-family: $body-ffamily;
+              font-size: $h3-fsize-mobile;
             }
           }
           .grid-vol {
@@ -16,6 +21,7 @@
             grid-gap: 30px;
             width: 350px;
             margin: 0 auto;
+            margin-bottom: 40px;
             .grid-container {
               display: flex;
               flex-direction: column;
@@ -34,6 +40,12 @@
             width: 350px;
             margin: 0 auto;
             font-size: 11px;
+          }
+          .get-started {
+            display: flex;
+            justify-content: center;
+            margin-top: 34px;
+            margin-bottom: 47px;
           }
         }
       }

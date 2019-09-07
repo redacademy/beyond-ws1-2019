@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="title-vol">
 			<h1>Join our team</h1>
-			<p>We're looking for exceptional volunteers like you</p>
+			<h2>We're looking for exceptional volunteers like you</h2>
 			</div>
 			<div class="grid-vol">
 			<div class="grid-container">
@@ -47,7 +47,9 @@ get_header(); ?>
 			</p>
 			<p>Just fill in the details below and we will be in touch to discuss the next steps with you.</p>
 		</div>
+		<div class="get-started">
 		<button class="started-btn">Get Started</button>
+		</div>
 	
 		</main><!-- #main -->
 	</div><!-- #primary -->
