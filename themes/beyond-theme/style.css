@@ -862,3 +862,8 @@ object {
       width: 70px;
       -ms-flex-item-align: center;
           align-self: center; }
+
+.page-template-default .hfeed .site-content .content-area .site-main .content {
+  width: 350px;
+  margin: 0 auto;
+  font-size: 11px; }
