@@ -284,7 +284,7 @@ big {
   font-size: 125%; }
 
 .submit-btn {
-  background-color: #E38639;
+  background-color: #e38639;
   color: #fff;
   border-radius: 10px;
   height: 60px;
@@ -305,7 +305,7 @@ big {
         opacity: 0.2; } }
 
 .nav-btn {
-  background-color: #1CB2CE;
+  background-color: #1cb2ce;
   color: #fff;
   border-radius: 10px;
   height: 33px;
@@ -321,6 +321,28 @@ big {
       font-size: 32px;
       width: 150px; } }
 
+.started-btn {
+  background-color: #e38639;
+  color: #fff;
+  border-radius: 10px;
+  height: 40px;
+  width: 110px;
+  font-family: 'Poppins Medium';
+  font-size: 17px;
+  border: none;
+  -webkit-box-shadow: 0 0;
+          box-shadow: 0 0;
+  -webkit-filter: blur(6);
+          filter: blur(6); }
+  @media (min-width: 1120px) {
+    .started-btn {
+      border-radius: 20px;
+      height: 88px;
+      font-size: 32px;
+      width: 150px; }
+      .started-btn:hover {
+        opacity: 0.2; } }
+
 .search-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,14 +352,15 @@ big {
           justify-content: center; }
   .search-pagination .page-numbers.current {
     color: #fff;
-    background-color: #62284E;
+    background-color: #62284e;
     border-radius: 100px;
     padding: 0 15px; }
-  .search-pagination a, .search-pagination .current {
+  .search-pagination a,
+  .search-pagination .current {
     font-family: 'Poppins';
     font-weight: regular;
     font-size: 28px;
-    color: #62284E;
+    color: #62284e;
     text-decoration: none;
     margin: 0 20px; }
   .search-pagination .next {
@@ -729,7 +752,7 @@ object {
   padding: 5px 20px; }
 
 .resources-card {
-  color: #62284E;
+  color: #62284e;
   border-radius: 20px;
   width: 342px;
   height: 416px;
@@ -776,7 +799,7 @@ object {
   font-size: 13px;
   padding-top: 10px; }
   .read-more a {
-    color: #2597BD;
+    color: #2597bd;
     text-decoration: none; }
   .read-more .arrow {
     font-size: 18px;
@@ -809,7 +832,7 @@ object {
     margin-bottom: 100px; }
     .hfeed .site-footer .site-info .footer .social i {
       font-size: 50px;
-      color: #62284E; }
+      color: #62284e; }
 
 .page-template-default .hfeed .site-content .content-area .site-main .title-vol {
   text-align: center; }

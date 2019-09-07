@@ -45,6 +45,7 @@ get_header(); ?>
 			<p>It should only take a few minutes to complete, but if you have any problems filling out the information, please contact us at <a href="mailto:contact@beyondtheconversation.ca">contact@beyondtheconversation.ca</a> or give us a call.</p>
 			<p>Just fill in the details below and we will be in touch to discuss the next steps with you.</p>
 		</div>
+		<button class="started-btn">Get Started</button>
 	
 		</main><!-- #main -->
 	</div><!-- #primary -->
