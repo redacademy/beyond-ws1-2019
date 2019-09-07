@@ -1,0 +1,29 @@
+.single-header {
+    position: relative;
+    height: 165px;
+}
+
+.single-navigation {
+	clear: both;
+    display: block;
+    height: 92px;
+    background: linear-gradient(to bottom, rgba(000,000,000,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    ul {
+		display: none;
+		list-style: none;
+    }
+}
+
+.header-blog {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
