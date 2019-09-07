@@ -336,8 +336,9 @@ big {
     color: #fff;
     background-color: #62284E;
     border-radius: 50%;
+    width: 32px;
     height: 32px;
-    width: 32px; }
+    font-size: 22px; }
   .search-pagination a, .search-pagination .current {
     font-family: 'Poppins';
     font-weight: regular;
@@ -564,7 +565,11 @@ a {
 
 .single-navigation {
   clear: both;
-  display: block; }
+  display: block;
+  height: 92px;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, black 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
   .single-navigation ul {
     display: none;
     list-style: none; }

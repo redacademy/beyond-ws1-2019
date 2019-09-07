@@ -5,8 +5,10 @@
 
 .single-navigation {
 	clear: both;
-	display: block;
-	ul {
+    display: block;
+    height: 92px;
+    background: linear-gradient(to bottom, rgba(000,000,000,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    ul {
 		display: none;
 		list-style: none;
     }
