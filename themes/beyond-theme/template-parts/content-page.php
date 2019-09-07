@@ -13,15 +13,22 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-	<?php
-		$loop = CFS()->get( 'member' );
-		foreach ( $loop as $row ) {
-    	echo '<img src="'.$row["photo"].'"/>';
-		echo $row['name'];
-		echo $row['role'];
-		echo $row['quote'];
-		}	?>
 		<?php the_content(); ?>
+		<?php
+			
+			// echo var_dump($loop);
+			// if ($loop !== "" && $row !== "") {
+				$loop = CFS()->get( 'member' );
+				foreach ( $loop as $row ) {
+					echo '<img src="'.$row["photo"].'"/>';
+					echo $row['name'];
+					echo $row['role'];
+					echo $row['quote'];
+				}	
+			// }
+			
+		?>
+		
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
