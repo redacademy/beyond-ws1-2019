@@ -40,6 +40,16 @@
 
  }
 
+ function single_post_posted_by() {
+	$byline = sprintf(
+		esc_html( '%s' ),
+		'<span class="author vcard">' . esc_html( get_the_author() ) . '</span>'
+	);
+
+	echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+
+}
+
  /**
   * Prints HTML with meta information for the comments with pop-up link.
   */
@@ -128,21 +138,22 @@
  	<li id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
  		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
 
- 			<div class="comment-author-avatar">
- 				<?php echo get_avatar( $comment, 64 ); ?>
- 			</div>
+ 			<!-- <div class="comment-author-avatar">
+ 				<?php /* echo get_avatar( $comment, 64 ); */ ?>
+ 			</div> -->
 
  			<div class="comment-content">
- 				<div class="comment-meta">
+ 				
+ 				<?php comment_text(); ?>
+				 <div class="comment-meta">
  					<div class="comment-author vcard">
  						<?php printf( '<cite class="fn">%s</cite>', get_comment_author() ); ?>
  					</div><!-- .comment-author -->
 
  					<div class="comment-metadata">
  						<time datetime="<?php comment_time( 'c' ); ?>">
- 								<?php printf( '%1$s', get_comment_date('d M Y \a\t g:i a') ); ?>
+ 								<?php printf( '%1$s', get_comment_date('Y, M. d') ); ?>
  						</time>
- 						<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">#</a>
  					</div><!-- .comment-metadata -->
 
  					<?php if ( '0' == $comment->comment_approved ) : ?>
@@ -150,16 +161,14 @@
  					<?php endif; ?>
  				</div><!-- .comment-meta -->
 
- 				<?php comment_text(); ?>
-
- 				<div class="reply">
- 					<?php comment_reply_link( array_merge( $args, array(
+ 				<!-- <div class="reply"> -->
+ 					<?php /* comment_reply_link( array_merge( $args, array(
  						'add_below'  => 'div-comment',
  						'depth'      => $depth,
  						'max_depth'  => $args['max_depth'],
  						'reply_text' => 'Reply &rarr;'
- 					) ) ); ?>
- 				</div><!-- .reply -->
+ 					) ) ); */ ?>
+ 				<!-- </div> .reply -->
  			</div><!-- .comment-content -->
 
  		</article><!-- .comment-body -->

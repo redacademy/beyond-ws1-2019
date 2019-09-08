@@ -21,7 +21,7 @@ if ( post_password_required() ) {
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
-			<?php esc_html( comments_number( '0 Comments', '1 Comment', '% Comments' ) ); ?>
+			<?php esc_html( comments_number( 'Comments', 'Comments', 'Comments' ) ); ?>
 		</h2>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>

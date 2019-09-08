@@ -1,3 +1,7 @@
+.single-main {
+    padding: 0 15px;
+}
+
 .single-header {
     position: relative;
     height: 165px;
@@ -29,11 +33,67 @@
 }
 
 .singleblog-header {
-    padding: 0 15px;
+    .singleblog-title {
+        font-family: 'Helvetica Neue';
+        font-size: 20px;
+        color: #707070;
+    }
+    .singleblog-entry-meta {
+        font-family: 'Poppins';
+        font-size: 12px;
+        font-weight: 600;
+        width: 160px;
+        display: flex;
+        align-items: center;
+        .avatar {
+            border-radius: 50%;
+        }
+        .byline {
+            padding: 0 15px;
+        }
+    }
 }
 
-.singleblog-title {
+.singlepost-entry-content {
     font-family: 'Helvetica Neue';
+    font-weight: 300;
+    font-size: 16px;
+    color: #707070;
+}
+
+.comments-title {
+    font-family: 'Poppins';
     font-size: 20px;
-    color: $grey;
+    border-top: 1px solid $grey;
+    padding-top: 15px;
+}
+
+.comment-list {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid $grey;
+}
+
+.comment-content {
+    p {
+        font-family: 'Helvetica Neue';
+        font-weight: lighter;
+        font-size: 16px; 
+        line-height: 23px;
+        margin: 0;
+    }
+}
+
+.comment-meta {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 5px 0 20px 0;
+    color: $purple;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-size: 10px;
+    .comment-author {
+        padding: 0 15px;
+    }
 }
