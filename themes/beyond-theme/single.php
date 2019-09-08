@@ -23,6 +23,11 @@ get_header('single'); ?>
 
 		<?php endwhile; // End of the loop. ?>
 
+		<div class="posts-links">
+			<?php previous_post_link('%link', '< Previous'); ?>
+			<?php next_post_link('%link', 'Next >'); ?>
+		</div>
+		<div class="go-back-btn"><?php echo "<a href=\"javascript:history.go(-1)\">< Back to Blog</a>"; ?></div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
