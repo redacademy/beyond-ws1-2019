@@ -10,11 +10,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="singleblog-header">
 
-
+		<p class="singleblog-date"><?php echo get_the_date() ?></p>
 		<?php the_title( '<h1 class="singleblog-title">', '</h1>' ); ?>
 
 		<div class="singleblog-entry-meta">
-			<?php echo get_avatar( $comment, 25 ); ?>
+			<span class="avatar-mobile"><?php echo get_avatar( $comment, 25 ); ?></span>
+			<span class="avatar-desktop"><?php echo get_avatar( $comment, 40 ); ?></span>
 			<?php single_post_posted_by(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->

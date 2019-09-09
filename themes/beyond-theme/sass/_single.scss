@@ -1,10 +1,16 @@
 .single-main {
     padding: 0 15px;
+    @include desktop {
+        padding: 0 100px;
+    }
 }
 
 .single-header {
     position: relative;
-    height: 165px;
+    height: 184px;
+    @include desktop {
+        height: 480px;
+    }
 }
 
 .single-navigation {
@@ -12,6 +18,9 @@
     display: block;
     height: 92px;
     background: linear-gradient(to bottom, rgba(000,000,000,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    @include desktop {
+        height: 240px;
+    }
     ul {
 		display: none;
 		list-style: none;
@@ -33,10 +42,30 @@
 }
 
 .singleblog-header {
+    @include desktop {
+        padding-top: 50px;
+    }
+    .singleblog-date {
+        display: none;
+        @include desktop {
+            display: initial;
+            color: $purple;
+            font-family: 'Poppins';
+            font-style: italic;
+            font-size: 16px;
+        }
+    }
     .singleblog-title {
         font-family: 'Helvetica Neue';
         font-size: 20px;
         color: #707070;
+        @include desktop {
+            font-family: 'Poppins';
+            font-weight: initial;
+            font-size: $h3-fsize-desktop - 5px;;
+            color: $black;
+            margin: 0;
+        }
     }
     .singleblog-entry-meta {
         font-family: 'Poppins';
@@ -45,11 +74,35 @@
         width: 160px;
         display: flex;
         align-items: center;
-        .avatar {
-            border-radius: 50%;
+        @include desktop {
+            padding: 10px 0 15px 0;
+            width: auto;
+        }
+        .avatar-mobile {
+            .avatar {
+                border-radius: 50%;
+            }
+            @include desktop {
+                display: none;
+            }
+        }
+        .avatar-desktop {
+            display: none;
+            .avatar {
+                border-radius: 50%
+            }
+            @include desktop {
+                border-radius: 50%;
+                display: initial;
+            }
         }
         .byline {
             padding: 0 15px;
+            * {
+                @include desktop {
+                    font-size: $h3-fsize-mobile;
+                }
+            }
         }
     }
 }
@@ -59,6 +112,10 @@
     font-weight: 300;
     font-size: 16px;
     color: #707070;
+    @include desktop {
+        font-size: 22px;
+        line-height: 32px;
+    }
 }
 
 .comments-title {
@@ -66,6 +123,9 @@
     font-size: 20px;
     border-top: 1px solid $grey;
     padding-top: 15px;
+    @include desktop {
+        font-size: 26px;
+    }
 }
 
 .comment-list {
@@ -81,6 +141,10 @@
         font-size: 16px; 
         line-height: 23px;
         margin: 0;
+        @include desktop {
+            font-size: 22px;
+            line-height: 32px;
+        }
     }
 }
 
@@ -93,6 +157,9 @@
     font-family: 'Poppins';
     font-style: italic;
     font-size: 10px;
+    @include desktop {
+        font-size: 16px;
+    }
     .comment-author {
         padding: 0 15px;
     }
@@ -107,11 +174,17 @@
     padding-top: 10px;
     .comment-reply-title {
         font-size: $h3-fsize-mobile + 5px;
+        @include desktop {
+            font-size: 26px;
+        }
     }
     .comment-form {
         label {
             font-size: $h3-fsize-mobile;
             font-weight: bold;
+            @include desktop {
+                font-size: $h3-fsize-mobile + 5px;
+            }
         }
         input[type="text"], input[type="email"],textarea {
             background-color: #F7F7F7;
@@ -156,6 +229,10 @@
         text-shadow: none;
         filter: blur(6);
         height: 60px;
+        text-transform: uppercase;
+        @include desktop {
+            border-radius: 20px;
+        }
     }
 }
 
@@ -164,6 +241,11 @@
     justify-content: space-between;
     padding-top: 35px;
     width: 100%;
+    @include desktop {
+        width: 50%;
+        margin: 0 auto;
+        padding: 80px 0 50px 0;
+    }
     * {
         font-family: 'Poppins';
         font-weight: bold;
@@ -175,6 +257,9 @@
 
 .go-back-btn {
     padding-top: 15px;
+    @include desktop {
+        display: none;
+    }
     a {
         font-family: 'Poppins';
         font-weight: bold;
