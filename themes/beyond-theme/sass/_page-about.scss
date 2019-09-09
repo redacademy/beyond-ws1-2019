@@ -1,0 +1,74 @@
+.about-content {
+    text-align: center;
+    padding: 5px 50px; 
+    font-size: $body-fsize-mobile;  
+    font-family: $body-ffamily; 
+    h2 {
+        font-size: $h2-fsize-mobile;
+    }
+}
+
+.cfs-description {
+    font-size: $h3-fsize-mobile;
+}
+.cfs-member {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    height: 258px;
+    .cfs-photo {
+        // flex-basis: 40%;
+        width: 146px;
+    }
+    .cfs-info {
+        // flex-basis: 60%;
+        width: 156px;
+        background-color: $sky-blue;
+        text-align: left;
+        padding: 10px 40px 10px 15px;
+        .cfs-name {
+            margin: 0;
+            font-weight: bold;
+            font-size: $h3-fsize-mobile;
+        }
+        .cfs-role {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        .cfs-quote {
+            font-size: $h3-fsize-mobile;
+            font-weight: 300;
+        }
+    }
+}
+
+#loadMore {
+    width: 180px;
+    color: #707070;
+    font-family: $h-ffamily;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    padding: 15px;
+    border: 1px solid #CBCBCB;
+    background-color:transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.history-block {
+    background-color: lighten( $orange, 40%);
+}
+
+.goals-block {
+    background-color: lighten( $purple, 70%);
+}
+
+.services-block {
+    background-color: lighten( $sky-blue, 50%);
+}
