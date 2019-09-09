@@ -582,9 +582,18 @@ a {
   text-align: right;
   width: 50%; }
 
+.single-main {
+  padding: 0 15px; }
+  @media (min-width: 850px) {
+    .single-main {
+      padding: 0 100px; } }
+
 .single-header {
   position: relative;
-  height: 165px; }
+  height: 184px; }
+  @media (min-width: 850px) {
+    .single-header {
+      height: 480px; } }
 
 .single-navigation {
   clear: both;
@@ -593,6 +602,9 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to bottom, black 0%, rgba(255, 255, 255, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  @media (min-width: 850px) {
+    .single-navigation {
+      height: 240px; } }
   .single-navigation ul {
     display: none;
     list-style: none; }
@@ -1168,3 +1180,68 @@ object {
           justify-content: center;
   margin-top: 34px;
   margin-bottom: 47px; }
+
+.about-content {
+  text-align: center;
+  padding: 5px 50px;
+  font-size: 10px;
+  font-family: Helvetica Neue, sans-serif; }
+  .about-content h2 {
+    font-size: 30px; }
+
+.cfs-description {
+  font-size: 15px; }
+
+.cfs-member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  height: 258px; }
+  .cfs-member .cfs-photo {
+    width: 146px; }
+  .cfs-member .cfs-info {
+    width: 156px;
+    background-color: #2597bd;
+    text-align: left;
+    padding: 10px 40px 10px 15px; }
+    .cfs-member .cfs-info .cfs-name {
+      margin: 0;
+      font-weight: bold;
+      font-size: 15px; }
+    .cfs-member .cfs-info .cfs-role {
+      margin-top: 10px;
+      margin-bottom: 0; }
+    .cfs-member .cfs-info .cfs-quote {
+      font-size: 15px;
+      font-weight: 300; }
+
+#loadMore {
+  width: 180px;
+  color: #707070;
+  font-family: Poppins, Helvetica Neue, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  margin-bottom: 50px;
+  padding: 15px;
+  border: 1px solid #CBCBCB;
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.history-block {
+  background-color: #fcf3ec; }
+
+.goals-block {
+  background-color: #fbf4f8; }
+
+.services-block {
+  background-color: #e7f5fa; }
