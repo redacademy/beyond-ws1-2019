@@ -442,8 +442,7 @@ table {
 --------------------------------------------------------------*/
 /* Buttons */
 input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type="reset"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -457,16 +456,13 @@ input[type="submit"] {
   padding: .6rem 1rem .4rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
+  input[type="reset"]:hover {
     border-color: #ccc #bbb #aaa;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
   input[type="button"]:active, input[type="button"]:focus,
   input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
+  input[type="reset"]:focus {
     border-color: #aaa #bbb #bbb;
     -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
             box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
@@ -1107,15 +1103,15 @@ object {
 .hfeed .site-footer {
   background-image: url("../../Media/Images/Footer-images/footer@2x_mobile.jpg");
   width: 100%;
-  height: 750px;
   background-size: cover; }
   .hfeed .site-footer .site-info {
-    padding: 0 15px; }
+    padding: 10px 15px; }
     .hfeed .site-footer .site-info .footer .footer-author {
       text-align: center; }
     .hfeed .site-footer .site-info .footer h1 {
       font-family: Poppins, Helvetica Neue, sans-serif;
       font-size: 40px;
+      font-weight: initial;
       background: -webkit-gradient(linear, left top, right top, from(#e88535), color-stop(51%, #1ea6cb), color-stop(94%, #671d43), to(#671d43));
       background: linear-gradient(to right, #e88535 0%, #1ea6cb 51%, #671d43 94%, #671d43 100%);
       -webkit-background-clip: text;
@@ -1138,8 +1134,73 @@ object {
         font-size: 50px;
         color: #62284e; }
 
+.wpcf7-form .form-label {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 20px; }
+
 .wpcf7-form p {
   text-align: left; }
+
+.your-name input {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  color: #848484; }
+
+.your-email input {
+  width: 100%;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  color: #848484; }
+
+.your-message textarea {
+  height: 125px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  color: #848484; }
+
+.wpcf7-form-control-wrap .wpcf7-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .wpcf7-form-control-wrap .wpcf7-list-item input[type="checkbox"] {
+    height: 24px;
+    width: 24px; }
+  .wpcf7-form-control-wrap .wpcf7-list-item .wpcf7-list-item-label {
+    padding: 0 10px;
+    width: 90%; }
+
+.wpcf7-submit {
+  background-color: #e38639;
+  color: #fff;
+  border-radius: 10px;
+  height: 60px;
+  font-family: 'Poppins Medium';
+  font-size: 24px;
+  border: none;
+  -webkit-box-shadow: 0 0;
+          box-shadow: 0 0;
+  -webkit-filter: blur(6);
+          filter: blur(6);
+  width: 150px; }
+
+.submit-footer {
+  text-align: center;
+  padding: 10px 0; }
+
+.wpcf7-not-valid-tip {
+  color: maroon !important;
+  padding: 10px 30px 0 30px;
+  font-family: "Helvetica Neue", sans-serif; }
+
+.wpcf7-validation-errors {
+  color: maroon;
+  font-family: "Helvetica Neue", sans-serif;
+  border: 1px solid maroon !important; }
 
 .page-template-default .hfeed .site-content .content-area .site-main .title-vol {
   text-align: center;
@@ -1148,7 +1209,7 @@ object {
     font-family: Poppins, Helvetica Neue, sans-serif;
     font-size: 40px; }
   .page-template-default .hfeed .site-content .content-area .site-main .title-vol h2 {
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
     font-size: 15px; }
 
 .page-template-default .hfeed .site-content .content-area .site-main .grid-vol {
@@ -1168,7 +1229,7 @@ object {
             flex-direction: column; }
     .page-template-default .hfeed .site-content .content-area .site-main .grid-vol .grid-container p {
       text-align: center;
-      font-family: Helvetica Neue, sans-serif;
+      font-family: "Helvetica Neue", sans-serif;
       font-size: 10px; }
     .page-template-default .hfeed .site-content .content-area .site-main .grid-vol .grid-container img {
       width: 70px;
