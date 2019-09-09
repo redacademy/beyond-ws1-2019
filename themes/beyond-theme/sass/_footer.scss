@@ -5,13 +5,17 @@
     height: 750px;
     background-size: cover;
     .site-info {
+      padding: 0 15px;
       .footer {
-        p {
+        .footer-author {
           text-align: center;
         }
         h1 {
           font-family: $h-ffamily;
           font-size: $h1-fsize-mobile;
+          background: linear-gradient(to right, rgba(232,133,53,1) 0%, rgba(30,166,203,1) 51%, rgba(103,29,67,1) 94%, rgba(103,29,67,1) 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
         .submit-btn {
           font-size: $mobile-button;
@@ -29,5 +33,13 @@
         }
       }
     }
+  }
+}
+
+// Widget
+
+.wpcf7-form {
+  p {
+    text-align: left;
   }
 }

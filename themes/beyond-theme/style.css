@@ -582,9 +582,18 @@ a {
   text-align: right;
   width: 50%; }
 
+.single-main {
+  padding: 0 15px; }
+  @media (min-width: 850px) {
+    .single-main {
+      padding: 0 100px; } }
+
 .single-header {
   position: relative;
-  height: 165px; }
+  height: 184px; }
+  @media (min-width: 850px) {
+    .single-header {
+      height: 480px; } }
 
 .single-navigation {
   clear: both;
@@ -593,6 +602,9 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to bottom, black 0%, rgba(255, 255, 255, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  @media (min-width: 850px) {
+    .single-navigation {
+      height: 240px; } }
   .single-navigation ul {
     display: none;
     list-style: none; }
@@ -1097,28 +1109,37 @@ object {
   width: 100%;
   height: 750px;
   background-size: cover; }
-  .hfeed .site-footer .site-info .footer p {
-    text-align: center; }
-  .hfeed .site-footer .site-info .footer h1 {
-    font-family: Poppins, Helvetica Neue, sans-serif;
-    font-size: 40px; }
-  .hfeed .site-footer .site-info .footer .submit-btn {
-    font-size: 24px; }
-  .hfeed .site-footer .site-info .footer .social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-top: 100px;
-    margin-bottom: 100px; }
-    .hfeed .site-footer .site-info .footer .social i {
-      font-size: 50px;
-      color: #62284e; }
+  .hfeed .site-footer .site-info {
+    padding: 0 15px; }
+    .hfeed .site-footer .site-info .footer .footer-author {
+      text-align: center; }
+    .hfeed .site-footer .site-info .footer h1 {
+      font-family: Poppins, Helvetica Neue, sans-serif;
+      font-size: 40px;
+      background: -webkit-gradient(linear, left top, right top, from(#e88535), color-stop(51%, #1ea6cb), color-stop(94%, #671d43), to(#671d43));
+      background: linear-gradient(to right, #e88535 0%, #1ea6cb 51%, #671d43 94%, #671d43 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .hfeed .site-footer .site-info .footer .submit-btn {
+      font-size: 24px; }
+    .hfeed .site-footer .site-info .footer .social {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      margin-top: 100px;
+      margin-bottom: 100px; }
+      .hfeed .site-footer .site-info .footer .social i {
+        font-size: 50px;
+        color: #62284e; }
+
+.wpcf7-form p {
+  text-align: left; }
 
 .page-template-default .hfeed .site-content .content-area .site-main .title-vol {
   text-align: center;
