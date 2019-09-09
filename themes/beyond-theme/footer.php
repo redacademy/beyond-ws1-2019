@@ -14,6 +14,8 @@
 				<div class="footer">
 				<h1>Let's Talk</h1>
 				
+				<?php dynamic_sidebar( 'footer-1' ); ?>
+
 				<button class="submit-btn">Submit</button>
 				<div class="social">
 				<a href="#"><i class="fab fa-facebook-square"></i></a>
