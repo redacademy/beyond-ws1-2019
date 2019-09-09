@@ -54,22 +54,31 @@
   input {
     font-family: $body-ffamily;
     font-weight: 300;
+    max-width: 380px;
     color: $grey;
+    @include desktop {
+      width: 250px;
+    }
   }
 }
 
 .your-email {
   input {
     width: 100%;
+    max-width: 380px;
     font-family: $body-ffamily;
     font-weight: 300;
     color: $grey;
+    @include desktop {
+      max-width: 250px;
+    }
   }
 }
 
 .your-message {
   textarea {
     height: 125px;
+    max-width: 380px;
     font-family: $body-ffamily;
     font-weight: 300;
     color: $grey;

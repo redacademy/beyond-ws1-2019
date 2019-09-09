@@ -1145,16 +1145,25 @@ object {
 .your-name input {
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
+  max-width: 380px;
   color: #848484; }
+  @media (min-width: 850px) {
+    .your-name input {
+      width: 250px; } }
 
 .your-email input {
   width: 100%;
+  max-width: 380px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
   color: #848484; }
+  @media (min-width: 850px) {
+    .your-email input {
+      max-width: 250px; } }
 
 .your-message textarea {
   height: 125px;
+  max-width: 380px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
   color: #848484; }
