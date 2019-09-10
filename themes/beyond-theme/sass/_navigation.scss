@@ -4,6 +4,23 @@
 
 .site-header {
 	height: 260px;
+	position: relative;
+}
+
+.text-header-blog {
+	display: none;
+}
+
+.text-header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: $white;
+	font-family: 'Poppins';
+	font-weight: lighter;
+	font-size: $h1-fsize-mobile;
+	margin: 0;
 }
 
 .main-navigation {
