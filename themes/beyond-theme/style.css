@@ -992,3 +992,83 @@ object {
             justify-content: center;
     margin-top: 34px;
     margin-bottom: 47px; }
+
+.content-area-donation {
+  width: 450px;
+  margin: 0 auto; }
+  .content-area-donation .site-main h1 {
+    font-family: Poppins, Helvetica Neue, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center; }
+  .content-area-donation .site-main .content {
+    text-align: justify;
+    margin-bottom: 50px; }
+    .content-area-donation .site-main .content h3 {
+      font-family: Poppins, Helvetica Neue, sans-serif;
+      font-size: 15px;
+      font-weight: 500; }
+    .content-area-donation .site-main .content p {
+      font-family: Helvetica Neue, sans-serif;
+      font-size: 10px; }
+  .content-area-donation .site-main .donation-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .content-area-donation .site-main .donation-links .img-donation {
+      background-color: #62284e;
+      height: 213px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-radius: 17px;
+      margin-bottom: 73px; }
+      .content-area-donation .site-main .donation-links .img-donation img {
+        width: 95px;
+        margin-top: 30px; }
+      .content-area-donation .site-main .donation-links .img-donation p {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: white;
+        font-family: Helvetica Neue, sans-serif;
+        font-size: 10px; }
+    .content-area-donation .site-main .donation-links .img-volunteer {
+      background-color: #e38639;
+      height: 213px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-radius: 17px; }
+      .content-area-donation .site-main .donation-links .img-volunteer img {
+        width: 85px;
+        margin-top: 30px; }
+      .content-area-donation .site-main .donation-links .img-volunteer p {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: white;
+        font-family: Helvetica Neue, sans-serif;
+        font-size: 10px; }
