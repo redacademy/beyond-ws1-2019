@@ -968,7 +968,8 @@ object {
       .page-template-default .hfeed .site-content .content-area-volunteer .site-main-volunteer .grid-vol .grid-container img {
         width: 70px;
         -ms-flex-item-align: center;
-            align-self: center; }
+            align-self: center;
+        height: 150px; }
         @media (min-width: 850px) {
           .page-template-default .hfeed .site-content .content-area-volunteer .site-main-volunteer .grid-vol .grid-container img {
             width: 140px; } }
