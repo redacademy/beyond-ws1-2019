@@ -1106,6 +1106,9 @@ object {
   background-size: cover; }
   .hfeed .site-footer .site-info {
     padding: 10px 15px; }
+    @media (min-width: 850px) {
+      .hfeed .site-footer .site-info {
+        padding: 10px 100px; } }
     .hfeed .site-footer .site-info .footer .footer-author {
       text-align: center; }
     .hfeed .site-footer .site-info .footer h1 {
@@ -1116,6 +1119,9 @@ object {
       background: linear-gradient(to right, #e88535 0%, #1ea6cb 51%, #671d43 94%, #671d43 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+      @media (min-width: 850px) {
+        .hfeed .site-footer .site-info .footer h1 {
+          display: inline-block; } }
     .hfeed .site-footer .site-info .footer .submit-btn {
       font-size: 24px; }
     .hfeed .site-footer .site-info .footer .social {
@@ -1142,6 +1148,15 @@ object {
 .wpcf7-form p {
   text-align: left; }
 
+@media (min-width: 850px) {
+  .name-email-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; } }
+
 .your-name input {
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
@@ -1149,7 +1164,7 @@ object {
   color: #848484; }
   @media (min-width: 850px) {
     .your-name input {
-      width: 250px; } }
+      width: 200px; } }
 
 .your-email input {
   width: 100%;
@@ -1159,7 +1174,7 @@ object {
   color: #848484; }
   @media (min-width: 850px) {
     .your-email input {
-      max-width: 250px; } }
+      max-width: 200px; } }
 
 .your-message textarea {
   height: 125px;

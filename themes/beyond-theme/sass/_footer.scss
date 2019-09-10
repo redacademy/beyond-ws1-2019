@@ -6,6 +6,9 @@
     background-size: cover;
     .site-info {
       padding: 10px 15px;
+      @include desktop {
+        padding: 10px 100px;
+      }
       .footer {
         .footer-author {
           text-align: center;
@@ -17,6 +20,9 @@
           background: linear-gradient(to right, rgba(232,133,53,1) 0%, rgba(30,166,203,1) 51%, rgba(103,29,67,1) 94%, rgba(103,29,67,1) 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+          @include desktop {
+            display: inline-block;
+          }
         }
         .submit-btn {
           font-size: $mobile-button;
@@ -50,6 +56,13 @@
   }
 }
 
+.name-email-form {
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .your-name {
   input {
     font-family: $body-ffamily;
@@ -57,7 +70,7 @@
     max-width: 380px;
     color: $grey;
     @include desktop {
-      width: 250px;
+      width: 200px;
     }
   }
 }
@@ -70,7 +83,7 @@
     font-weight: 300;
     color: $grey;
     @include desktop {
-      max-width: 250px;
+      max-width: 200px;
     }
   }
 }
