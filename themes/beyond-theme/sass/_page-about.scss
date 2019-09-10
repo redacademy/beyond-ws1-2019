@@ -1,15 +1,29 @@
 .about-content {
-    text-align: center;
-    padding: 5px 50px; 
+    // text-align: center;
+    // padding: 5px 50px; 
     font-size: $body-fsize-mobile;  
     font-family: $body-ffamily; 
     h2 {
         font-size: $h2-fsize-mobile;
+        font-family: $h-ffamily;
+        font-weight: 400;
+        text-align: center;
+        color: $black;
+    }
+    h3 {
+        font-size: 20px;
+        font-family: $h-ffamily;
+        font-weight: 400;
+        color: $black;
+
     }
 }
 
 .cfs-description {
     font-size: $h3-fsize-mobile;
+    text-align: center;
+    font-family: $h-ffamily;
+    color: $black;
 }
 .cfs-member {
     display: flex;
@@ -17,6 +31,7 @@
     margin-top: 80px;
     margin-bottom: 50px;
     height: 258px;
+    justify-content: center;
     .cfs-photo {
         // flex-basis: 40%;
         width: 146px;
@@ -62,13 +77,92 @@
 }
 
 .history-block {
+    padding: 10px 40px 0 40px;
     background-color: lighten( $orange, 40%);
+    height: 338px;
+    h3 {
+        color: $orange;
+        text-align: left;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .history-content {
+        display: flex;
+        flex-direction: row;
+        p {
+            padding-left: 20px;
+            font-weight: 300;
+            text-align: left;
+            flex-basis: 50%;
+        }
+        img {
+            flex-basis: 50%;
+        }
+    }
 }
 
 .goals-block {
-    background-color: lighten( $purple, 70%);
+    padding: 10px 40px 0 40px;
+    background-color: lighten( $purple, 67%);
+    height: 338px;
+    h3 {
+        color: $purple;
+        text-align: right;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    h4 {
+        font-weight: 300;
+        margin-top: 0;
+    }
+    .goals-content {
+        display: flex;
+        flex-direction: row;
+        figure {
+            margin: 0;
+        }
+        .goals-text {
+            padding-right: 20px; 
+            flex-basis: 50%;
+            font-weight: 300;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        img {
+            flex-basis: 50%;
+        }
+    }
 }
 
 .services-block {
+    padding: 10px 40px 0 40px;
     background-color: lighten( $sky-blue, 50%);
+    height: 403px;
+    h3 {
+        color: $sky-blue;
+        text-align: left;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .services-content {
+        display: flex;
+        flex-direction: row;
+        .services-images {
+            flex-basis: 50%;
+        }
+        .services-text {
+            padding-left: 10px;
+            font-weight: 300;
+            text-align: left;
+            flex-basis: 50%;
+            line-height: 13px;
+            p {
+                margin-bottom: 0;
+            }
+        }
+       
+    }
 }
