@@ -26,7 +26,7 @@ get_header(); ?>
 </div>
 
 <div class="donation-links">
-<a href="#"><div class="img-volunteer">
+<a href="<?php echo get_permalink( get_page_by_path( 'volunteer' ) ) ?>"><div class="img-volunteer">
 <img src="<?php echo get_stylesheet_directory_uri();?>/Media/icon/support-as-volunteer.svg" alt="fundraising team">
 <p>Support as a volunteer</p> 
 </div></a>
