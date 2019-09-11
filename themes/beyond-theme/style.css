@@ -1277,11 +1277,11 @@ object {
 
 .about-content {
   font-size: 10px;
-  font-family: Helvetica Neue, sans-serif; }
+  font-family: "Helvetica Neue", sans-serif; }
   .about-content h2 {
     font-size: 30px;
     font-family: Poppins, Helvetica Neue, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     color: #000000; }
   .about-content h3 {
@@ -1435,3 +1435,15 @@ object {
       line-height: 13px; }
       .services-block .services-content .services-text p {
         margin-bottom: 0; }
+
+.partners-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 300px;
+  margin: 0 auto;
+  justify-items: center; }
+  .partners-container .wp-image-101 {
+    margin-left: -40px; }
+  .partners-container .wp-image-103 {
+    margin-left: 20px; }
