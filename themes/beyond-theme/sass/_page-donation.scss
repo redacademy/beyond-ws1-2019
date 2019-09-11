@@ -1,0 +1,127 @@
+.content-area-donation {
+  width: 450px;
+  margin: 0 auto;
+  @include desktop {
+    width: 1120px;
+    margin: 0 auto;
+  }
+  .site-main {
+    h1 {
+      font-family: $h-ffamily;
+      font-size: $h1-fsize-mobile;
+      font-weight: 500;
+      text-align: center;
+      @include desktop {
+        font-size: 80px;
+      }
+    }
+    .content {
+      text-align: justify;
+      margin-bottom: 50px;
+      h3 {
+        font-family: $h-ffamily;
+        font-size: $h3-fsize-mobile;
+        font-weight: 500;
+        @include desktop {
+          font-size: $h3-fsize-desktop;
+        }
+      }
+      p {
+        font-family: $body-ffamily;
+        font-size: $body-fsize-mobile;
+
+        @include desktop {
+          font-size: $body-fsize-desktop;
+          line-height: 1.22;
+        }
+      }
+    }
+    .img-links {
+      @include desktop {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 90px;
+      }
+
+      .donation-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 73px;
+        @include desktop {
+          width: 50%;
+        }
+        a {
+          text-decoration: none;
+          @include desktop {
+            margin-left: 25px;
+            margin-right: 25px;
+          }
+          .img-donation {
+            background-color: $purple;
+            height: 213px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 17px;
+            @include desktop {
+              height: 360px;
+            }
+
+            img {
+              width: 95px;
+              margin-top: 30px;
+              @include desktop {
+                width: 150px;
+                height: 130px;
+              }
+            }
+            p {
+              margin-top: 30px;
+              margin-bottom: 20px;
+              color: white;
+              font-family: $body-ffamily;
+              font-size: $body-fsize-mobile;
+              @include desktop {
+                font-size: $body-fsize-desktop;
+              }
+            }
+          }
+        }
+        a {
+          .img-volunteer {
+            background-color: $orange;
+            height: 213px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 17px;
+            @include desktop {
+              height: 360px;
+            }
+            img {
+              width: 85px;
+              margin-top: 30px;
+              @include desktop {
+                width: 130px;
+                height: 130px;
+              }
+            }
+            p {
+              margin-top: 30px;
+              margin-bottom: 20px;
+              color: white;
+              font-family: $body-ffamily;
+              font-size: $body-fsize-mobile;
+              @include desktop {
+                font-size: $body-fsize-desktop;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

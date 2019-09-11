@@ -7,14 +7,32 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area-donation">
 		<main id="main" class="site-main" role="main">
+<h1>Help the cause</h1>
+<div class="content">
+	<h3>Your donation builds stronger, safer, healthier and resilent communities
+	</h3>
+	<p>Your donation builds stronger, safer , healthier and more resilent communities. Develop and sustain a growing, inclusive, volunteer-led commununity, dedicated to understanding and reducing social insolation's negative impact on individuals and society through effective communication and action</p>
+</div>
 
-			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+<div class="img-links">
+<div class="donation-links">
+<a href="#"> <div class="img-donation">
+<img src="<?php echo get_stylesheet_directory_uri();?>/Media/icon/icon-donation.svg" alt="fundraising team">
+<p>Contribute to donation</p> 
+</div></a>
+</div>
 
-			<?php endwhile; // End of the loop. ?>
+<div class="donation-links">
+<a href="<?php echo get_permalink( get_page_by_path( 'volunteer' ) ) ?>"><div class="img-volunteer">
+<img src="<?php echo get_stylesheet_directory_uri();?>/Media/icon/support-as-volunteer.svg" alt="fundraising team">
+<p>Support as a volunteer</p> 
+</div></a>
+</div>
+</div>
+			
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

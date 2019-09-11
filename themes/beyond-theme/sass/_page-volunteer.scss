@@ -1,18 +1,30 @@
 .page-template-default {
   .hfeed {
     .site-content {
-      .content-area {
-        .site-main {
+      .content-area-volunteer {
+        width: 450px;
+        margin: 0 auto;
+        @include desktop {
+          width: 1120px;
+          margin: 0 auto;
+        }
+        .site-main-volunteer {
           .title-vol {
             text-align: center;
             margin-bottom: 50px;
             h1 {
               font-family: $h-ffamily;
-              font-size: $h1-fsize-mobile;
+              font-size: $h2-fsize-desktop;
+              @include desktop {
+                font-size: 80px;
+              }
             }
             h2 {
               font-family: $body-ffamily;
               font-size: $h3-fsize-mobile;
+              @include desktop {
+                font-size: $body-fsize-desktop;
+              }
             }
           }
           .grid-vol {
@@ -20,19 +32,35 @@
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 30px;
             width: 350px;
+
             margin: 0 auto;
             margin-bottom: 40px;
+
+            @include desktop {
+              width: 1120px;
+              height: 700px;
+              margin: 0 auto;
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 80px;
+            }
             .grid-container {
               display: flex;
               flex-direction: column;
               p {
                 text-align: center;
                 font-family: $body-ffamily;
-                font-size: $body-fsize-mobile;
+                font-size: 15px;
+                @include desktop {
+                  font-size: 25px;
+                }
               }
               img {
                 width: 70px;
                 align-self: center;
+                height: 150px;
+                @include desktop {
+                  width: 140px;
+                }
               }
             }
           }
@@ -40,6 +68,16 @@
             width: 350px;
             margin: 0 auto;
             font-size: 11px;
+            @include desktop {
+              width: 1120px;
+              margin: 0 auto;
+              text-align: justify;
+              font-size: $body-fsize-desktop;
+              line-height: 1.22;
+            }
+            a {
+              text-decoration: none;
+            }
           }
           .get-started {
             display: flex;
