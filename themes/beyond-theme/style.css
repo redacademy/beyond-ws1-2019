@@ -539,42 +539,41 @@ a {
     outline: 0; }
 
 /* Menus */
+.desktop-menu {
+  display: none; }
+
 .main-navigation {
   clear: both;
   display: block;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
       left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
+      top: 0; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+      left: 100%; }
+    .main-navigation ul a {
+      width: 200px; }
+  .main-navigation li:hover > ul,
+  .main-navigation li.focus > ul {
+    left: auto; }
+
+li {
+  float: left;
+  position: relative; }
+
+a {
+  display: block;
+  text-decoration: none; }
 
 /* Small menu. */
+.menu-toggle {
+  position: absolute; }
+
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block; }

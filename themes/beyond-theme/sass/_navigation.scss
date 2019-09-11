@@ -54,6 +54,10 @@ a {
 
 /* Menus */
 
+.desktop-menu {
+	display: none;
+}
+
 .main-navigation {
 	clear: both;
 	display: block;
@@ -61,18 +65,11 @@ a {
 	width: 100%;
 	// height: 50px;
 	ul {
-		display: none;
+		// display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
 
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: $base__space-unit;
-			left: -999rem;
-			z-index: 99999;
 
 			ul {
 				left: -999rem;
@@ -121,9 +118,13 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
-}
 
 /* Small menu. */
+
+.menu-toggle {
+	position: absolute;
+}
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
