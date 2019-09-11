@@ -16,15 +16,20 @@ get_header(); ?>
 	<p>Your donation builds stronger, safer , healthier and more resilent communities. Develop and sustain a growing, inclusive, volunteer-led commununity, dedicated to understanding and reducing social insolation's negative impact on individuals and society through effective communication and action</p>
 </div>
 
+
+<div class="img-links">
 <div class="donation-links">
-<div class="img-donation">
+<a href="#"> <div class="img-donation">
 <img src="<?php echo get_stylesheet_directory_uri();?>/Media/icon/icon-donation.svg" alt="fundraising team">
 <p>Contribute to donation</p> 
+</div></a>
 </div>
 
-<div class="img-volunteer">
+<div class="donation-links">
+<a href="#"><div class="img-volunteer">
 <img src="<?php echo get_stylesheet_directory_uri();?>/Media/icon/support-as-volunteer.svg" alt="fundraising team">
 <p>Support as a volunteer</p> 
+</div></a>
 </div>
 </div>
 			

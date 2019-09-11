@@ -16,7 +16,7 @@
               font-family: $h-ffamily;
               font-size: $h2-fsize-desktop;
               @include desktop {
-                font-size: $h1-fsize-desktop;
+                font-size: 80px;
               }
             }
             h2 {
@@ -49,7 +49,7 @@
               p {
                 text-align: center;
                 font-family: $body-ffamily;
-                font-size: $body-fsize-mobile;
+                font-size: 15px;
                 @include desktop {
                   font-size: 25px;
                 }
@@ -73,6 +73,10 @@
               margin: 0 auto;
               text-align: justify;
               font-size: $body-fsize-desktop;
+              line-height: 1.22;
+            }
+            a {
+              text-decoration: none;
             }
           }
           .get-started {

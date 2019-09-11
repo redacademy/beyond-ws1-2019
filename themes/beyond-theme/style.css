@@ -929,7 +929,7 @@ object {
       font-size: 80px; }
       @media (min-width: 850px) {
         .page-template-default .hfeed .site-content .content-area-volunteer .site-main-volunteer .title-vol h1 {
-          font-size: 100px; } }
+          font-size: 80px; } }
     .page-template-default .hfeed .site-content .content-area-volunteer .site-main-volunteer .title-vol h2 {
       font-family: Helvetica Neue, sans-serif;
       font-size: 15px; }
@@ -961,7 +961,7 @@ object {
       .page-template-default .hfeed .site-content .content-area-volunteer .site-main-volunteer .grid-vol .grid-container p {
         text-align: center;
         font-family: Helvetica Neue, sans-serif;
-        font-size: 10px; }
+        font-size: 15px; }
         @media (min-width: 850px) {
           .page-template-default .hfeed .site-content .content-area-volunteer .site-main-volunteer .grid-vol .grid-container p {
             font-size: 25px; } }
@@ -982,7 +982,10 @@ object {
         width: 1120px;
         margin: 0 auto;
         text-align: justify;
-        font-size: 40px; } }
+        font-size: 40px;
+        line-height: 1.22; } }
+    .page-template-default .hfeed .site-content .content-area-volunteer .site-main-volunteer .content a {
+      text-decoration: none; }
   .page-template-default .hfeed .site-content .content-area-volunteer .site-main-volunteer .get-started {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -996,11 +999,18 @@ object {
 .content-area-donation {
   width: 450px;
   margin: 0 auto; }
+  @media (min-width: 850px) {
+    .content-area-donation {
+      width: 1120px;
+      margin: 0 auto; } }
   .content-area-donation .site-main h1 {
     font-family: Poppins, Helvetica Neue, sans-serif;
     font-size: 40px;
     font-weight: 500;
     text-align: center; }
+    @media (min-width: 850px) {
+      .content-area-donation .site-main h1 {
+        font-size: 80px; } }
   .content-area-donation .site-main .content {
     text-align: justify;
     margin-bottom: 50px; }
@@ -1008,45 +1018,82 @@ object {
       font-family: Poppins, Helvetica Neue, sans-serif;
       font-size: 15px;
       font-weight: 500; }
+      @media (min-width: 850px) {
+        .content-area-donation .site-main .content h3 {
+          font-size: 40px; } }
     .content-area-donation .site-main .content p {
       font-family: Helvetica Neue, sans-serif;
       font-size: 10px; }
-  .content-area-donation .site-main .donation-links {
+      @media (min-width: 850px) {
+        .content-area-donation .site-main .content p {
+          font-size: 40px;
+          line-height: 1.22; } }
+  @media (min-width: 850px) {
+    .content-area-donation .site-main .img-links {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      width: 100%;
+      margin-top: 90px; } }
+  .content-area-donation .site-main .img-links .donation-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
-    .content-area-donation .site-main .donation-links .img-donation {
-      background-color: #62284e;
-      height: 213px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      border-radius: 17px;
-      margin-bottom: 73px; }
-      .content-area-donation .site-main .donation-links .img-donation img {
-        width: 95px;
-        margin-top: 30px; }
-      .content-area-donation .site-main .donation-links .img-donation p {
-        margin-top: 30px;
-        margin-bottom: 20px;
-        color: white;
-        font-family: Helvetica Neue, sans-serif;
-        font-size: 10px; }
-    .content-area-donation .site-main .donation-links .img-volunteer {
+            flex-direction: column;
+    margin-bottom: 73px; }
+    @media (min-width: 850px) {
+      .content-area-donation .site-main .img-links .donation-links {
+        width: 50%; } }
+    .content-area-donation .site-main .img-links .donation-links a {
+      text-decoration: none; }
+      @media (min-width: 850px) {
+        .content-area-donation .site-main .img-links .donation-links a {
+          margin-left: 25px;
+          margin-right: 25px; } }
+      .content-area-donation .site-main .img-links .donation-links a .img-donation {
+        background-color: #62284e;
+        height: 213px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        border-radius: 17px; }
+        @media (min-width: 850px) {
+          .content-area-donation .site-main .img-links .donation-links a .img-donation {
+            height: 360px; } }
+        .content-area-donation .site-main .img-links .donation-links a .img-donation img {
+          width: 95px;
+          margin-top: 30px; }
+          @media (min-width: 850px) {
+            .content-area-donation .site-main .img-links .donation-links a .img-donation img {
+              width: 150px;
+              height: 130px; } }
+        .content-area-donation .site-main .img-links .donation-links a .img-donation p {
+          margin-top: 30px;
+          margin-bottom: 20px;
+          color: white;
+          font-family: Helvetica Neue, sans-serif;
+          font-size: 10px; }
+          @media (min-width: 850px) {
+            .content-area-donation .site-main .img-links .donation-links a .img-donation p {
+              font-size: 40px; } }
+    .content-area-donation .site-main .img-links .donation-links a .img-volunteer {
       background-color: #e38639;
       height: 213px;
       display: -webkit-box;
@@ -1063,12 +1110,22 @@ object {
           -ms-flex-align: center;
               align-items: center;
       border-radius: 17px; }
-      .content-area-donation .site-main .donation-links .img-volunteer img {
+      @media (min-width: 850px) {
+        .content-area-donation .site-main .img-links .donation-links a .img-volunteer {
+          height: 360px; } }
+      .content-area-donation .site-main .img-links .donation-links a .img-volunteer img {
         width: 85px;
         margin-top: 30px; }
-      .content-area-donation .site-main .donation-links .img-volunteer p {
+        @media (min-width: 850px) {
+          .content-area-donation .site-main .img-links .donation-links a .img-volunteer img {
+            width: 130px;
+            height: 130px; } }
+      .content-area-donation .site-main .img-links .donation-links a .img-volunteer p {
         margin-top: 30px;
         margin-bottom: 20px;
         color: white;
         font-family: Helvetica Neue, sans-serif;
         font-size: 10px; }
+        @media (min-width: 850px) {
+          .content-area-donation .site-main .img-links .donation-links a .img-volunteer p {
+            font-size: 40px; } }
