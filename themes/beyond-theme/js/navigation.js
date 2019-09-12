@@ -114,11 +114,11 @@ const sizedMenu = document.getElementsByClassName('menu-menu-1-container')[0];
 
 function show() {
   sizedMenu.style.display = "initial";
-};
+}
 
 function hide() {
   sizedMenu.style.display = "none";
-};
+}
 
 let menuCounter = 0;
 
@@ -131,37 +131,5 @@ hamburger.addEventListener('click', () => {
     hide();
   }
 })
-
-
-// const hamburguer = document.getElementById('menu-toggle');
-// const menuText = document.getElementById('menu-text');
-// hide();
-
-// function show() {
-//   let toggleMenu = document.getElementById('mobile-menu');
-//   toggleMenu.style.display = "flex";
-//   toggleMenu.style.height = "100vh";
-//   menuText.style.display = "none";
-//   hamburguer.setAttribute('aria-expanded', true);
-// };
-
-// function hide() {
-//   let toggleMenu = document.getElementById('mobile-menu');
-//   toggleMenu.style.display = "none";
-//   menuText.style.display = "initial";
-//   hamburguer.setAttribute('aria-expanded', false);
-// };
-
-// let showMenu = 0;
-
-// hamburguer.addEventListener('click', function() {
-//   if (showMenu === 0) {
-//     showMenu = 1;
-//     show();
-//   } else {
-//     showMenu = 0;
-//     hide();
-//   }
-// })
 
 })();
