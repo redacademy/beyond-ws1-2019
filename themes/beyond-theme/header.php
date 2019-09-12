@@ -39,6 +39,9 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<div class="white-icon">
+					<?php echo '<style type="text/css"> .white-icon { background-image:url('.get_stylesheet_directory_uri().'/Media/logo/logo-white.svg) !important; width: 110px !important; height: 31px !important; background-size: 100% !important; background-position: center; background-repeat: no-repeat;}</style>';?>			
+					</div>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 					<?php echo '<style type="text/css"> .menu-toggle { background-image:url('.get_stylesheet_directory_uri().'/Media/icon/menu.svg) !important; width: 36px !important; height: 50% !important; background-size: 100% !important; background-position: center; background-repeat: no-repeat;}</style>';?>			
 					</button>
