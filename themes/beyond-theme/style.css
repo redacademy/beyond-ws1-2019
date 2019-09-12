@@ -1516,11 +1516,11 @@ object {
 
 .about-content {
   font-size: 10px;
-  font-family: Helvetica Neue, sans-serif; }
+  font-family: "Helvetica Neue", sans-serif; }
   .about-content h2 {
     font-size: 30px;
     font-family: Poppins, Helvetica Neue, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     color: #000000; }
   .about-content h3 {
@@ -1536,9 +1536,7 @@ object {
   color: #000000; }
 
 .cfs-member {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1582,6 +1580,9 @@ object {
   background-color: transparent;
   text-decoration: none;
   text-transform: uppercase; }
+
+#loadMore:hover {
+  border-color: #2597bd; }
 
 .history-block {
   padding: 10px 40px 0 40px;
@@ -1674,3 +1675,15 @@ object {
       line-height: 13px; }
       .services-block .services-content .services-text p {
         margin-bottom: 0; }
+
+.partners-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 300px;
+  margin: 0 auto;
+  justify-items: center; }
+  .partners-container .wp-image-101 {
+    margin-left: -40px; }
+  .partners-container .wp-image-103 {
+    margin-left: 20px; }
