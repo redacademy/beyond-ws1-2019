@@ -39,16 +39,12 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button id="menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="true">
-						Menu<div id="mobile-menu"><?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?></div>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<?php echo '<style type="text/css"> .menu-toggle { background-image:url('.get_stylesheet_directory_uri().'/Media/icon/menu.svg) !important; width: 36px !important; height: 50% !important; background-size: 100% !important; background-position: center; background-repeat: no-repeat;}</style>';?>			
 					</button>
-					<div class="white-logo">	
-						<?php echo '<style type="text/css"> .white-logo { background-image:url('.get_stylesheet_directory_uri().'/Media/logo/logo-white.svg) !important; height: 32px !important; width: 110px !important; background-size: 100% !important; background-repeat: no-repeat;}</style>';?>		
-					</div>
-					<div class="desktop-menu">
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					</div>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
+
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
