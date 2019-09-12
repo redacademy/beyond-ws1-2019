@@ -25,7 +25,8 @@
     color: $black;
 }
 .cfs-member {
-    display: flex;
+    display: none;
+    // display: flex;
     flex-direction: row;
     margin-top: 80px;
     margin-bottom: 50px;
@@ -72,7 +73,9 @@
     background-color:transparent;
     text-decoration: none;
     text-transform: uppercase;
-    
+}
+#loadMore:hover {
+    border-color: $sky-blue
 }
 
 .history-block {
