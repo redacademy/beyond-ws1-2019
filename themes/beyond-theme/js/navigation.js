@@ -109,6 +109,30 @@
 
 // Mobile Menu
 
+const hamburger = document.getElementById('menu-toggle');
+const sizedMenu = document.getElementsByClassName('menu-menu-1-container')[0];
+
+function show() {
+  sizedMenu.style.display = "initial";
+};
+
+function hide() {
+  sizedMenu.style.display = "none";
+};
+
+let menuCounter = 0;
+
+hamburger.addEventListener('click', () => {
+  if (menuCounter === 0) {
+    menuCounter = 1;
+    show();
+  } else {
+    menuCounter = 0;
+    hide();
+  }
+})
+
+
 // const hamburguer = document.getElementById('menu-toggle');
 // const menuText = document.getElementById('menu-text');
 // hide();

@@ -115,6 +115,9 @@ a {
 
 	.menu-menu-1-container {
 		display: none;
+		@include desktop {
+			display: flex !important;
+		}
 	}
 }
 

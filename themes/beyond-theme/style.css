@@ -576,6 +576,11 @@ a {
     text-decoration: none; }
   .main-navigation .menu-menu-1-container {
     display: none; }
+    @media (min-width: 850px) {
+      .main-navigation .menu-menu-1-container {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important; } }
 
 /* Small menu. */
 .menu-toggle {
