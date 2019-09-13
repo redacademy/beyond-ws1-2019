@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area-front">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -16,6 +16,12 @@ get_header(); ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
+			<?php endif; ?>
+			
+			<?php else : ?>
+
+			<?php get_template_part( 'template-parts/content', 'home' ); ?>
+
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
@@ -27,11 +33,7 @@ get_header(); ?>
 
 			<?php the_posts_navigation(); ?>
 
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
+		
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
