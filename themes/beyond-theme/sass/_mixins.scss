@@ -13,6 +13,18 @@
 
 // Breakpoints
 
+@mixin responsive-nav {
+	@media (min-width: 800px) and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin desktop-nav {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+
 @mixin desktop {
     @media (min-width: $desktop-width) {
         @content;
