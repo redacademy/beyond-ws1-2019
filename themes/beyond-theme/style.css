@@ -1597,7 +1597,7 @@ object {
   margin: 20px auto;
   margin-bottom: 50px;
   padding: 15px;
-  border: 1px solid #CBCBCB;
+  border: 1px solid #cbcbcb;
   background-color: transparent;
   text-decoration: none;
   text-transform: uppercase; }
@@ -1708,3 +1708,8 @@ object {
     margin-left: -40px; }
   .partners-container .wp-image-103 {
     margin-left: 20px; }
+
+.content-area-front .site-main .entry-content .block1 {
+  background-color: #62284e; }
+  .content-area-front .site-main .entry-content .block1 p {
+    color: white; }
