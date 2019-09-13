@@ -1,62 +1,75 @@
 .about-content {
-  // text-align: center;
-  // padding: 5px 50px;
-  font-size: $body-fsize-mobile;
-  font-family: $body-ffamily;
-  h2 {
-    font-size: $h2-fsize-mobile;
-    font-family: $h-ffamily;
-    font-weight: 500;
-    text-align: center;
+
+    // text-align: center;
+    // padding: 5px 50px; 
+    font-size: $body-fsize-mobile;  
+    font-family: $body-ffamily; 
     color: $black;
-  }
-  h3 {
-    font-size: 20px;
-    font-family: $h-ffamily;
-    font-weight: 400;
-    color: $black;
-  }
+    h2 {
+        font-size: $h2-fsize-mobile;
+        font-family: $h-ffamily;
+        font-weight: 500;
+        text-align: center;
+        @include desktop {
+            font-size: $h2-fsize-desktop;
+        }
+    }
+    h3 {
+        font-size: 20px;
+        font-family: $h-ffamily;
+        font-weight: 400;
+    }
+    div:nth-child(8) {
+       height: 345px;
+    }
 }
 
 .cfs-description {
-  font-size: $h3-fsize-mobile;
-  text-align: center;
-  font-family: $h-ffamily;
-  color: $black;
+    font-size: $h3-fsize-mobile;
+    text-align: center;
+    font-family: $h-ffamily;
+    @include desktop {
+        font-size: $h3-fsize-desktop;
+    }
+    
 }
 .cfs-member {
-  display: none;
-  // display: flex;
-  flex-direction: row;
-  margin-top: 80px;
-  margin-bottom: 50px;
-  height: 258px;
-  justify-content: center;
-  .cfs-photo {
-    // flex-basis: 40%;
-    width: 146px;
-  }
-  .cfs-info {
-    // flex-basis: 60%;
-    width: 156px;
-    background-color: $sky-blue;
-    text-align: left;
-    padding: 10px 40px 10px 15px;
-    .cfs-name {
-      margin: 0;
-      font-weight: bold;
-      font-size: $h3-fsize-mobile;
+
+    display: none;
+    // display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    height: 258px;
+    justify-content: center;
+    .cfs-photo {
+        width: 146px;
+        object-fit: cover;
+        border-radius: 0%;
     }
-    .cfs-role {
-      margin-top: 10px;
-      margin-bottom: 0;
-    }
-    .cfs-quote {
-      font-size: $h3-fsize-mobile;
-      font-weight: 300;
-    }
+    .cfs-info {
+        width: 156px;
+        background-color: $sky-blue;
+        text-align: left;
+        padding: 10px 35px 10px 15px;
+        .cfs-name {
+            margin: 0;
+            font-weight: 400;
+            font-size: $h3-fsize-mobile;
+        }
+        .cfs-role {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        .cfs-quote {
+            font-size: $h3-fsize-mobile;
+            font-weight: 300;
+            line-height: 1.2rem;
+        }
+ 
   }
 }
+
 
 #loadMore {
   width: 180px;
