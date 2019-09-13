@@ -515,6 +515,9 @@ a {
 .site-header {
   position: relative;
   height: 260px; }
+  @media (min-width: 850px) {
+    .site-header {
+      height: 100vh; } }
 
 .text-header {
   position: absolute;
@@ -526,6 +529,10 @@ a {
   font-family: 'Poppins';
   font-weight: lighter;
   font-size: 40px; }
+  @media (min-width: 850px) {
+    .text-header {
+      font-size: 100px;
+      text-transform: uppercase; } }
 
 .main-navigation {
   clear: both;
@@ -544,6 +551,9 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(50%, rgba(36, 36, 36, 0.84)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to bottom, black 0%, rgba(36, 36, 36, 0.84) 50%, rgba(0, 0, 0, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  @media (min-width: 850px) {
+    .main-navigation {
+      height: 240px; } }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -590,7 +600,13 @@ a {
       .main-navigation .menu-menu-1-container {
         display: -webkit-box !important;
         display: -ms-flexbox !important;
-        display: flex !important; } }
+        display: flex !important;
+        position: initial;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        background: transparent; } }
     .main-navigation .menu-menu-1-container .menu {
       display: -webkit-box;
       display: -ms-flexbox;
