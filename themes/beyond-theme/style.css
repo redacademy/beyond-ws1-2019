@@ -626,9 +626,15 @@ a {
                   flex-direction: row; } }
       .main-navigation .menu-menu-1-container .menu .menu-item a {
         font-family: 'Poppins';
-        font-size: 20px; }
+        font-size: 20px;
+        padding: 0 15px; }
         .main-navigation .menu-menu-1-container .menu .menu-item a:visited {
           color: #62284e; }
+        @media (min-width: 850px) {
+          .main-navigation .menu-menu-1-container .menu .menu-item a {
+            font-weight: lighter; }
+            .main-navigation .menu-menu-1-container .menu .menu-item a:visited {
+              color: #fff; } }
 
 /* Small menu. */
 .menu-toggle {

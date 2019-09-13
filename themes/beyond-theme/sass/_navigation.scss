@@ -152,13 +152,19 @@ a {
 			@include desktop {
 				flex-direction: row;
 			}
-			// padding: 20px 0;
 			.menu-item { // li
 				a {
 					font-family: 'Poppins';
 					font-size: $h3-fsize-mobile + 5px;
+					padding: 0 15px;
 					&:visited {
 						color: $purple;
+					}
+					@include desktop {
+						font-weight: lighter;
+						&:visited {
+							color: $white;
+						}
 					}
 				}
 			}
