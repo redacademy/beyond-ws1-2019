@@ -13,6 +13,7 @@
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 		<div class="class-content">
+			
 			<h1 class="blog-title"><a href='<?php echo esc_url( get_permalink() ) ?>'><?php echo wp_trim_words(get_the_title(), 4, null); ?></a></h1>
 
 			<?php if ( 'post' === get_post_type() ) : ?>
