@@ -553,7 +553,8 @@ a {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
   @media (min-width: 850px) {
     .main-navigation {
-      height: 240px; } }
+      height: 240px;
+      padding: 0 80px; } }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -598,14 +599,8 @@ a {
     transition: opacity 2s linear; }
     @media (min-width: 850px) {
       .main-navigation .menu-menu-1-container {
-        display: -webkit-box !important;
-        display: -ms-flexbox !important;
-        display: flex !important;
-        position: initial;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        display: initial !important;
+        position: inherit;
         background: transparent; } }
     .main-navigation .menu-menu-1-container .menu {
       display: -webkit-box;
@@ -623,6 +618,12 @@ a {
               align-items: center;
       height: 100%;
       line-height: 4; }
+      @media (min-width: 850px) {
+        .main-navigation .menu-menu-1-container .menu {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
       .main-navigation .menu-menu-1-container .menu .menu-item a {
         font-family: 'Poppins';
         font-size: 20px; }
