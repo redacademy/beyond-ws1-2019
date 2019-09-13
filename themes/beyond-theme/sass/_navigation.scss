@@ -58,7 +58,11 @@ a {
 	width: 100%;
 	height: 92px;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.84) 50%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	@include desktop {
+	@include responsive-nav {
+		height: 240px;
+		padding: 0 50px;
+	}
+	@include desktop-nav {
 		height: 240px;
 		padding: 0 80px;
 	}
@@ -87,20 +91,7 @@ a {
 					left: 100%;
 				}
 			}
-
-			a {
-				width: 200px;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
 		}
-
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
@@ -110,18 +101,10 @@ a {
 		float: left;
 		position: relative;
 
-		&:hover > a,
-		&.focus > a {
-		}
 	}
 	a {
 		display: block;
 		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
 	}
 
 	.menu-menu-1-container {
@@ -136,7 +119,6 @@ a {
 		right: 0;
 		bottom: 0;
 		opacity: 1;
-		transition: opacity 2s linear;
 		@include desktop {
 			display: initial !important;
 			position: inherit;
@@ -156,12 +138,21 @@ a {
 				a {
 					font-family: 'Poppins';
 					font-size: $h3-fsize-mobile + 5px;
-					padding: 0 15px;
 					&:visited {
 						color: $purple;
 					}
-					@include desktop {
+					@include responsive-nav {
+						font-size: $h3-fsize-mobile + 2.5px;
 						font-weight: lighter;
+						padding: 0 8px;
+						&:visited {
+							color: $white;
+						}
+					}
+					@include desktop-nav {
+						font-size: $h3-fsize-mobile + 5px;
+						font-weight: lighter;
+						padding: 0 15px;
 						&:visited {
 							color: $white;
 						}
@@ -211,4 +202,11 @@ a {
     text-align: right;
     width: 50%;
   }
+}
+
+.menu-menu-1-container ul ul {
+	position: absolute;
+	top: 60px;
+	width: 100%;
+	background-color: $grey;
 }

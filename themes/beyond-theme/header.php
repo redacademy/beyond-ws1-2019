@@ -52,8 +52,15 @@
 								}
 									@media (min-width: 850px) {
 										.white-icon {
-											width: 380px;
+											width: 200px;
+											height: 80px;
+											transition: all 0.25s ease-in-out 0.25s;
+									}
+									@media (min-width: 1200px) {
+										.white-icon {
+											width: 350px;
 											height: 110px;
+											transition: all 0.25s ease-in-out 0.25s;
 										}
 									}
 								</style>';?>			
