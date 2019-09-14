@@ -36,19 +36,67 @@
     
 }
 
-    .members-container {
-        @include desktop {
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr;
-            padding: 20px 100px;
-            grid-row-gap: 100px;
-            justify-items: center;
-            align-items: start;
-            margin: 0;
-            padding-top: 100px;
-        }
+.members-container {
+    @include desktop {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px 100px;
+        grid-row-gap: 10px;
+        grid-column-gap: 30px;
+        justify-content: center;
+        justify-items: center;
+        align-items: start;
+        margin: 0;
+        padding-top: 100px;
+        max-width: 100%;
     }
+}
+
+.desktop-member {
+    @include desktop {
+    background-color: $sky-blue;
+    display: none;
+    width: 450px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    
+    .cfs-photo {
+        width: 155px;
+        height: 250px;
+        border-radius: 20px;
+        margin-top: 40px;
+        object-fit: cover;
+    }
+    i {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        display: block;
+        font-size: 20px;
+    }
+    .cfs-name {
+        font-size: 25px;
+        text-align: center;
+    }
+    .cfs-role {
+        display: none;
+    }
+    .cfs-quote {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 300; 
+        text-align: center;
+        padding: 0 20px;
+    }
+    }
+}
 .cfs-member {
     display: none;
     // display: flex;
@@ -58,6 +106,14 @@
     height: 258px;
     justify-content: center;
     @include desktop {
+        i {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            display: block;
+            font-size: 20px;
+        }
         display: flex;
         flex-direction: column;
         margin-top: 0;
