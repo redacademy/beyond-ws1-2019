@@ -48,6 +48,7 @@
           font-size: $body-fsize-mobile;
           font-family: $body-ffamily;
           padding: 20px 70px;
+          padding-bottom: 0;
         }
       }
       .our-team {
@@ -61,6 +62,15 @@
       p {
         margin: 0;
       }
+    }
+    .title-front {
+      text-align: center;
+      font-size: $h2-fsize-mobile;
+      font-family: $h-ffamily;
+      font-weight: 500;
+    }
+    .description-front {
+      text-align: center;
     }
   }
 }
