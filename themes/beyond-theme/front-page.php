@@ -40,7 +40,7 @@ get_header(); ?>
 
 			<?php $args = array(
   			 'order' => 'ASC',
-   			'posts_per_page' => 3,
+   			'posts_per_page' => 2,
    			'post_type' => array('post'),
 			);
 			$query = new WP_Query( $args ); ?>
