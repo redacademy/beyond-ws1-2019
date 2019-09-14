@@ -25,14 +25,15 @@ get_header(); ?>
 	<div class="members-container">
 		<?php $loop = CFS()->get( 'member' ); ?>
 			<?php foreach ( $loop as $row ) { ?> 
-				<div class="cfs-member">
-					<?php echo '<img class="cfs-photo" src="'.$row["photo"].'"/>'; ?>
-					<div class="cfs-info">
-						<p class="cfs-name"><?php echo $row['name']; ?></p>
-						<p class="cfs-role"><?php echo $row['role']; ?></p>
-						<p class="cfs-quote"><?php echo $row['quote']; ?></p>
-					</div>	
-				</div>
+					<div class="cfs-member">
+					<i class="fas fa-times"></i>
+						<?php echo '<img class="cfs-photo" src="'.$row["photo"].'"/>'; ?>
+						<div class="cfs-info">
+							<p class="cfs-name"><?php echo $row['name']; ?></p>
+							<p class="cfs-role"><?php echo $row['role']; ?></p>
+							<p class="cfs-quote"><?php echo $row['quote']; ?></p>
+						</div>	
+					</div>
 			<?php }	?>
 	</div>	
 			<a href="#" id="loadMore">Load More</a>
