@@ -22,7 +22,7 @@ get_header(); ?>
 		
 	<h2 class="cfs-title"><?php echo CFS()->get( 'title' ); ?></h2>
 	<p class="cfs-description"><?php echo CFS()->get( 'description' ); ?></p>
-	
+	<div class="members-container">
 		<?php $loop = CFS()->get( 'member' ); ?>
 			<?php foreach ( $loop as $row ) { ?> 
 				<div class="cfs-member">
@@ -34,7 +34,7 @@ get_header(); ?>
 					</div>	
 				</div>
 			<?php }	?>
-		
+	</div>	
 			<a href="#" id="loadMore">Load More</a>
 
 
