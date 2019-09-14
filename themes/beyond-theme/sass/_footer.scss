@@ -37,12 +37,35 @@
           justify-content: space-around;
           margin-top: 100px;
           margin-bottom: 100px;
+          @include desktop {
+            padding: 35px 0;
+            margin: 0;
+          }
           i {
             font-size: 50px;
             color: $purple;
           }
         }
       }
+    }
+  }
+}
+
+.footer-desktop {
+  @include desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo-social-footer {
+  @include desktop {
+    width: auto;
+  }
+  .footer-logo {
+    @include mobile {
+      display: none;
     }
   }
 }
@@ -64,24 +87,6 @@
     color: $black;
   }
 }
-
-// .wpcf7-form {
-//   .form-label {
-//     font-family: 'Poppins';
-//     font-weight: bold;
-//     font-size: $h3-fsize-mobile + 5px;
-//   }
-//   p {
-//     text-align: left;
-//   }
-// }
-
-// .name-email-form {
-//   @include desktop {
-//     display: flex;
-//     align-items: baseline;
-//   }
-// }
 
 .user-info {
   @include desktop {
@@ -199,19 +204,14 @@
   }
 }
 
-// .submit-footer {
-//   text-align: center;
-//   padding: 10px 0;
-// }
+.wpcf7-not-valid-tip {
+  color: maroon !important;
+  padding: 10px 30px 0 30px;
+  font-family: $body-ffamily;
+}
 
-// .wpcf7-not-valid-tip {
-//   color: maroon !important;
-//   padding: 10px 30px 0 30px;
-//   font-family: $body-ffamily;
-// }
-
-// .wpcf7-validation-errors {
-//   color: maroon;
-//   font-family: $body-ffamily;
-//   border: 1px solid maroon !important;
-// }
+.wpcf7-validation-errors {
+  color: maroon;
+  font-family: $body-ffamily;
+  border: 1px solid maroon !important;
+}

@@ -14,19 +14,34 @@
 					<div class="footer">
 						<h1>Let's Talk</h1>
 						
-						<?php dynamic_sidebar( 'footer-1' ); ?>
+						<div class="footer-desktop">
+							<?php dynamic_sidebar( 'footer-1' ); ?>
+							<div class="logo-social-footer">
+								<div class="footer-logo">
+									<?php echo '<style type="text/css">
+												.footer-logo {
+													margin: 0 auto;
+													background-image: url('.get_stylesheet_directory_uri().'/Media/logo/svg/logo-footer.svg) !important;
+													width: 300px;
+													height: 200px;
+													background-position: center;
+													background-repeat: no-repeat;
+												}
+									</style>';?>
+								</div>
 
-						<div class="social">
-							<a href="#"><i class="fab fa-facebook-square"></i></a>
-							<a href="#"><i class="fab fa-instagram"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-							<a href="#"><i class="fab fa-twitter-square"></i></a>
-						</div>
-						<div class="footer-author">
+								<div class="social">
+									<a href="#"><i class="fab fa-facebook-square"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+									<a href="#"><i class="fab fa-twitter-square"></i></a>
+								</div>
+							</div>
+					</div>
+					<div class="footer-author">
 							<p>© 2019 Amie Peacock.</p>
 							<p>All materials are copyright protected and may not be distributed without the author's express written permission.</p>
 						</div>
-					</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
