@@ -22,6 +22,10 @@
           -webkit-text-fill-color: transparent;
           @include desktop {
             display: inline-block;
+            font-size: $h2-fsize-desktop;
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-family: $body-ffamily;
           }
         }
         .submit-btn {
@@ -50,6 +54,9 @@
 }
 
 .wpcf7-form {
+  @include desktop {
+    width: min-content;
+  }
   label {
     font-family: $h-ffamily;
     font-size: $mobile-button;
@@ -76,16 +83,26 @@
 //   }
 // }
 
+.user-info {
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    width: max-content;
+  }
+}
+
 .your-name {
+  @include desktop {
+    padding-right: 5px;
+  }
   input {
     font-family: $body-ffamily;
     font-weight: 300;
     max-width: 380px;
-    width: 80%;
     color: $grey;
     padding: 5px 10px;
     @include desktop {
-      width: 200px;
+      width: 350px;
     }
   }
 }
@@ -99,7 +116,7 @@
     color: $grey;
     padding: 5px 10px;
     @include desktop {
-      max-width: 200px;
+      width: 350px;
     }
   }
 }
@@ -112,27 +129,43 @@
     font-weight: 300;
     color: $grey;
     padding: 5px 10px;
+    @include desktop {
+      max-width: 710px;
+      height: 180px;
+    }
   }
 }
 
-// .wpcf7-form-control-wrap {
-//   input {
-//     width: 100%;
-//   }
-  // .wpcf7-list-item {
-  //   display: flex;
-  //   margin: 0;
-  //   align-items: flex-start;
-  //   input[type="checkbox"] {
-  //     height: 24px;
-  //     width: 24px;
-  //   }
-  //   .wpcf7-list-item-label {
-  //     padding: 0 10px;
-  //     width: 90%;
-  //   }
-  // }
-// }
+.wpcf7-form-control-wrap {
+  .wpcf7-list-item {
+    display: flex;
+    margin: 0;
+    align-items: flex-start;
+    padding: 10px 0;
+    input[type="checkbox"] {
+      height: 24px;
+      width: 24px;
+    }
+    .wpcf7-list-item-label {
+      padding-left: 20px;
+      width: 90%;
+      font-weight: initial;
+      font-size: 16px;
+      font-family: $body-ffamily;
+      @include desktop {
+        font-weight: lighter;
+        font-size: $mobile-button;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.privacy-label {
+  @include desktop {
+    display: none;
+  }
+}
 
 .wpcf7-submit {
   background-color: $orange;
@@ -145,6 +178,15 @@
   box-shadow: 0 0;
   filter: blur(6);
   width: 150px;
+  @include desktop {
+    border-radius: 20px;
+    height: 88px;
+    font-size: $desktop-button;
+    width: 250px;
+    &:hover {
+      opacity: 0.2;
+    }
+  }
 }
 
 .submit-form {
@@ -152,6 +194,9 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
+  @include desktop {
+    align-items: flex-start;
+  }
 }
 
 // .submit-footer {
