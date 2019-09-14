@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area-front">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<?php if ( have_posts() ) : ?> 
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>

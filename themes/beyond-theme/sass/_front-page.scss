@@ -1,12 +1,50 @@
 .content-area-front {
   .site-main {
     .entry-content {
+      margin-top: 0;
       .block1 {
         background-color: $purple;
+        .has-large-font-size {
+          font-size: $h2-fsize-mobile;
+          font-family: $h-ffamily;
+          font-weight: 500;
+        }
         .img {
         }
         p {
           color: white;
+          font-size: $body-fsize-mobile;
+          font-family: $body-ffamily;
+        }
+      }
+      .block2 {
+        background-color: $sky-blue;
+        .has-large-font-size {
+          font-size: $h2-fsize-mobile;
+          font-family: $h-ffamily;
+          font-weight: 500;
+        }
+        .img {
+        }
+        p {
+          color: white;
+          font-size: $body-fsize-mobile;
+          font-family: $body-ffamily;
+        }
+      }
+      .block3 {
+        background: linear-gradient(to bottom, $light-orange 50%, #ffff 50%);
+        .has-large-font-size {
+          font-size: $h2-fsize-mobile;
+          font-family: $h-ffamily;
+          font-weight: 500;
+        }
+        .img {
+        }
+        p {
+          color: black;
+          font-size: $body-fsize-mobile;
+          font-family: $body-ffamily;
         }
       }
     }
