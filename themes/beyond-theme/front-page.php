@@ -48,17 +48,23 @@ get_header(); ?>
 
 			<?php $query = new WP_Query( $args ); /* $args set above*/ ?>
 			<?php if ( $query->have_posts() ) : ?>
-  			 <?php while ( $query->have_posts() ) : $query->the_post(); ?><div class="front-wrap-container">
-			  <div class="front-post-container"> <?php the_post_thumbnail(); ?></div>
-	 		 <div class="post-info">
-	 		 <div class="front-comments"> <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?></div>
-	 		 <div class="front-post-title"><?php the_title(sprintf( '<h2 class="frontpost"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>'); ?>
+  			 <?php while ( $query->have_posts() ) : $query->the_post(); ?><div class="resources-card">
+			  <div class="imgs"> <?php the_post_thumbnail(); ?></div>
+	 		 <div class="class-content">
+	 		 <div class="card-info"> <div class="blog-meta">
+					<span class="posted-on"><?php red_starter_posted_on(); ?></span><span class="posted-by"><?php red_starter_posted_by(); ?></span></div>
+					
+			  <h1 class="blog-title"><a href='<?php echo esc_url( get_permalink() ) ?>'><?php echo wp_trim_words(get_the_title(), 4, null); ?></a></h1>
+			  <div class="comment-card">
+					<i class="fa fa-comment"></i><span class="comment-number"><?php comments_number( '0', '1', '%' ); ?></span>
+				</div>
 	 		 </div>
-	 		 <div class="buttonfront">
-	  		<a href="<?php echo esc_url( get_permalink() )?>"> Read more → </a></span>
+	 		 <div class="read-more">
+			  <?php echo sprintf( '<div class="read-more"><a href="%s" rel="bookmark"><div class="button">', esc_url( get_permalink() )).'Read more <span class="arrow">&gt;</span></div></a></div>'; ?>
 			</div>
 				</div>
 			</div>
+
    			<?php endwhile; ?>
   			 <?php wp_reset_postdata(); ?>
 			<?php else : ?>
