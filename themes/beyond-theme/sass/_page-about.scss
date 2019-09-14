@@ -12,6 +12,7 @@
         text-align: center;
         @include desktop {
             font-size: $h2-fsize-desktop;
+            margin-bottom: 20px;
         }
     }
     h3 {
@@ -30,11 +31,25 @@
     font-family: $h-ffamily;
     @include desktop {
         font-size: $h3-fsize-desktop;
+        margin-top: 0;
     }
     
 }
-.cfs-member {
 
+    .members-container {
+        @include desktop {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 20px 100px;
+            grid-row-gap: 100px;
+            justify-items: center;
+            align-items: start;
+            margin: 0;
+            padding-top: 100px;
+        }
+    }
+.cfs-member {
     display: none;
     // display: flex;
     flex-direction: row;
@@ -42,32 +57,72 @@
     margin-bottom: 50px;
     height: 258px;
     justify-content: center;
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 586px;
+        width: 257px;
+        justify-content: start;
+        position: relative;
+    }
     .cfs-photo {
         width: 146px;
         object-fit: cover;
         border-radius: 0%;
+        @include desktop {
+            width: 257px;
+            height: 421px;
+            border-radius: 20px;
+            // object-fit: contain;
+        }
     }
     .cfs-info {
         width: 156px;
         background-color: $sky-blue;
         text-align: left;
         padding: 10px 35px 10px 15px;
+        @include desktop {
+            background-color: transparent;
+            width: 257px;
+            padding: 0;
+            position: absolute;
+            top: 380px;
+        }
         .cfs-name {
             margin: 0;
             font-weight: 400;
             font-size: $h3-fsize-mobile;
+            font-family: $h-ffamily;
+            @include desktop {
+                background-color:  $sky-blue;
+                font-size: 25px;
+                border-radius: 20px;
+                height: 105px;
+                text-align: left;
+                padding: 10px 120px 10px 10px;
+            }
         }
         .cfs-role {
             margin-top: 10px;
             margin-bottom: 0;
+            font-family: $h-ffamily;
+            @include desktop {
+               font-size: 17px;
+               padding: 0 10px;
+            }
+           
         }
         .cfs-quote {
             font-size: $h3-fsize-mobile;
             font-weight: 300;
             line-height: 1.2rem;
+            @include desktop {
+                display: none;
+            }
         }
- 
-  }
+    }
 }
 
 
@@ -86,6 +141,9 @@
   background-color: transparent;
   text-decoration: none;
   text-transform: uppercase;
+  @include desktop {
+    display: none;
+  }
 }
 #loadMore:hover {
   border-color: $sky-blue;
