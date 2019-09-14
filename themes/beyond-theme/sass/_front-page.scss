@@ -34,6 +34,8 @@
       }
       .block3 {
         background: linear-gradient(to bottom, $light-orange 50%, #ffff 50%);
+        display: flex;
+        flex-direction: column;
         .has-large-font-size {
           font-size: $h2-fsize-mobile;
           font-family: $h-ffamily;
@@ -45,7 +47,19 @@
           color: black;
           font-size: $body-fsize-mobile;
           font-family: $body-ffamily;
+          padding: 20px 70px;
         }
+      }
+      .our-team {
+        font-size: $h2-fsize-mobile;
+        background-color: $light-orange;
+        text-align: center;
+        margin: 0;
+        height: 105px;
+        padding-top: 20px;
+      }
+      p {
+        margin: 0;
       }
     }
   }
