@@ -58,6 +58,29 @@
   }
 }
 
+.who-we-btn {
+  background-color: $orange;
+  color: $white;
+  border-radius: 33px;
+  height: 36px;
+  width: 100px;
+  font-family: $body-ffamily;
+  font-size: 13px;
+  border: none;
+  box-shadow: 0 0;
+  margin: 30px 109px;
+  filter: blur(6);
+  @include desktop {
+    border-radius: 20px;
+    height: 88px;
+    font-size: $desktop-button;
+    width: 150px;
+    &:hover {
+      opacity: 0.2;
+    }
+  }
+}
+
 //Pagination
 
 .search-pagination {
