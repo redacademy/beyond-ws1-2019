@@ -120,10 +120,10 @@ add_action( 'wp_enqueue_scripts', 'custom_load_font_awesome' );
 
 
 function flickity_scripts() {
-	wp_enqueue_script( 'flickityjs', get_template_directory_uri() . '/js/flickity.pkgd.min.js', array( 'jquery' ), '1.9.0', true );
-	wp_enqueue_script( 'flickityjs-init', get_template_directory_uri(). '/js/flickity.init.js', array( 'flickityjs' ), '1.9.0', true );
+	wp_enqueue_script( 'flickityjs', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), '1.9.0', true );
 	
-	wp_enqueue_style( 'flickitycss', get_template_directory_uri() . '/css/flickity.min.css', 'all');
+	
+	wp_enqueue_style( 'flickitycss', 'https://unpkg.com/flickity@2/dist/flickity.min.css');
  }
 	add_action( 'wp_enqueue_scripts', 'flickity_scripts' );
 
