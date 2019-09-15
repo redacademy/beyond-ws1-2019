@@ -1,7 +1,4 @@
 .about-content {
-
-    // text-align: center;
-    // padding: 5px 50px; 
     font-size: $body-fsize-mobile;  
     font-family: $body-ffamily; 
     color: $black;
@@ -19,9 +16,9 @@
         font-size: 20px;
         font-family: $h-ffamily;
         font-weight: 400;
-    }
-    div:nth-child(8) {
-       height: 345px;
+        @include desktop {
+            font-size: $h3-fsize-desktop;
+        }
     }
 }
 
@@ -33,10 +30,12 @@
         font-size: $h3-fsize-desktop;
         margin-top: 0;
     }
-    
 }
 
 .members-container {
+    div:nth-child(6) {
+        height: 320px;
+     }
     @include desktop {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
@@ -131,7 +130,6 @@
             width: 257px;
             height: 421px;
             border-radius: 20px;
-            // object-fit: contain;
         }
     }
     .cfs-info {
@@ -173,7 +171,7 @@
         .cfs-quote {
             font-size: $h3-fsize-mobile;
             font-weight: 300;
-            line-height: 1.2rem;
+            line-height: 1.1rem;
             @include desktop {
                 display: none;
             }
@@ -209,24 +207,45 @@
   padding: 10px 40px 0 40px;
   background-color: lighten($orange, 40%);
   height: 338px;
+  @include desktop {
+      height: 800px;
+      padding: 20px 150px;
+  }
   h3 {
     color: $orange;
     text-align: left;
-    font-weight: 400;
     margin-top: 10px;
     margin-bottom: 10px;
+    @include desktop {
+        padding-left: 50px;
+    }
   }
   .history-content {
     display: flex;
     flex-direction: row;
+    @include desktop {
+        padding-left: 50px;
+    }
     p {
       padding-left: 20px;
       font-weight: 300;
       text-align: left;
       flex-basis: 50%;
+      @include desktop {
+          font-size: 35px;
+          padding-left: 100px;
+          line-height: 49px;
+          font-weight: 100;
+          margin-top: 0;
+          flex-basis: 70%
+      }
     }
     img {
       flex-basis: 50%;
+      @include desktop {
+      height: 600px;
+      width: 500px;
+      }
     }
   }
 }
@@ -235,15 +254,22 @@
   padding: 10px 40px 0 40px;
   background-color: lighten($purple, 67%);
   height: 338px;
+  @include desktop {
+      height: 800px;
+      padding: 20px 150px;
+  }
   h3 {
     color: $purple;
     text-align: right;
-    font-weight: 400;
     margin-top: 10px;
+    margin-right: 275px;
   }
   h4 {
     font-weight: 300;
     margin-top: 0;
+    @include desktop {
+        margin-bottom: 10px;
+    }
   }
   .goals-content {
     display: flex;
@@ -255,12 +281,29 @@
       padding-right: 20px;
       flex-basis: 50%;
       font-weight: 300;
+      @include desktop {
+        font-size: 35px;
+        padding-left: 50px;
+        padding-right: 140px;
+        line-height: 49px;
+        font-weight: 100;
+        margin-top: 0;
+        flex-basis: 70%
+    }
     }
     p {
       margin-bottom: 10px;
+      @include desktop {
+        margin-top: 30px;
+    }
+      
     }
     img {
       flex-basis: 50%;
+      @include desktop {
+          height: 600px;
+          width: 600px;
+      }
     }
   }
 }
@@ -269,18 +312,37 @@
   padding: 10px 40px 0 40px;
   background-color: lighten($sky-blue, 50%);
   height: 403px;
+  @include desktop {
+    height: 1050px;
+    padding: 20px 150px;
+  }
+
   h3 {
     color: $sky-blue;
     text-align: left;
-    font-weight: 400;
     margin-top: 10px;
     margin-bottom: 10px;
+    @include desktop {
+        padding-left: 50px;
+    }
   }
   .services-content {
     display: flex;
     flex-direction: row;
+    @include desktop {
+        padding-left: 50px;
+    }
     .services-images {
       flex-basis: 50%;
+      
+      img {
+        @include desktop {
+            height: 450px;
+            width: 500px;
+            padding-bottom: 20px;
+        }
+      }
+     
     }
     .services-text {
       padding-left: 10px;
@@ -288,13 +350,24 @@
       text-align: left;
       flex-basis: 50%;
       line-height: 13px;
+      @include desktop {
+        font-size: 35px;
+        padding-left: 100px;
+        line-height: 45px;
+        font-weight: 100;
+        margin-top: 0;
+        flex-basis: 70%
+      }
       p {
         margin-bottom: 0;
+        @include desktop {
+            margin-top: 0;
+            padding-bottom: 30px;
+        }
       }
     }
   }
 }
-
 .partners-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
