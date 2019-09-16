@@ -22,9 +22,13 @@
     }
 }
 
+#field_1_2 {
+    flex-direction: column-reverse !important;
+}
+
 .gfield {
     display: flex !important;
-    flex-direction: column-reverse !important;
+    flex-direction: column !important;
     font-family: $h-ffamily !important;
     font-weight: lighter;
     color: $black;
@@ -32,6 +36,48 @@
     line-height: 1.5;
     img {
         padding-bottom: 30px;
+    }
+    .gfield_label {
+            font-weight: lighter !important;
+        font-size: 15px !important;
+        .gfield_required {
+            color: $black;
+        }
+    }
+}
+
+.gform_fields {
+    display: flex !important;
+    flex-direction: column !important;
+    .joinus-name {
+        order: 1 !important;
+    }
+    .joinus-email {
+        order: 2 !important;
+    }
+    .joinus-iam {
+        order: 4 !important;
+    }
+    .joinus-interested {
+        order: 5 !important;
+    }
+    .joinus-phone {
+        order: 3 !important;
+    }
+    .joinus-other {
+        order: 6 !important;
+    }
+}
+
+.ginput_container {
+    input {
+        font-family: $body-ffamily !important;
+    }
+}
+
+#input_1_4_3_container {
+    label {
+        display: none !important;
     }
 }
 
