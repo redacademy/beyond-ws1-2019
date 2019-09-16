@@ -40,17 +40,11 @@ get_header(); ?>
 			</div>
 			</div>
 
-		<div class="content">
-			<p>Complete an online form where we'll take some details from you to help us determine if you're suitable for the volunteer positions</p>
-			<p>It should only take a few minutes to complete, but if you have any problems filling out the information, please contact us at <a href="mailto:contact@beyondtheconversation.ca">contact@beyondtheconversation.ca</a> or give us a call.</p>
-			<p>We take your privacy seriously and will not pass your details or information on to any 3rd parties or anyone without your consent.
-			</p>
-			<p>Just fill in the details below and we will be in touch to discuss the next steps with you.</p>
-		</div>
-		<div class="get-started">
-		<button class="started-btn">Get Started</button>
-		</div>
-	
+		<?php while ( have_posts() ) : the_post(); ?>
+
+			<?php get_template_part( 'template-parts/content', 'volunteer' ); ?>
+
+		<?php endwhile; ?>	
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
