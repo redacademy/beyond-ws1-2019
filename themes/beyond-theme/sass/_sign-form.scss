@@ -40,6 +40,28 @@
     display: none !important;
 }
 
+.gform_page_footer {
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    input[type="button"] {
+        margin: 30px 0 !important;
+        background-color: $orange;
+        color: $white;
+        border-radius: 10px;
+        height: 40px;
+        width: 90px !important;
+        font-family: $body-ffamily;
+        font-size: $mobile-started-btn;
+        text-shadow: none;
+        border: none;
+        box-shadow: 0 0;
+        filter: blur(6);
+        padding: 0 !important;
+        line-height: 0 !important;
+    }
+}
+
 .pum-close {
     top: 0 !important;
     right: 0 !important;
