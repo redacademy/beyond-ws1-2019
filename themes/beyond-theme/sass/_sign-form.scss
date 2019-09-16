@@ -2,16 +2,20 @@
     background: rgba(0, 0, 0, 0.5) !important;
 }
 
+.gform_body {
+    padding: 30px 20px 10px 20px;
+}
+
 .pum-container {
     position: relative !important;
     height: auto !important;
+    padding: 0 !important;
 }
 
 .gform_wrapper {
     form {
         display: flex !important;
         flex-direction: column-reverse !important;
-        padding: 30px 0 !important;
         .gform_heading {
             display: none !important;
         }
@@ -38,6 +42,51 @@
 
 .gform_title {
     display: none !important;
+}
+
+.gf_page_steps {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border: 0 !important;
+    background-color: #D7D1D5;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 30px;
+    font-family: $body-ffamily;
+    .gf_step_active {
+        color: $orange;
+        height: 100% !important;
+        text-align: center;
+        .gf_step_number {
+            background-color: $orange;
+            color: $white;
+            border: 0.5px solid $orange;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            font-size: 12px !important;
+        }
+        .gf_step_label {
+            text-decoration: underline;
+        }
+    }
+    .gf_step {
+        margin: 0 auto !important;
+        width: auto !important;
+        height: auto !important;
+        text-align: center;
+    }
+    .gf_step_pending {
+        .gf_step_number {
+            width: 15px;
+            height: 15px;
+            border: 0.5px solid $grey;
+            border-radius: 50%;
+            font-size: 12px !important;
+        }
+    }
 }
 
 .gform_page_footer {
