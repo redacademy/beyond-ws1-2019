@@ -38,8 +38,6 @@ get_header(); ?>
 	</div>	
 			<a href="#" id="loadMore">Load More</a>
 
-
-				
 		<?php the_content(); ?>
 		
 		<?php
