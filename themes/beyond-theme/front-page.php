@@ -33,8 +33,9 @@ get_header(); ?>
 			<?php endwhile; ?>
 			
 			<?php the_posts_navigation(); ?>
-			
+			<div class="who-btn">
 			<a href="<?php echo get_permalink( get_page_by_path( 'who-we-are' ) ) ?>"><button class="who-we-btn"> Who we are ></button></a>
+			</div>
 			<h2 class="title-front"> <?php echo CFS()->get('title'); ?></h2>
 			<p class="description-front"> <?php echo CFS()->get('description'); ?></p>
 
@@ -73,13 +74,13 @@ get_header(); ?>
       		<h2>Nothing found!</h2>
 			<?php endif; ?>
 			
-			<div class="main-carousel" data-flickity='{ "cellAlign": "right", "contain": true, "wrapAround": true, "prevNextButtons": false}'>
+			<div class="main-carousel" data-flickity='{ "cellAlign": "right", "contain": true, "wrapAround": true, "prevNextButtons": false, "autoPlay": true}'>
 			
 			<?php $loop = CFS()->get( 'testimonial' ); ?>
 			<?php foreach ( $loop as $row ) { ?> 
 				
 				<div class="carousel-cell"> 
-				
+					
 					<?php echo '<img class="cfs-photo-testimonial" src="'.$row["photo"].'"/>'; ?>
 					<p class="cfs-quote-test"><?php echo $row['quote']; ?></p>
 					

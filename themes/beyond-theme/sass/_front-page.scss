@@ -8,6 +8,11 @@
           font-size: $h2-fsize-mobile;
           font-family: $h-ffamily;
           font-weight: 500;
+          @include desktop {
+            font-size: $h2-fsize-desktop;
+            font-family: $h-ffamily;
+            font-weight: normal;
+          }
         }
         .img {
         }
@@ -15,6 +20,11 @@
           color: white;
           font-size: $body-fsize-mobile;
           font-family: $body-ffamily;
+          @include desktop {
+            color: white;
+            font-size: $body-fsize-desktop;
+            font-family: $body-ffamily;
+          }
         }
       }
       .block2 {
@@ -23,6 +33,11 @@
           font-size: $h2-fsize-mobile;
           font-family: $h-ffamily;
           font-weight: 500;
+          @include desktop {
+            font-size: $h2-fsize-desktop;
+            font-family: $h-ffamily;
+            font-weight: normal;
+          }
         }
         .img {
         }
@@ -30,18 +45,33 @@
           color: white;
           font-size: $body-fsize-mobile;
           font-family: $body-ffamily;
+          @include desktop {
+            color: white;
+            font-size: $body-fsize-desktop;
+            font-family: $body-ffamily;
+          }
         }
       }
       .block3 {
         background: linear-gradient(to bottom, $light-orange 50%, #ffff 50%);
         display: flex;
         flex-direction: column;
+        @include desktop {
+          display: flex;
+          flex-direction: row;
+        }
         .has-large-font-size {
           font-size: $h2-fsize-mobile;
           font-family: $h-ffamily;
           font-weight: 500;
         }
-        .img {
+        .wp-block-media-text__media {
+          img {
+            width: 100%;
+            @include desktop {
+              width: 800px;
+            }
+          }
         }
         p {
           color: black;
@@ -49,6 +79,12 @@
           font-family: $body-ffamily;
           padding: 20px 70px;
           padding-bottom: 0;
+          @include desktop {
+            color: black;
+            font-size: $body-fsize-desktop;
+            font-family: $body-ffamily;
+            padding: 0;
+          }
         }
       }
       .our-team {
@@ -58,6 +94,11 @@
         margin: 0;
         height: 105px;
         padding-top: 20px;
+        @include desktop {
+          font-size: $h2-fsize-desktop;
+          height: 250px;
+          padding-top: 60px;
+        }
       }
       p {
         margin: 0;
@@ -81,8 +122,8 @@
       margin-top: 40px;
       background: linear-gradient(
         to right,
-        rgba(232, 133, 53, 1) 0%,
-        rgba(30, 166, 203, 1) 51%,
+        rgba(232, 133, 53, 1) 10%,
+        rgba(30, 166, 203, 1) 61%,
         rgba(103, 29, 67, 1) 94%,
         rgba(103, 29, 67, 1) 100%
       );
@@ -94,6 +135,8 @@
         margin-right: 10px;
         justify-content: center;
         text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
         img {
           height: auto;
           max-width: 30%;
@@ -102,9 +145,41 @@
         p {
           color: white;
         }
+        .flickity-button {
+          background: transparent;
+        }
+        /* big previous & next buttons */
+        .flickity-prev-next-button {
+          width: 100px;
+          height: 100px;
+        }
+        /* icon color */
+        .flickity-button-icon {
+          fill: white;
+        }
+        /* hide disabled button */
+        .flickity-button:disabled {
+          display: none;
+        }
       }
       .flickity-page-dots {
         position: unset;
+      }
+    }
+    .who-btn {
+      @include desktop {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 120px;
+      }
+      .who-we-btn {
+        @include desktop {
+          border-radius: 20px;
+          height: 88px;
+          font-size: 23px;
+          width: 238px;
+          margin-left: 60px;
+        }
       }
     }
   }
