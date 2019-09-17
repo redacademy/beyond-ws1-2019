@@ -81,6 +81,11 @@
     .gfield_label {
         font-weight: lighter !important;
         font-size: 15px !important;
+        @include resp-form {
+            font-family: $h-ffamily;
+            font-weight: lighter !important;
+            font-size: 28px !important;
+        }
         .gfield_required {
             color: $black;
         }
@@ -125,27 +130,86 @@ tbody {
     flex-direction: column !important;
     .joinus-name {
         order: 1 !important;
+        @include resp-form {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            align-items: flex-start;
+            justify-content: center;
+        }
     }
     .joinus-email {
         order: 2 !important;
+        @include resp-form {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            align-items: flex-start;
+            justify-content: center;
+        }
     }
     .joinus-iam {
         order: 4 !important;
+        @include resp-form {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            align-items: flex-start;
+            justify-content: center;
+        }
     }
     .joinus-interested {
         order: 5 !important;
+        @include resp-form {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+            align-items: flex-start;
+            justify-content: center;
+        }
     }
     .joinus-phone {
         order: 3 !important;
+        @include resp-form {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            align-items: flex-start;
+            justify-content: center;
+        }
     }
     .joinus-other {
         order: 6 !important;
+        @include resp-form {
+            grid-column: 2 / 3;
+            grid-row: 2 / 4;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    }
+}
+
+#gform_fields_1_2 {
+    @include resp-form {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
 }
 
 .ginput_container {
-    input {
+    @include resp-form {
+        width: 100%;
+    }
+    input, select {
         font-family: $body-ffamily !important;
+        @include resp-form {
+            width: 100% !important;
+            font-size: 26px !important;
+        }
+    }
+    select {
+        option {
+            @include resp-form {
+                font-family: $body-ffamily !important;
+                color: $grey;
+            }
+        }
     }
 }
 
