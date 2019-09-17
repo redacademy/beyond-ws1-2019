@@ -5,18 +5,43 @@
 .gform_body {
     background-color: $white;
     padding: 30px 20px 10px 20px;
+    @include resp-form {
+        height: 100% !important;
+        padding: 30px 100px 10px 100px !important;
+    }
+}
+
+.gform_page {
+    @include resp-form {
+        padding: 0 20px;
+    }
+}
+
+.pum-content {
+    @include resp-form {
+        height: 100% !important;
+    }
 }
 
 .pum-container {
     position: relative !important;
     height: auto !important;
     padding: 0 !important;
+    @include resp-form {
+        width: 90% !important;
+    }
 }
 
 .gform_wrapper {
+    @include resp-form {
+        height: 100% !important;
+    }
     form {
         display: flex !important;
         flex-direction: column-reverse !important;
+        @include resp-form {
+            height: 100% !important;
+        }
         .gform_heading {
             display: none !important;
         }
@@ -25,6 +50,9 @@
 
 #field_1_2 {
     flex-direction: column-reverse !important;
+    @include resp-form {
+        flex-direction: row !important;
+    }
 }
 
 .gfield {
@@ -35,11 +63,23 @@
     color: $black;
     font-size: 13px;
     line-height: 1.5;
+    @include resp-form {
+        align-items: center;
+        font-size: 28px;
+        line-height: 1.5 !important;
+        font-family: $body-ffamily !important;
+        font-weight: 200 !important;
+    }
     img {
         padding-bottom: 30px;
+        @include resp-form {
+            width: 300px !important;
+            height: 300px !important;
+            margin: 10px 25px 10px 100px !important;
+        }
     }
     .gfield_label {
-            font-weight: lighter !important;
+        font-weight: lighter !important;
         font-size: 15px !important;
         .gfield_required {
             color: $black;
@@ -135,6 +175,11 @@ tbody {
     padding: 0 !important;
     height: 30px;
     font-family: $body-ffamily;
+    @include resp-form {
+        font-family: $h-ffamily;
+        height: 70px !important;
+        font-weight: lighter;
+    }
     .gf_step_active {
         color: $orange;
         height: 100% !important;
@@ -147,9 +192,19 @@ tbody {
             height: 15px;
             border-radius: 50%;
             font-size: 12px !important;
+            @include resp-form {
+                width: 30px !important;
+                display: inline !important;
+                font-size: $desktop-button - 10px !important;
+                padding: 2px 14px !important;
+                font-family: $h-ffamily !important;
+            }
         }
         .gf_step_label {
             text-decoration: underline;
+            @include resp-form {
+                font-size: $desktop-button - 10px;
+            }
         }
     }
     .gf_step {
@@ -157,6 +212,9 @@ tbody {
         width: auto !important;
         height: auto !important;
         text-align: center;
+        @include resp-form {
+            font-size: $desktop-button - 10px !important;
+        }
     }
     .gf_step_pending {
         .gf_step_number {
@@ -165,6 +223,13 @@ tbody {
             border: 0.5px solid $grey;
             border-radius: 50%;
             font-size: 12px !important;
+            @include resp-form {
+                width: 30px !important;
+                display: inline !important;
+                font-size: $desktop-button - 10px !important;
+                padding: 2px 14px !important;
+                font-family: $h-ffamily !important;
+            }
         }
     }
 }
@@ -212,6 +277,18 @@ tbody {
         filter: blur(6);
         padding: 0 !important;
         line-height: 0 !important;
+        @include resp-form {
+            font-family: $h-ffamily;
+            font-weight: lighter;
+            font-size: $desktop-button !important;
+            border-radius: 20px;
+            height: 70px;
+            font-size: 25px;
+            width: 250px !important;
+            &:hover {
+              opacity: 0.2;
+            }
+          }
     }
 }
 
