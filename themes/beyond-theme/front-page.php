@@ -48,9 +48,11 @@ get_header(); ?>
 
 			<?php $query = new WP_Query( $args ); /* $args set above*/ ?>
 			<?php if ( $query->have_posts() ) : ?>
-  			 <?php while ( $query->have_posts() ) : $query->the_post(); ?><div class="resources-card">
-			  <div class="imgs"> <?php the_post_thumbnail(); ?></div>
-	 		 <div class="class-content">
+			   <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+			<div class="resources-card">
+			<div class="imgs"> <?php the_post_thumbnail(); ?></div>
+			 
+			  <div class="class-content">
 	 		 <div class="card-info"> <div class="blog-meta">
 					<span class="posted-on"><?php red_starter_posted_on(); ?></span><span class="posted-by"><?php red_starter_posted_by(); ?></span></div>
 					
@@ -70,8 +72,21 @@ get_header(); ?>
 			<?php else : ?>
       		<h2>Nothing found!</h2>
 			<?php endif; ?>
-
+			
+			<div class="main-carousel" data-flickity='{ "cellAlign": "right", "contain": true, "wrapAround": true, "prevNextButtons": false}'>
+			
+			<?php $loop = CFS()->get( 'testimonial' ); ?>
+			<?php foreach ( $loop as $row ) { ?> 
+				
+				<div class="carousel-cell"> 
+				
+					<?php echo '<img class="cfs-photo-testimonial" src="'.$row["photo"].'"/>'; ?>
+					<p class="cfs-quote-test"><?php echo $row['quote']; ?></p>
+					
+				</div>	
+			<?php }	?>
 			</div>
+			
 
 			<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 

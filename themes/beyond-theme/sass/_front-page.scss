@@ -72,5 +72,40 @@
     .description-front {
       text-align: center;
     }
+
+    .main-carousel {
+      height: 230px;
+      align-content: center;
+      padding-bottom: 25px;
+      padding-top: 25px;
+      margin-top: 40px;
+      background: linear-gradient(
+        to right,
+        rgba(232, 133, 53, 1) 0%,
+        rgba(30, 166, 203, 1) 51%,
+        rgba(103, 29, 67, 1) 94%,
+        rgba(103, 29, 67, 1) 100%
+      );
+
+      .carousel-cell {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-right: 10px;
+        justify-content: center;
+        text-align: center;
+        img {
+          height: auto;
+          max-width: 30%;
+          border-radius: 86px;
+        }
+        p {
+          color: white;
+        }
+      }
+      .flickity-page-dots {
+        position: unset;
+      }
+    }
   }
 }
