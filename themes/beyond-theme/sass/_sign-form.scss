@@ -230,3 +230,25 @@ tbody {
     background-color: transparent !important;
     color: $black !important;
 }
+
+// Confirmation form
+
+#gform_confirmation_wrapper_1 {
+    background-color: $white !important;
+    height: 350px !important;
+}
+
+#gform_confirmation_message_1 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+    font-family: $h-ffamily !important;
+    font-size: 20px !important;
+    color: $black !important;
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
