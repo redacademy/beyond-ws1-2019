@@ -99,12 +99,18 @@
                 font-family: $body-ffamily !important;
                 font-size: 15px !important;
                 font-weight: 200;
+                @include resp-form {
+                    font-size: 26px !important;
+                }
             }
         }
         strong {
             font-family: $h-ffamily;
             font-size: 15px;
             font-weight: 500;
+            @include resp-form {
+                font-size: 28px;
+            }
         }
     }
 }
@@ -302,6 +308,14 @@ tbody {
     display: none;
 }
 
+#gform_page_1_3 {
+    .gform_page_footer {
+        @include resp-form {
+            padding: 10px 0 30px !important;
+        }
+    }
+}
+
 #gform_previous_button_1 {
     background-color: $blue;
     margin: 0 !important;
@@ -319,6 +333,15 @@ tbody {
     border-radius: 10px;
     position: absolute;
     right: 0;
+    @include resp-form {
+        width: 250px !important;
+        height: 70px;
+        font-size: $desktop-button !important;
+        font-weight: lighter;
+        &:hover {
+            opacity: 0.2;
+          }
+    }
 }
 
 .gform_page_footer {
