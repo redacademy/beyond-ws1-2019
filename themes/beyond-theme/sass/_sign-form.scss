@@ -400,6 +400,9 @@ tbody {
 #gform_confirmation_wrapper_1 {
     background-color: $white !important;
     height: 350px !important;
+    @include resp-form {
+        height: 600px !important;
+    }
 }
 
 #gform_confirmation_message_1 {
@@ -411,8 +414,16 @@ tbody {
     font-family: $h-ffamily !important;
     font-size: 20px !important;
     color: $black !important;
+    @include resp-form {
+        font-size: 32px !important;
+        font-weight: lighter;
+    }
     img {
         width: 150px;
         height: 150px;
+        @include resp-form {
+            width: 250px;
+            height: 250px;
+        }
     }
 }
