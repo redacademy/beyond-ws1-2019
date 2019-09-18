@@ -24,9 +24,12 @@
 			
 				<?php if( is_home() ): ?>
 					<?php the_title( sprintf( '<h1 class="text-header-blog">', esc_url( get_permalink() ) ), '</h1>' ); ?>
-					<?php else: ?>
+				<?php elseif( is_post_type_archive() ): ?>
+					<h1 class="text-header">What's On</h1>
+				<?php else: ?>
 					<?php the_title( sprintf( '<h1 class="text-header">', esc_url( get_permalink() ) ), '</h1>' ); ?>
 				<?php endif ?>
+
 
 				<?php if( is_front_page() ): ?>
 						<?php echo '<style type="text/css"> .site-header { background-image:url('.get_stylesheet_directory_uri().'/Media/Images/Homepage/heroimage-homepage@2x.jpg) !important; width: 100% !important; background-size: 100% !important; background-position: center; background-repeat: no-repeat;}</style>';?>

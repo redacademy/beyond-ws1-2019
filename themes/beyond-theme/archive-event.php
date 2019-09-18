@@ -13,10 +13,9 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+				
+					<h1 class="page-title">Upcoming Events</h1>
+				
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
@@ -28,6 +27,15 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
+			<a href="#" id="loadMore">Load More</a>
+
+			<p>We also host weekly meet-ups in your local area.</p>
+			<a href="#">See your nearest locations --></a>
+
+			<h1 class="page-title">Past Events</h1>
+
+
+			
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
