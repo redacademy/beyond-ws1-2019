@@ -12,8 +12,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		
-
 
 	<?php wp_head(); ?>
 	</head>
@@ -32,18 +30,15 @@
 					<?php the_title( sprintf( '<h1 class="text-header">', esc_url( get_permalink() ) ), '</h1>' ); ?>
 				<?php endif ?>
 
-
-				<?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' ); ?>
-
-				<style>
-					.site-header {
-						background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('<?php echo $background[0]; ?>');
-						background-position: center;
-						background-size: 100%;
-						background-repeat: no-repeat;
-						width: 100%;
-					}
-				</style>
+                <?php echo '<style type="text/css">
+                .site-header {
+                    background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('.get_stylesheet_directory_uri().'/Media/Images/Event/hero-whatson.jpg);
+                    width: 100% !important;
+                    background-size: 100% !important;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    }
+                </style>'; ?>
 
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

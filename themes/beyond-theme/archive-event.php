@@ -5,7 +5,7 @@
  * @package Beyond The Conversation
  */
 
-get_header(); ?>
+get_header('events'); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
