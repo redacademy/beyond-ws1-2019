@@ -116,18 +116,17 @@ a {
 		display: none;
 		// position: absolute;
 		position: fixed;
-		height: 60px;
-		background: linear-gradient(180deg,transparent 0,#f6f6f6 5%,#ededed);
+		// height: 60px;
 		// top: 50px;
 		top: 92px;
 		left: 0;
 		right: 0;
 		bottom: 0;
 		opacity: 1;
+		z-index: 100;
 		@include desktop {
 			display: initial !important;
 			position: inherit;
-			background: transparent;
 		}
 		.menu { // ul
 			display: flex;
@@ -136,6 +135,13 @@ a {
 			align-items: center;
 			height: 100%;
 			line-height: 4;
+			background: linear-gradient(180deg,transparent 0,#ffffff 5%,#ffffff);
+			@include responsive-nav {
+				background: transparent;
+			}
+			@include desktop-nav {
+				background: transparent;
+			}
 			@include desktop {
 				flex-direction: row;
 			}
@@ -145,7 +151,7 @@ a {
 				}
 				@include desktop-nav {
 					margin: 0 15px;
-					height: 100%;
+					height: 60px;
 					&:hover {
 						border-bottom: 2px solid $white;
 					}
@@ -153,7 +159,7 @@ a {
 				a {
 					font-family: 'Poppins';
 					font-size: $h3-fsize-mobile + 5px;
-					color: $white;
+					color: $purple;
 					&:visited {
 						color: $purple;
 					}
@@ -171,6 +177,7 @@ a {
 					@include desktop-nav {
 						font-size: $h3-fsize-mobile + 5px;
 						font-weight: lighter;
+						color: $white;
 						&:visited {
 							color: $white;
 						}
@@ -191,9 +198,15 @@ a {
   border: none;
 }
 
-.menu-toggle,
 .main-navigation.toggled ul {
-  display: block;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #F0F0F0;
+	box-shadow: none;
+	@include responsive-nav {
+		background-color: $grey;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -230,4 +243,33 @@ a {
 	top: 60px;
 	width: 100%;
 	background-color: $grey;
+}
+
+.sub-menu {
+	.menu-item {
+		&:hover {
+			@include responsive-nav {
+				border: none !important;
+			}
+			@include desktop-nav {
+				border: none !important;
+			}
+		}
+	}
+		a {
+			font-weight: lighter;
+			color: $orange;
+			@include responsive-nav {
+				color: $white;
+			}
+			&:visited {
+				color: $orange !important;
+				@include responsive-nav {
+					color: $white !important;
+				}
+				@include desktop-nav {
+					color: $white !important;
+				}
+			}	
+		}
 }
