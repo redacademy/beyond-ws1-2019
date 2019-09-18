@@ -35,7 +35,7 @@
 
 				<style>
 					.site-header {
-						background: linear-gradient(180deg, rgba(0,0,0,.25) 0, rgba(0,0,0,.25)), url('<?php echo $background[0]; ?>');
+						background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('<?php echo $background[0]; ?>');
 						background-position: center;
 						background-size: 100%;
 						background-repeat: no-repeat;
