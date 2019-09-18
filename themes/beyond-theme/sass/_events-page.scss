@@ -1,0 +1,30 @@
+.events-content-area {
+    padding: 0 20px;
+    h1 {
+        font-family: $body-ffamily;
+        font-size: 25px;
+        color: $black;
+    }
+
+    .event {
+        display: none;
+        border: 1px solid $black;
+        border-radius: 5%;
+        padding: 20px 30px;
+        .entry-header {
+            font-size: 30px;
+            font-family: $h-ffamily;
+            font-weight: bold;
+            color: #39364F;
+        }
+        p {
+            color: #707070;
+            font-family: $body-ffamily;
+            font-size: 16px;
+        }
+        p:second {
+            font-size: 20px;
+        }
+    }
+
+}

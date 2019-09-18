@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="events-content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -27,10 +27,11 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
+
 			<a href="#" id="loadMore">Load More</a>
 
 			<p>We also host weekly meet-ups in your local area.</p>
-			<a href="#">See your nearest locations --></a>
+			<a href="<?php echo get_permalink( get_page_by_path( 'find-us' ) ) ?>">See your nearest locations --></a>
 
 			<h1 class="page-title">Past Events</h1>
 
