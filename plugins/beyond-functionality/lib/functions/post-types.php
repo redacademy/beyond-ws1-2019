@@ -42,7 +42,7 @@ function beyond_cpt_event() {
 	$args = array(
 		'label'                 => __( 'Event', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'author', 'revisions' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -55,14 +55,14 @@ function beyond_cpt_event() {
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
-        'capability_type'       => 'page',
-        'show_in_rest'          => true,
+		'capability_type'       => 'page',
+		'show_in_rest'          => true,
         'template' => array(
             array( 'core/paragraph', array(
-                'placeholder' => 'Add Event description here...',
+                'placeholder' => 'Add event description here...',
             ) ),
         ),
-        'template_lock' => 'all'
+       
 	);
 	register_post_type( 'event', $args );
 
