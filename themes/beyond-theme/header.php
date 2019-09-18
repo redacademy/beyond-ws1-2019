@@ -31,11 +31,17 @@
 				<?php endif ?>
 
 
-				<?php if( is_front_page() ): ?>
-						<?php echo '<style type="text/css"> .site-header { background-image:url('.get_stylesheet_directory_uri().'/Media/Images/Homepage/heroimage-homepage@2x.jpg) !important; width: 100% !important; background-size: 100% !important; background-position: center; background-repeat: no-repeat;}</style>';?>
-				<?php else: ?>
-						<?php echo '<style type="text/css"> .site-header { background-image:url('.get_stylesheet_directory_uri().'/Media/Images/Event/event-courselimage@2x.jpg) !important; width: 100% !important; background-size: 100% !important; background-position: center; background-repeat: no-repeat;}</style>';?>			
-				<?php endif ?>
+				<?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' ); ?>
+
+				<style>
+					.site-header {
+						background: linear-gradient(180deg, rgba(0,0,0,.25) 0, rgba(0,0,0,.25)), url('<?php echo $background[0]; ?>');
+						background-position: center;
+						background-size: 100%;
+						background-repeat: no-repeat;
+						width: 100%;
+					}
+				</style>
 
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
