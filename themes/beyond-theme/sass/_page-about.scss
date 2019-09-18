@@ -270,7 +270,7 @@
     color: $purple;
     text-align: right;
     margin-top: 10px;
-    margin-right: 275px;
+    // margin-right: 275px;
   }
   h4 {
     font-weight: 300;
@@ -307,9 +307,11 @@
       
     }
     img {
-      flex-basis: 50%;
+      // flex-basis: 50%;
+      width: 200px;
+      height: 150px;
       @include desktop {
-          height: 600px;
+          height: 400px;
           width: 600px;
       }
     }
