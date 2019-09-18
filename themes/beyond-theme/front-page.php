@@ -39,7 +39,7 @@ get_header(); ?>
 			<h2 class="title-front"> <?php echo CFS()->get('title'); ?></h2>
 			<p class="description-front"> <?php echo CFS()->get('description'); ?></p>
 
-			<a href="<?php echo get_permalink( get_page_by_path( 'blog' ) ) ?>"> <h2>See our blog</h2></a>
+			<div class="hideclass"><a href="<?php echo get_permalink( get_page_by_path( 'blog' ) ) ?>"> <h2>See our blog</h2></a></div>
 			<h3 class="article-title">Recent Article</h3>
 			<div class="cards-content">
 			<?php $args = array(
@@ -79,7 +79,7 @@ get_header(); ?>
       		<h2>Nothing found!</h2>
 			<?php endif; ?>
 			</div>
-			<div class="main-carousel" data-flickity='{ "cellAlign": "right", "contain": true, "wrapAround": true, "prevNextButtons": false, "autoPlay": true}'>
+			<div class="main-carousel" data-flickity='{ "cellAlign": "right", "contain": true, "wrapAround": true, "prevNextButtons": true, "autoPlay": true}'>
 			
 			<?php $loop = CFS()->get( 'testimonial' ); ?>
 			<?php foreach ( $loop as $row ) { ?> 
