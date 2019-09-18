@@ -39,6 +39,7 @@ get_header(); ?>
 			<h2 class="title-front"> <?php echo CFS()->get('title'); ?></h2>
 			<p class="description-front"> <?php echo CFS()->get('description'); ?></p>
 
+			<a href="<?php echo get_permalink( get_page_by_path( 'blog' ) ) ?>"> <h2>See our blog</h2></a>
 			<h3 class="article-title">Recent Article</h3>
 			<div class="cards-content">
 			<?php $args = array(

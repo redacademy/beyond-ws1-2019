@@ -138,6 +138,9 @@
         rgba(103, 29, 67, 1) 94%,
         rgba(103, 29, 67, 1) 100%
       );
+      @include desktop {
+        height: 603px;
+      }
 
       .carousel-cell {
         display: flex;
@@ -154,23 +157,21 @@
           border-radius: 86px;
         }
         p {
+          font-size: $h3-fsize-mobile;
+          font-family: $body-ffamily;
           color: white;
+          @include desktop {
+            font-size: $h3-fsize-desktop;
+            font-family: $body-ffamily;
+            color: white;
+            padding-top: 130px;
+          }
         }
-        .flickity-button {
-          background: transparent;
-        }
-        /* big previous & next buttons */
-        .flickity-prev-next-button {
-          width: 100px;
-          height: 100px;
-        }
-        /* icon color */
-        .flickity-button-icon {
-          fill: white;
-        }
-        /* hide disabled button */
-        .flickity-button:disabled {
-          display: none;
+
+        .flickity-viewport {
+          @include desktop {
+            margin-top: 130px;
+          }
         }
       }
       .flickity-page-dots {
@@ -255,6 +256,17 @@
         font-family: $h-ffamily;
         font-weight: normal;
         margin-left: 30px;
+      }
+    }
+    a {
+      text-decoration: none;
+      display: none;
+      @include desktop {
+        display: block;
+        text-align: center;
+        color: $blue;
+        font-size: $h2-fsize-mobile;
+        font-family: $h-ffamily;
       }
     }
   }
