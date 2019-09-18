@@ -34,8 +34,6 @@ get_header(); ?>
 
 			<h1 class="page-title">Past Events</h1>
 
-
-			
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
