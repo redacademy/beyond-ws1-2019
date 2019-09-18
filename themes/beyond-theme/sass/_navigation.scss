@@ -140,7 +140,11 @@ a {
 				flex-direction: row;
 			}
 			.menu-item { // li
-				@include desktop {
+				@include responsive-nav {
+					margin: 0 8px;
+				}
+				@include desktop-nav {
+					margin: 0 15px;
 					height: 100%;
 					&:hover {
 						border-bottom: 2px solid $white;
@@ -156,18 +160,22 @@ a {
 					@include responsive-nav {
 						font-size: $h3-fsize-mobile + 2.5px;
 						font-weight: lighter;
-						padding: 0 8px;
 						color: $white;
 						&:visited {
 							color: $white;
+						}
+						&:hover {
+							font-weight: 500;
 						}
 					}
 					@include desktop-nav {
 						font-size: $h3-fsize-mobile + 5px;
 						font-weight: lighter;
-						padding: 0 15px;
 						&:visited {
 							color: $white;
+						}
+						&:hover {
+							font-weight: 500;
 						}
 					}
 				}
