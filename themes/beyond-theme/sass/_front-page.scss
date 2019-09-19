@@ -88,6 +88,7 @@
         }
       }
       .our-team {
+        font-family: $h-ffamily;
         font-size: $h2-fsize-mobile;
         background-color: $light-orange;
         text-align: center;
@@ -109,19 +110,23 @@
       font-size: $h2-fsize-mobile;
       font-family: $h-ffamily;
       font-weight: 500;
+      color: $black;
       @include desktop {
         text-align: center;
         font-size: $h2-fsize-desktop;
         font-family: $h-ffamily;
         font-weight: 500;
+        color: $black;
       }
     }
     .description-front {
       text-align: center;
+      color: $black;
       @include desktop {
         font-size: $h3-fsize-desktop;
         font-family: $h-ffamily;
         font-weight: normal;
+        color: $black;
       }
     }
 
@@ -158,9 +163,10 @@
         }
         img {
           height: auto;
-          max-width: 30%;
+          width: 30%;
           border-radius: 50%;
           @include desktop {
+            width: 30%;
             padding-top: 30px;
           }
         }
@@ -186,10 +192,15 @@
             margin-top: 130px;
           }
         }
+        .flickity-page-dots {
+          bottom: 21px;
+          @include desktop {
+            position: unset;
+            bottom: 85px;
+          }
+        }
       }
-      .flickity-page-dots {
-        position: unset;
-      }
+
       .flickity-button {
         background: transparent;
       }
@@ -288,11 +299,13 @@
       margin-left: 90px;
       margin-top: 60px;
       margin-bottom: 60px;
+      color: $black;
       @include desktop {
         font-size: $h3-fsize-desktop;
         font-family: $h-ffamily;
         font-weight: normal;
         margin-left: 30px;
+        color: $black;
       }
     }
     .hideclass {

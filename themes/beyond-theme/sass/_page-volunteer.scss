@@ -15,15 +15,22 @@
             h1 {
               font-family: $h-ffamily;
               font-size: $h2-fsize-desktop;
+              font-weight: normal;
+              color: $black;
               @include desktop {
                 font-size: 80px;
+                font-weight: normal;
+                color: $black;
               }
             }
             h2 {
               font-family: $body-ffamily;
               font-size: $h3-fsize-mobile;
+              color: $black;
               @include desktop {
                 font-size: $body-fsize-desktop;
+                font-weight: normal;
+                color: $black;
               }
             }
           }
@@ -50,8 +57,10 @@
                 text-align: center;
                 font-family: $body-ffamily;
                 font-size: 15px;
+                color: $black;
                 @include desktop {
                   font-size: 25px;
+                  color: $black;
                 }
               }
               img {
