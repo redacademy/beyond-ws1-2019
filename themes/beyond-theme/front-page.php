@@ -86,7 +86,7 @@ get_header(); ?>
 				
 				<div class="carousel-cell"> 
 					
-					<?php echo '<img class="cfs-photo-testimonial" src="'.$row["photo"].'"/>'; ?>
+					
 					<p class="cfs-quote-test"><?php echo $row['quote']; ?></p>
 					
 				</div>	
