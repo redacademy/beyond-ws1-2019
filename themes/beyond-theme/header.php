@@ -25,7 +25,7 @@
 			<header id="masthead" class="site-header" role="banner">
 			
 				<?php if( is_home() ): ?>
-					<?php the_title( sprintf( '<h1 class="text-header-blog">', esc_url( get_permalink() ) ), '</h1>' ); ?>
+					<h1 class=text-header-blog><?php echo esc_html( 'Blog' ); ?></h1>
 				<?php elseif( is_post_type_archive() ): ?>
 					<h1 class="text-header">What's On</h1>
 				<?php else: ?>
@@ -50,7 +50,7 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<a href='<?php echo esc_url(home_url('/')); ?>'>
+					<a class="logo-container" href='<?php echo esc_url(home_url('/')); ?>'>
 						<div class="white-icon">
 							<?php echo '<style type="text/css">
 								.white-icon {
@@ -78,7 +78,17 @@
 						</div>
 					</a>
 					<button id="menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-						<?php echo '<style type="text/css"> .menu-toggle { background-image:url('.get_stylesheet_directory_uri().'/Media/icon/menu.svg) !important; width: 36px !important; height: 50% !important; background-size: 100% !important; background-position: center; background-repeat: no-repeat;}</style>';?>			
+						<?php echo '<style type="text/css">
+							.menu-toggle {
+								background-image: url('.get_stylesheet_directory_uri().'/Media/icon/menu.svg) !important;
+								width: 36px !important;
+								height: 50% !important;
+								background-size: 100% !important;
+								background-position: center;
+								background-repeat: no-repeat;
+								margin-right: 20px;
+							}
+							</style>';?>			
 					</button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->

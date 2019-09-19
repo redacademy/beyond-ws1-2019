@@ -47,22 +47,25 @@ a {
 	font-family: 'Poppins';
 	font-weight: lighter;
 	font-size: 40px;
+	text-transform: uppercase;
 	@include desktop {
 		font-size: $h1-fsize-desktop;
-		font-weight: normal;
-		text-transform: uppercase;
+		font-weight: lighter;
+		text-transform: capitalize;
 	}
 }
 
 .main-navigation {
 	clear: both;
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	align-items: center;
-	padding: 0 20px;
 	width: 100%;
 	height: 92px;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.84) 50%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	z-index: 999;
 	@include responsive-nav {
 		height: 240px;
 		padding: 0 50px;
@@ -114,19 +117,16 @@ a {
 
 	.menu-menu-1-container {
 		display: none;
-		// position: absolute;
-		position: fixed;
-		// height: 60px;
-		// top: 50px;
-		top: 92px;
-		left: 0;
-		right: 0;
-		bottom: 0;
+		width: 100%;
+		height: 100vh;
 		opacity: 1;
 		z-index: 100;
 		@include desktop {
 			display: initial !important;
-			position: inherit;
+			position: fixed;
+			right: 50px;
+			height: auto;
+			width: auto;
 		}
 		.menu { // ul
 			display: flex;
@@ -136,15 +136,18 @@ a {
 			height: 100%;
 			line-height: 4;
 			background: linear-gradient(180deg,transparent 0,#ffffff 5%,#ffffff);
-			@include responsive-nav {
+			
+			@include responsive-menu-items {
+				background: linear-gradient(180deg,transparent 0,#ffffff 5%,#ffffff);
+			}
+			@include desktop {
 				background: transparent;
+				flex-direction: row;
 			}
 			@include desktop-nav {
 				background: transparent;
 			}
-			@include desktop {
-				flex-direction: row;
-			}
+
 			.menu-item { // li
 				@include responsive-nav {
 					margin: 0 8px;
@@ -162,6 +165,12 @@ a {
 					color: $purple;
 					&:visited {
 						color: $purple;
+					}
+					@include responsive-menu-items {
+						color: $purple;
+						&:visited {
+							color: $purple !important;
+						}
 					}
 					@include responsive-nav {
 						font-size: $h3-fsize-mobile + 2.5px;
@@ -191,6 +200,20 @@ a {
 	}
 }
 
+.logo-container {
+	padding-left: 20px;
+	@include desktop {
+		padding: 0px;
+	}
+}
+
+// .main-navigation > .white-icon {
+// 	padding-left: 20px;
+// 	@include responsive-nav {
+// 		padding-left: 50px;
+// 	}
+// }
+
 /* Small menu. */
 .menu-toggle {
   color: white;
@@ -209,7 +232,7 @@ a {
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 850px) {
   .menu-toggle {
     display: none;
   }
