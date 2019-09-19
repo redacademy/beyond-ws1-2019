@@ -17,14 +17,72 @@
             font-weight: bold;
             color: #39364F;
         }
+        h2 {
+            margin: 0;
+        }
         p {
             color: #707070;
             font-family: $body-ffamily;
             font-size: 16px;
+            margin: 10px auto;
         }
-        p:second {
+        p:nth-child(2) {
+           font-size: 20px; 
+        }
+        p:nth-child(3) {
             font-size: 20px;
+            line-height: 1.3rem;
+        }
+        p:nth-child(4) {
+            line-height: 1.3rem;
+            margin-top: 20px;
+        }
+        p:nth-child(5) {
+            font-size: 20px;
+            font-family: $h-ffamily;
+            border-radius: 20px;
+            background-color:$orange;
+            padding: 10px 20px;
+            text-align: center;
+            color: $white;
+            width: 180px;
+            margin: 0 auto;
+            margin-top: 30px;
         }
     }
 
+    #loadMore {
+        width: 180px;
+        color: #707070;
+        font-family: $h-ffamily;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+        margin-bottom: 50px;
+        padding: 15px;
+        border: 1px solid #cbcbcb;
+        background-color: transparent;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include desktop {
+          display: none;
+        }
+    }
+    #loadMore:hover {
+        border-color: $sky-blue;
+    }
+   
+    .meet-ups {
+        font-family: $h-ffamily;
+        color: $black;
+        margin-bottom: 0;
+    }
+    .link-find-us {
+        color: #2598BE;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: $h-ffamily;
+    }
 }
