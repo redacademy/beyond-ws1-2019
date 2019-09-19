@@ -140,9 +140,9 @@ require get_template_directory() . '/inc/extras.php';
 
 // Search on navbar
 
-add_filter( 'wp_nav_menu_items','add_search_box', 10, 2 );
+add_filter( 'wp_nav_menu','add_search_box', 10, 2 );
 	function add_search_box( $items, $args ) {
-	$items .= '<li class="searchbox-position">' . get_search_form( false ) . '</li>';
+	$items .= '<div class="searchbox-position">' . get_search_form( false ) . '</div>';
 	return $items;
 }
 
