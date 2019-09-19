@@ -1,3 +1,20 @@
+.text-header-blog {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: $white;
+	font-family: 'Poppins';
+	font-weight: lighter;
+  font-size: 40px;
+  text-transform: uppercase;
+	@include desktop {
+		font-size: $h1-fsize-desktop;
+    font-weight: lighter;
+    text-transform: capitalize;
+	}
+}
+
 .card-desktop {
   @include desktop {
     display: grid;
