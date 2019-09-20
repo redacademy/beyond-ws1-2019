@@ -1,0 +1,136 @@
+.events-content-area {
+    padding: 0 20px;
+    h1 {
+        font-family: $body-ffamily;
+        font-size: 25px;
+        color: $black;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .event {
+        display: none;
+        border: 1px solid $black;
+        border-radius: 5%;
+        padding: 20px 30px;
+        margin-bottom: 30px;
+
+        .event-date {
+            font-size: 30px;
+            font-family: $h-ffamily;
+            font-weight: bold;
+            color: #39364F;
+            margin: 0;
+        }
+        h2 {
+            margin: 0;
+        }
+        p {
+            color: #707070;
+            font-family: $body-ffamily;
+            font-size: 16px;
+            margin: 10px auto;
+            line-height: 1.4rem;
+        }
+        .event-time {
+            margin-bottom: 0;
+        }
+        .event-location {
+            margin-top: 0;
+        }
+        .event-type {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .event-title {
+            margin-top: 12px;
+            font-size: 20px;
+            line-height: 1.4rem;
+        }
+        .event-description p {
+            margin-top: 20px;
+            line-height: 1.2rem;
+            margin-bottom: 40px;
+        }
+        .event-rsvp {
+            font-size: 20px;
+            font-family: $h-ffamily;
+            border-radius: 20px;
+            background-color:$orange;
+            padding: 10px 60px;
+            color: $white;
+            text-decoration: none;
+            text-align: center;
+            width: 250px;
+            margin: 20px auto;
+        }
+    }
+    .event:hover {
+        background-color: #A3A3A3;
+    }
+   
+    .meet-ups {
+        font-family: $h-ffamily;
+        color: $black;
+        margin-bottom: 0;
+    }
+    .link-find-us {
+        color: #2598BE;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: $h-ffamily;
+    }
+    .fa-arrow-right {
+        padding-left: 20px;
+    }
+
+    .past-event {
+        display: none;
+        position: relative;
+        margin: 40px auto;
+
+        .event-image {
+            border-radius: 5%;
+            width: 600px;
+            height: 335px;
+        }
+        .event-title {
+            display: none;
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+        }
+        .event-description {
+            display: none;
+        } 
+    }
+    // .past-event:hover {
+    //     // background-color: gradient(#E38639, #62284E,
+    //     // #2598BE);
+            
+    // }
+
+    #loadMore, #loadMore1, #loadMore2 {
+        width: 180px;
+        color: #707070;
+        font-family: $h-ffamily;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+        margin-bottom: 50px;
+        padding: 15px;
+        border: 1px solid #cbcbcb;
+        background-color: transparent;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include desktop {
+          display: none;
+        }
+    }
+    #loadMore:hover, #loadMore1:hover, #loadMore2:hover {
+        border-color: $sky-blue;
+    }
+   
+}

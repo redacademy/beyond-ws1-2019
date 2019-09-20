@@ -1,13 +1,13 @@
 jQuery(document).ready(function ($) {
-    $('i').hide();
+    $('.fa-times').hide();
     $('.cfs-photo').on('click', function (event) {
         event.preventDefault();
-        $(this).siblings('i').show();
+        $(this).siblings('.fa-times').show();
         $(this).parent().addClass('desktop-member');
         $(this).parent().removeClass('cfs-member');
         $('.desktop-member').show();
     });
-    $('i').on('click', function (event) {
+    $('.fa-times').on('click', function (event) {
         event.preventDefault();
         $(this).parent().removeClass('desktop-member');
         $(this).parent().addClass('cfs-member');
