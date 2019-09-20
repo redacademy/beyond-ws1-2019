@@ -1,0 +1,27 @@
+.content-area-news {
+  .site-main {
+    .news-container {
+      margin-top: 50px;
+      display: flex;
+      .news-card {
+        width: 450px;
+        margin: 0 auto;
+        .cfs-news {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 50px;
+          border: 1px solid black;
+          border-radius: 4%;
+          img {
+          }
+          .cfs-title-news {
+          }
+          .cfs-date-news {
+          }
+          .cfs-url-news {
+          }
+        }
+      }
+    }
+  }
+}

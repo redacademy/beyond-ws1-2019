@@ -14,8 +14,7 @@
             font-weight: 100;
           }
         }
-        .img {
-        }
+
         p {
           color: white;
           font-size: $body-fsize-mobile;
@@ -42,15 +41,14 @@
             font-weight: 100;
           }
         }
-        .img {
-        }
+
         p {
-          color: white;
+          color: $white;
           font-size: $body-fsize-mobile;
           font-family: $body-ffamily;
           font-weight: 100;
           @include desktop {
-            color: white;
+            color: $white;
             font-size: $body-fsize-desktop;
             font-family: $body-ffamily;
             font-weight: 100;
