@@ -5,7 +5,7 @@
  * @package Beyond The Conversation
  */
 
-get_header(); ?>
+get_header('search'); ?>
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -33,14 +33,14 @@ get_header(); ?>
 
 				<?php endif; ?>
 
+				<!-- Area when search icon clicked -->
 				<?php else : ?>
 
-				hkgjfhdkjghf
+					<?php echo get_search_form(); ?>
 
 			<?php endif; ?>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

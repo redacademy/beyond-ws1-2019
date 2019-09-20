@@ -1,0 +1,7 @@
+.search-header {
+	position: relative;
+	height: 92px;
+	@include desktop {
+		height: 100vh;
+	}
+}
