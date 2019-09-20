@@ -98,8 +98,8 @@
 					</button>
 					<div class="dynamic-nav">
 						<a class="search-icon" href="<?= site_url( '?s=' ); ?>"></a>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</div>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 
 			</header><!-- #masthead -->
