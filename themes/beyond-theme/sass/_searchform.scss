@@ -3,7 +3,7 @@
       border: none;
       margin: 0;
       display: flex !important;
-      padding-bottom: 22px;
+      padding: 0;
       .search-toggle {
         order: 2;
         display: flex;
@@ -32,7 +32,13 @@
   .icon-search {
     color: $white;
     font-size: 16px;
+    margin: 0 !important;
+    height: auto !important;
     cursor: pointer;
+    i {
+        display: initial !important;
+        font-size: 20px;
+    }
   }
 
 .search-toggle-click {
@@ -41,6 +47,7 @@
 }
 
 .the-search-form {
+    border: none !important;
     background-color: transparent;
     border: none;
     width: 100%;
