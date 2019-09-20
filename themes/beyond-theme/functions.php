@@ -103,6 +103,7 @@ function red_starter_scripts() {
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'red-starter-loadMore', get_template_directory_uri() . '/build/js/loadMore.min.js', array('jquery'), 1.1, true );
 	wp_enqueue_script( 'red-starter-teamMembers', get_template_directory_uri() . '/build/js/teamMembers.min.js', array('jquery'), 1.1, true );
+	wp_enqueue_script( 'red-starter-searchForm', get_template_directory_uri() . '/build/js/searchForm.min.js', array(), '20151215', true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -151,7 +152,7 @@ add_action( 'pre_get_posts', 'query_ppp' );
 function beyond_search_form( $form ) {
     $form = '<form role="search" method="get" id="searchform" class="search-form" action="' . home_url( '/' ) . '" >
     <label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
-	<input class="search-input" type="text" placeholder="Search here..." value="' . get_search_query() . '" name="s" id="s" />
+	<input class="search-input" onClick="this.setSelectionRange(0, this.value.length)" type="text" placeholder="Search here..." value="' . get_search_query() . '" name="s" id="s" />
 	<span id="clear-search">X</span>
     <input type="submit" id="searchsubmit" class="search-submit" value="'. esc_attr__( 'Search' ) .'" />
     </form>';
