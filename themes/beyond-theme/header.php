@@ -51,6 +51,11 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<a class="logo-container" href='<?php echo esc_url(home_url('/')); ?>'>
+						<?php echo '<style type="text/css">
+							.logo-container {
+								order: 1;
+							}
+							</style>'; ?>
 						<div class="white-icon">
 							<?php echo '<style type="text/css">
 								.white-icon {
@@ -87,10 +92,22 @@
 								background-position: center;
 								background-repeat: no-repeat;
 								margin-right: 20px;
+								order: 3;
 							}
 							</style>';?>			
 					</button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<?php echo '<style type="text/css">
+							.searchbox-position {
+								order: 1;
+							}
+							@media (min-width: 850px) {
+								.searchbox-position {
+									position: fixed;
+									right: 20%;
+									top: 50px;
+							}
+							</style>'; ?>
 				</nav><!-- #site-navigation -->
 
 			</header><!-- #masthead -->

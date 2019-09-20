@@ -58,6 +58,7 @@ a {
 .main-navigation {
 	clear: both;
 	position: fixed;
+	top: 0;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -117,6 +118,9 @@ a {
 
 	.menu-menu-1-container {
 		display: none;
+		position: fixed;
+		bottom: 0;
+		top: 60px;
 		width: 100%;
 		height: 100vh;
 		opacity: 1;
@@ -124,6 +128,8 @@ a {
 		@include desktop {
 			display: initial !important;
 			position: fixed;
+			top: unset;
+			bottom: unset;
 			right: 50px;
 			height: auto;
 			width: auto;
@@ -219,6 +225,8 @@ a {
   color: white;
   background-color: transparent;
   border: none;
+//   position: fixed;
+//   right: 0;
 }
 
 .main-navigation.toggled ul {

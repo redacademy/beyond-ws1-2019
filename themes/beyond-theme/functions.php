@@ -138,6 +138,14 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
+// Search on navbar
+
+add_filter( 'wp_nav_menu','add_search_box', 10, 2 );
+	function add_search_box( $items, $args ) {
+	$items .= '<div class="searchbox-position">' . get_search_form( false ) . '</div>';
+	return $items;
+}
+
  // Function to modify the main query object
  function query_ppp($query) {
 	if (is_home()){
