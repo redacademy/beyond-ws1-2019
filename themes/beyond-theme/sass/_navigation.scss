@@ -335,3 +335,20 @@ a {
 		color: $white;
 	}
 }
+
+// Font resizing
+.dynamic-fonts {
+	display: none;
+	position: absolute;
+	color: $white;
+	@include responsive-nav {
+		display: flex;
+		top: 40px;
+		right: 150px;
+	}
+	@include desktop-nav {
+		display: flex;
+		top: 40px;
+		right: 180px;
+	}
+}
