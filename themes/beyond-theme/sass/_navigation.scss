@@ -55,7 +55,9 @@ a {
 	}
 }
 
-.main-navigation {
+
+
+.main-navigation, .main-search-navigation {
 	clear: both;
 	position: fixed;
 	top: 0;
@@ -303,4 +305,33 @@ a {
 				}
 			}	
 		}
+}
+
+.main-search-navigation {
+	background: linear-gradient(180deg,#000 0,rgba(36,36,36,.50) 100%, transparent);
+}
+
+// Search icon
+
+.dynamic-nav {
+	position: absolute;
+	right: 80px;
+	@include responsive-nav {
+		top: 40px;
+		right: 220px;
+	}
+	@include desktop-nav {
+		top: 40px;
+		right: 250px;
+	}
+}
+
+.search-icon {
+	position: relative;
+	font-size: 25px;
+	&::before {
+		content: "\f002";  /* this is your text. You can also use UTF-8 character codes as I do here */
+		font-family: FontAwesome;
+		color: $white;
+	}
 }

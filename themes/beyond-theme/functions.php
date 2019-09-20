@@ -103,6 +103,7 @@ function red_starter_scripts() {
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'red-starter-loadMore', get_template_directory_uri() . '/build/js/loadMore.min.js', array('jquery'), 1.1, true );
 	wp_enqueue_script( 'red-starter-teamMembers', get_template_directory_uri() . '/build/js/teamMembers.min.js', array('jquery'), 1.1, true );
+	wp_enqueue_script( 'red-starter-searchForm', get_template_directory_uri() . '/build/js/searchForm.min.js', array(), '20151215', true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -138,14 +139,6 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
-// Search on navbar
-
-add_filter( 'wp_nav_menu','add_search_box', 10, 2 );
-	function add_search_box( $items, $args ) {
-	$items .= '<div class="searchbox-position">' . get_search_form( false ) . '</div>';
-	return $items;
-}
-
  // Function to modify the main query object
  function query_ppp($query) {
 	if (is_home()){
@@ -153,3 +146,17 @@ add_filter( 'wp_nav_menu','add_search_box', 10, 2 );
 	}
 }
 add_action( 'pre_get_posts', 'query_ppp' );
+
+// Search form
+
+function beyond_search_form( $form ) {
+    $form = '<form role="search" method="get" id="searchform" class="search-form" action="' . home_url( '/' ) . '" >
+    <label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
+	<input class="search-input" onClick="this.setSelectionRange(0, this.value.length)" type="text" placeholder="Search here..." value="' . get_search_query() . '" name="s" id="s" />
+	<span id="clear-search">X</span>
+    <input type="submit" id="searchsubmit" class="search-submit" value="'. esc_attr__( 'Search' ) .'" />
+    </form>';
+ 
+    return $form;
+}
+add_filter( 'get_search_form', 'beyond_search_form' );

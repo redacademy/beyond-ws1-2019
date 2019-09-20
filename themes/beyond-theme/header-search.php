@@ -22,34 +22,13 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
-			
-				<?php if( is_home() ): ?>
-					<h1 class=text-header-blog><?php echo esc_html( 'Blog' ); ?></h1>
-				<?php elseif( is_post_type_archive() ): ?>
-					<h1 class="text-header">What's On</h1>
-				<?php else: ?>
-					<?php the_title( sprintf( '<h1 class="text-header">', esc_url( get_permalink() ) ), '</h1>' ); ?>
-				<?php endif ?>
-
-
-				<?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' ); ?>
-
-				<style>
-					.site-header {
-						background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('<?php echo $background[0]; ?>');
-						background-position: center;
-						background-size: 100%;
-						background-repeat: no-repeat;
-						width: 100%;
-					}
-				</style>
+			<header id="masthead" class="search-header" role="banner">
 
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<nav id="site-navigation" class="main-search-navigation" role="navigation">
 					<a class="logo-container" href='<?php echo esc_url(home_url('/')); ?>'>
 						<?php echo '<style type="text/css">
 							// .logo-container {
