@@ -52,9 +52,9 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<a class="logo-container" href='<?php echo esc_url(home_url('/')); ?>'>
 						<?php echo '<style type="text/css">
-							.logo-container {
-								order: 1;
-							}
+							// .logo-container {
+							// 	order: 1;
+							// }
 							</style>'; ?>
 						<div class="white-icon">
 							<?php echo '<style type="text/css">
@@ -96,18 +96,10 @@
 							}
 							</style>';?>			
 					</button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<?php echo '<style type="text/css">
-							.searchbox-position {
-								order: 1;
-							}
-							@media (min-width: 850px) {
-								.searchbox-position {
-									position: fixed;
-									right: 20%;
-									top: 50px;
-							}
-							</style>'; ?>
+					<div class="dynamic-nav">
+						<a class="search-icon" href="<?= site_url( '?s=' ); ?>"></a>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					</div>
 				</nav><!-- #site-navigation -->
 
 			</header><!-- #masthead -->

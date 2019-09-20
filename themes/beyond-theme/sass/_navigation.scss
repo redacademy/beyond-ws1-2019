@@ -304,3 +304,17 @@ a {
 			}	
 		}
 }
+
+// Search icon
+
+.search-icon {
+	position: relative;
+	&::before {
+		content: "\f002";  /* this is your text. You can also use UTF-8 character codes as I do here */
+		font-family: FontAwesome;
+		left: -5px;
+		position: absolute;
+		top: 0;
+		color: $white;
+	}
+}
