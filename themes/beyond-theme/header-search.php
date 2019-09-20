@@ -28,7 +28,7 @@
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<nav id="site-navigation" class="main-search-navigation" role="navigation">
 					<a class="logo-container" href='<?php echo esc_url(home_url('/')); ?>'>
 						<?php echo '<style type="text/css">
 							// .logo-container {

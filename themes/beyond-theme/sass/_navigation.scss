@@ -55,7 +55,9 @@ a {
 	}
 }
 
-.main-navigation {
+
+
+.main-navigation, .main-search-navigation {
 	clear: both;
 	position: fixed;
 	top: 0;
@@ -303,6 +305,10 @@ a {
 				}
 			}	
 		}
+}
+
+.main-search-navigation {
+	background: linear-gradient(180deg,#000 0,rgba(36,36,36,.50) 100%, transparent);
 }
 
 // Search icon
