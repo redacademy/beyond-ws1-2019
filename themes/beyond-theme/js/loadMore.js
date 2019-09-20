@@ -7,8 +7,14 @@ jQuery(document).ready(function ($) {
     });
 
     $('.event').slice(0, 2).css('display', 'block');
-    $('#loadMore').on('click', function (e) {
+    $('#loadMore1').on('click', function (e) {
         e.preventDefault();
         $('.event:hidden').slice(0, 2).slideDown().css('display', 'block');
+    });
+
+    $('.past-event').slice(0, 2).css('display', 'block');
+    $('#loadMore2').on('click', function (e) {
+        e.preventDefault();
+        $('.past-event:hidden').slice(0, 2).slideDown().css('display', 'block');
     });
 })
