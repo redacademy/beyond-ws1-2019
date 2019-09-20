@@ -316,6 +316,14 @@ a {
 .dynamic-nav {
 	position: absolute;
 	right: 80px;
+	@include responsive-nav {
+		top: 40px;
+		right: 220px;
+	}
+	@include desktop-nav {
+		top: 40px;
+		right: 250px;
+	}
 }
 
 .search-icon {
