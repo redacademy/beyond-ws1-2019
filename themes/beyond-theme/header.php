@@ -101,6 +101,12 @@
 							.searchbox-position {
 								order: 1;
 							}
+							@media (min-width: 850px) {
+								.searchbox-position {
+									position: fixed;
+									right: 20%;
+									top: 50px;
+							}
 							</style>'; ?>
 				</nav><!-- #site-navigation -->
 

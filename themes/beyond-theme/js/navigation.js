@@ -134,28 +134,28 @@ hamburger.addEventListener('click', () => {
 
 // Search menu
 
-const iconSearch = document.getElementsByClassName('icon-search')[0];
-const searchForm = document.getElementsByClassName('the-search-form')[0];
+// const iconSearch = document.getElementsByClassName('icon-search')[0];
+// const searchForm = document.getElementsByClassName('the-search-form')[0];
 
-function toggleSearch() {
-  searchForm.style.width = "0";
-}
+// function toggleSearch() {
+//   searchForm.style.width = "0";
+// }
 
-function hideSearch() {
-  searchForm.style.width = "50px";
-}
+// function hideSearch() {
+//   searchForm.style.width = "50px";
+// }
 
-let searchCounter = 0;
+// let searchCounter = 0;
 
-iconSearch.addEventListener('click', () => {
-  if (searchCounter === 0 ) {
-    searchCounter = 1;
-    toggleSearch();
-  } else {
-    searchCounter = 0;
-    hideSearch();
-  }
-})
+// iconSearch.addEventListener('click', () => {
+//   if (searchCounter === 0 ) {
+//     searchCounter = 1;
+//     toggleSearch();
+//   } else {
+//     searchCounter = 0;
+//     hideSearch();
+//   }
+// })
 
 // function classClick() {
 
