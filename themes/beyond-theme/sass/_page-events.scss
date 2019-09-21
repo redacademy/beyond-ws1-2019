@@ -2,7 +2,7 @@
     padding: 0 20px;
     h1 {
         font-family: $body-ffamily;
-        font-size: 25px;
+        font-size: 1.78rem;
         color: $black;
         margin: 20px auto;
         text-align: center;
@@ -16,7 +16,7 @@
         margin-bottom: 30px;
 
         .event-date {
-            font-size: 30px;
+            font-size: 2.14rem;
             font-family: $h-ffamily;
             font-weight: bold;
             color: #39364F;
@@ -28,7 +28,7 @@
         p {
             color: #707070;
             font-family: $body-ffamily;
-            font-size: 16px;
+            font-size: 1.41rem;
             margin: 10px auto;
             line-height: 1.4rem;
         }
@@ -40,11 +40,11 @@
         }
         .event-type {
             margin-top: 20px;
-            font-size: 20px;
+            font-size: 1.42rem;
         }
         .event-title {
             margin-top: 12px;
-            font-size: 20px;
+            font-size: 1.42rem;
             line-height: 1.4rem;
         }
         .event-description p {
@@ -53,7 +53,7 @@
             margin-bottom: 40px;
         }
         .event-rsvp {
-            font-size: 20px;
+            font-size: 1.42rem;
             font-family: $h-ffamily;
             border-radius: 20px;
             background-color:$orange;
@@ -117,7 +117,7 @@
         width: 180px;
         color: #707070;
         font-family: $h-ffamily;
-        font-size: 20px;
+        font-size: 1.42rem;
         font-weight: bold;
         display: block;
         text-align: center;

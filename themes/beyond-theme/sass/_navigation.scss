@@ -46,7 +46,7 @@ a {
 	color: $white;
 	font-family: 'Poppins';
 	font-weight: lighter;
-	font-size: 40px;
+	font-size: 2.85rem;
 	text-transform: uppercase;
 	@include desktop {
 		font-size: $h1-fsize-desktop;
@@ -169,7 +169,7 @@ a {
 				}
 				a {
 					font-family: 'Poppins';
-					font-size: $h3-fsize-mobile + 5px;
+					font-size: $h3-fsize-mobile + 0.35rem;
 					color: $purple;
 					&:visited {
 						color: $purple;
@@ -181,7 +181,7 @@ a {
 						}
 					}
 					@include responsive-nav {
-						font-size: $h3-fsize-mobile + 2.5px;
+						font-size: $h3-fsize-mobile + 0.17rem;
 						font-weight: lighter;
 						color: $white;
 						&:visited {
@@ -192,7 +192,7 @@ a {
 						}
 					}
 					@include desktop-nav {
-						font-size: $h3-fsize-mobile + 5px;
+						font-size: $h3-fsize-mobile + 0.35rem;
 						font-weight: lighter;
 						color: $white;
 						&:visited {
@@ -328,7 +328,7 @@ a {
 
 .search-icon {
 	position: relative;
-	font-size: 25px;
+	font-size: 1.78rem;
 	&::before {
 		content: "\f002";  /* this is your text. You can also use UTF-8 character codes as I do here */
 		font-family: FontAwesome;
