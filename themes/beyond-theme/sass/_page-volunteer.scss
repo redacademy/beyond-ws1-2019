@@ -16,7 +16,7 @@
               font-family: $h-ffamily;
               font-size: $h2-fsize-desktop;
               @include desktop {
-                font-size: 80px;
+                font-size: 5.7rem;
               }
             }
             h2 {
@@ -49,9 +49,9 @@
               p {
                 text-align: center;
                 font-family: $body-ffamily;
-                font-size: 15px;
+                font-size: 1.07rem;
                 @include desktop {
-                  font-size: 25px;
+                  font-size: 1.78rem;
                 }
               }
               img {
@@ -67,7 +67,7 @@
           .content {
             width: 350px;
             margin: 0 auto;
-            font-size: 11px;
+            font-size: 0.78rem;
             @include desktop {
               width: 1120px;
               margin: 0 auto;

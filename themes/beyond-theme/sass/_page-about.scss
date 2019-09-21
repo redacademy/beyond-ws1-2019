@@ -14,7 +14,7 @@
         }
     }
     h3 {
-        font-size: 20px;
+        font-size: 1.42rem;
         font-family: $h-ffamily;
         font-weight: 400;
         @include desktop {
@@ -83,17 +83,17 @@
         top: 10px;
         right: 20px;
         display: block;
-        font-size: 20px;
+        font-size: 1.42rem;
     }
     .cfs-name {
-        font-size: 25px;
+        font-size: 1.71rem;
         text-align: center;
     }
     .cfs-role {
         display: none;
     }
     .cfs-quote {
-        font-size: 20px;
+        font-size: 1.42rem;
         font-style: italic;
         font-weight: 300; 
         text-align: center;
@@ -119,7 +119,7 @@
             top: 10px;
             right: 20px;
             display: block;
-            font-size: 20px;
+            font-size: 1.42rem;
         }
         display: flex;
         flex-direction: column;
@@ -159,7 +159,7 @@
             font-family: $h-ffamily;
             @include desktop {
                 background-color:  $sky-blue;
-                font-size: 25px;
+                font-size: 1.78rem;
                 border-radius: 20px;
                 height: 105px;
                 text-align: left;
@@ -171,7 +171,7 @@
             margin-bottom: 0;
             font-family: $h-ffamily;
             @include desktop {
-               font-size: 17px;
+               font-size: 1.21rem;
                padding: 0 10px;
             }
            
@@ -192,7 +192,7 @@
   width: 180px;
   color: #707070;
   font-family: $h-ffamily;
-  font-size: 20px;
+  font-size: 1.42rem;
   font-weight: bold;
   display: block;
   text-align: center;
@@ -240,7 +240,7 @@
       text-align: left;
       flex-basis: 50%;
       @include desktop {
-          font-size: 35px;
+          font-size: 2.5rem;
           padding-left: 100px;
           line-height: 49px;
           font-weight: 100;
@@ -290,7 +290,7 @@
       flex-basis: 50%;
       font-weight: 300;
       @include desktop {
-        font-size: 35px;
+        font-size: 2.5rem;
         padding-left: 50px;
         padding-right: 140px;
         line-height: 49px;
@@ -361,7 +361,7 @@
       flex-basis: 50%;
       line-height: 13px;
       @include desktop {
-        font-size: 35px;
+        font-size: 2.5rem;
         padding-left: 100px;
         line-height: 45px;
         font-weight: 100;

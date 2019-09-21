@@ -42,7 +42,7 @@
             margin: 0;
           }
           i {
-            font-size: 50px;
+            font-size: 1.57rem;
             color: $purple;
           }
         }
@@ -155,7 +155,7 @@
       padding-left: 20px;
       width: 90%;
       font-weight: initial;
-      font-size: 16px;
+      font-size: 1.14rem;
       font-family: $body-ffamily;
       @include desktop {
         font-weight: lighter;

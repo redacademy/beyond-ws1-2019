@@ -104,6 +104,7 @@ function red_starter_scripts() {
 	wp_enqueue_script( 'red-starter-loadMore', get_template_directory_uri() . '/build/js/loadMore.min.js', array('jquery'), 1.1, true );
 	wp_enqueue_script( 'red-starter-teamMembers', get_template_directory_uri() . '/build/js/teamMembers.min.js', array('jquery'), 1.1, true );
 	wp_enqueue_script( 'red-starter-searchForm', get_template_directory_uri() . '/build/js/searchForm.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'red-starter-fontResize', get_template_directory_uri() . '/build/js/fontResize.min.js', array(), '20151215', true );
 	
 	$script_url = get_template_directory_uri() . '/build/js/singleEvent.min.js';
   	wp_enqueue_script( 'jquery' );
@@ -114,6 +115,7 @@ function red_starter_scripts() {
       'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
       'post_id' => get_the_ID()
   ) );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
