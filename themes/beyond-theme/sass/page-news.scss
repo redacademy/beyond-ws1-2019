@@ -8,51 +8,60 @@
         margin: 0 auto;
         @include desktop {
           display: grid;
-          grid-auto-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           width: 1120px;
           margin: 0 auto;
           grid-gap: 100px;
+          margin-top: 30px;
         }
         .cfs-news {
           display: flex;
           flex-direction: column;
           margin-bottom: 50px;
-          border: 1px solid black;
+          border: 1px solid #cbcbcb;
           border-radius: 4%;
-          box-shadow: 5px 5px #888888;
+          box-shadow: 4px 4px #000000 16%;
+
           img {
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
             @include desktop {
               height: 350px;
             }
           }
-          .cfs-title-news {
-            margin-top: 5px;
-            font-size: 24px;
-            color: $black;
-            font-family: $h-ffamily;
-            margin-bottom: 0;
-            margin-left: 20px;
-            margin-right: 40px;
-          }
-          .cfs-date-news {
-            font-size: 16px;
-            color: black;
-            font-family: $h-ffamily;
-            margin-left: 20px;
-          }
-          .cfs-url-news {
-            margin-left: 15px;
-            a {
-              text-decoration: none;
-              color: $sky-blue;
+          .card-content {
+            @include desktop {
+              height: 270px;
             }
-          }
-          .cfs-source-news {
-            font-size: 15px;
-            margin-bottom: 0;
-            font-family: $h-ffamily;
-            color: $purple;
-            margin-left: 25px;
+            .cfs-title-news {
+              margin-top: 5px;
+              font-size: 24px;
+              color: $black;
+              font-family: $h-ffamily;
+              margin-bottom: 0;
+              margin-left: 20px;
+              margin-right: 40px;
+            }
+            .cfs-date-news {
+              font-size: 16px;
+              color: black;
+              font-family: $h-ffamily;
+              margin-left: 20px;
+            }
+            .cfs-url-news {
+              margin-left: 15px;
+              a {
+                text-decoration: none;
+                color: $sky-blue;
+              }
+            }
+            .cfs-source-news {
+              font-size: 15px;
+              margin-bottom: 0;
+              font-family: $h-ffamily;
+              color: $purple;
+              margin-left: 25px;
+            }
           }
         }
       }

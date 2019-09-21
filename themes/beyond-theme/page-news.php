@@ -17,10 +17,12 @@ get_header(); ?>
 			<?php foreach ( $loop as $row ) { ?> 
 					<div class="cfs-news">
 					<?php echo '<img class="cfs-photo-news" src="'.$row["photo"].'"/>'; ?>
+					<div class="card-content">
 							<p class="cfs-source-news"><?php echo $row['source']; ?></p>
 							<p class="cfs-title-news"><?php echo $row['title']; ?></p>
 							<p class="cfs-date-news"><?php echo $row['date']; ?></p>
 							<p class="cfs-url-news"><?php echo $row['url']; ?></p>
+			</div>
 						</div>	
 					<?php }	?>
 				</div>	
