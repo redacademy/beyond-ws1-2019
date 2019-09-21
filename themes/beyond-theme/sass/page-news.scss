@@ -7,8 +7,11 @@
         width: 450px;
         margin: 0 auto;
         @include desktop {
-          display: flex;
-          flex-wrap: wrap;
+          display: grid;
+          grid-auto-columns: repeat(2, 1fr);
+          width: 1120px;
+          margin: 0 auto;
+          grid-gap: 100px;
         }
         .cfs-news {
           display: flex;
