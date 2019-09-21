@@ -33,7 +33,7 @@
 				<?php endif ?>
 
 
-				<?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' ); ?>
+				<?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' ); ?>
 
 				<style>
 					.site-header {
