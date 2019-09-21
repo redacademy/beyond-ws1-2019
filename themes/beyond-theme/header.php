@@ -100,9 +100,9 @@
 						<a class="search-icon" href="<?= site_url( '?s=' ); ?>"></a>
 					</div>
 					<div class="dynamic-fonts">
-						<p id="small-font">A</p>
+						<p id="small-font" onclick="changeFontSize(this)">A</p>
 						<p id="normal-font">A</p>
-						<p id="big-font">A</p>
+						<p id="big-font" onclick="changeFontSize(this)">A</p>
 					</div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->

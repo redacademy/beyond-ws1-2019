@@ -16,4 +16,3 @@ function formClear() {
 window.addEventListener('load', () => {
     clearInput();
 })
-
