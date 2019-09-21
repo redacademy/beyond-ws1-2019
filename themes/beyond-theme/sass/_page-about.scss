@@ -307,11 +307,11 @@
       
     }
     img {
-      // flex-basis: 50%;
+      flex-basis: 50%;
       width: 200px;
-      height: 150px;
+      height: 230px;
       @include desktop {
-          height: 400px;
+          height: 600px;
           width: 600px;
       }
     }
