@@ -6,7 +6,7 @@
 	color: $white;
 	font-family: 'Poppins';
 	font-weight: lighter;
-  font-size: 40px;
+  font-size: 2.85rem;
   text-transform: uppercase;
 	@include desktop {
 		font-size: $h1-fsize-desktop;
@@ -50,12 +50,12 @@
 .blog-title {
   font-family: 'Poppins';
   font-weight: initial;
-  font-size: 24px;
+  font-size: 1.71rem;
   max-width: 530px;
   margin: 0;
   @include desktop {
     max-width: 100%;
-    font-size: 30px;
+    font-size: 2.14rem;
   }
   a {
     color: $black;
@@ -77,10 +77,10 @@
 .blog-meta {
   font-family: 'Poppins';
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 1.14rem;
   padding: 5px 0;
   @include desktop {
-    font-size: 20px;
+    font-size: 1.42rem;
   }
 }
 
@@ -107,10 +107,10 @@
 .read-more {
   font-family: 'Poppins';
   font-weight: bold;
-  font-size: 13px;
+  font-size: 0.92rem;
   padding-top: 10px;
   @include desktop {
-    font-size: 30px;
+    font-size: 2.14rem;
     text-align: right;
   }
   a {
@@ -118,7 +118,7 @@
     text-decoration: none;
   }
   .arrow {
-    font-size: 18px;
+    font-size: 1.28rem;
     padding: 0 10px;
     font-weight: normal;
   }

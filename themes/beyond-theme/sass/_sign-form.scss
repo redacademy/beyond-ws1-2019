@@ -61,11 +61,11 @@
     font-family: $h-ffamily !important;
     font-weight: lighter;
     color: $black;
-    font-size: 13px;
+    font-size: 0.92rem;
     line-height: 1.5;
     @include resp-form {
         align-items: center;
-        font-size: 28px;
+        font-size: 2rem;
         line-height: 1.5 !important;
         font-family: $body-ffamily !important;
         font-weight: 200 !important;
@@ -80,11 +80,11 @@
     }
     .gfield_label {
         font-weight: lighter !important;
-        font-size: 15px !important;
+        font-size: 1.07px !important;
         @include resp-form {
             font-family: $h-ffamily;
             font-weight: lighter !important;
-            font-size: 28px !important;
+            font-size: 2rem !important;
         }
         .gfield_required {
             color: $black;
@@ -97,19 +97,19 @@
             background-color: $white !important;
             font {
                 font-family: $body-ffamily !important;
-                font-size: 15px !important;
+                font-size: 1.07rem !important;
                 font-weight: 200;
                 @include resp-form {
-                    font-size: 26px !important;
+                    font-size: 1.85rem !important;
                 }
             }
         }
         strong {
             font-family: $h-ffamily;
-            font-size: 15px;
+            font-size: 1.07rem;
             font-weight: 500;
             @include resp-form {
-                font-size: 28px;
+                font-size: 2rem;
             }
         }
     }
@@ -261,11 +261,11 @@ tbody {
             width: 15px;
             height: 15px;
             border-radius: 50%;
-            font-size: 12px !important;
+            font-size: 0.85rem !important;
             @include resp-form {
                 width: 30px !important;
                 display: inline !important;
-                font-size: $desktop-button - 10px !important;
+                font-size: $desktop-button - 0.71rem !important;
                 padding: 2px 14px !important;
                 font-family: $h-ffamily !important;
             }
@@ -273,7 +273,7 @@ tbody {
         .gf_step_label {
             text-decoration: underline;
             @include resp-form {
-                font-size: $desktop-button - 10px;
+                font-size: $desktop-button - 0.71rem;
             }
         }
     }
@@ -283,7 +283,7 @@ tbody {
         height: auto !important;
         text-align: center;
         @include resp-form {
-            font-size: $desktop-button - 10px !important;
+            font-size: $desktop-button - 0.71rem !important;
         }
     }
     .gf_step_pending {
@@ -292,11 +292,11 @@ tbody {
             height: 15px;
             border: 0.5px solid $grey;
             border-radius: 50%;
-            font-size: 12px !important;
+            font-size: 0.85rem !important;
             @include resp-form {
                 width: 30px !important;
                 display: inline !important;
-                font-size: $desktop-button - 10px !important;
+                font-size: $desktop-button - 0.71rem !important;
                 padding: 2px 14px !important;
                 font-family: $h-ffamily !important;
             }
@@ -370,7 +370,7 @@ tbody {
             font-size: $desktop-button !important;
             border-radius: 20px;
             height: 70px;
-            font-size: 25px;
+            font-size: 1.78rem;
             width: 250px !important;
             &:hover {
               opacity: 0.2;
@@ -412,10 +412,10 @@ tbody {
     justify-content: center !important;
     height: 100% !important;
     font-family: $h-ffamily !important;
-    font-size: 20px !important;
+    font-size: 1.42rem !important;
     color: $black !important;
     @include resp-form {
-        font-size: 32px !important;
+        font-size: 2.28rem !important;
         font-weight: lighter;
     }
     img {

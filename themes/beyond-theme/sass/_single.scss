@@ -52,24 +52,24 @@
             color: $purple;
             font-family: 'Poppins';
             font-style: italic;
-            font-size: 16px;
+            font-size: 1.14rem;
         }
     }
     .singleblog-title {
         font-family: 'Helvetica Neue';
-        font-size: 20px;
+        font-size: 1.42rem;
         color: #707070;
         @include desktop {
             font-family: 'Poppins';
             font-weight: initial;
-            font-size: $h3-fsize-desktop - 5px;;
+            font-size: $h3-fsize-desktop - 0.35rem;
             color: $black;
             margin: 0;
         }
     }
     .singleblog-entry-meta {
         font-family: 'Poppins';
-        font-size: 12px;
+        font-size: 0.85rem;
         font-weight: 600;
         width: 160px;
         display: flex;
@@ -110,21 +110,21 @@
 .singlepost-entry-content {
     font-family: 'Helvetica Neue';
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1.14rem;
     color: #707070;
     @include desktop {
-        font-size: 22px;
+        font-size: 1.57rem;
         line-height: 32px;
     }
 }
 
 .comments-title {
     font-family: 'Poppins';
-    font-size: 20px;
+    font-size: 1.42rem;
     border-top: 1px solid $grey;
     padding-top: 15px;
     @include desktop {
-        font-size: 26px;
+        font-size: 1.85rem;
     }
 }
 
@@ -138,11 +138,11 @@
     p {
         font-family: 'Helvetica Neue';
         font-weight: lighter;
-        font-size: 16px; 
+        font-size: 1.14rem; 
         line-height: 23px;
         margin: 0;
         @include desktop {
-            font-size: 22px;
+            font-size: 1.37rem;
             line-height: 32px;
         }
     }
@@ -156,9 +156,9 @@
     color: $purple;
     font-family: 'Poppins';
     font-style: italic;
-    font-size: 10px;
+    font-size: 0.71rem;
     @include desktop {
-        font-size: 16px;
+        font-size: 1.14rem;
     }
     .comment-author {
         padding: 0 15px;
@@ -173,9 +173,9 @@
     font-family: 'Poppins';
     padding-top: 10px;
     .comment-reply-title {
-        font-size: $h3-fsize-mobile + 5px;
+        font-size: $h3-fsize-mobile + 0.35rem;
         @include desktop {
-            font-size: 26px;
+            font-size: 1.85rem;
         }
     }
     .comment-form {
@@ -183,7 +183,7 @@
             font-size: $h3-fsize-mobile;
             font-weight: bold;
             @include desktop {
-                font-size: $h3-fsize-mobile + 5px;
+                font-size: $h3-fsize-mobile + 0.35rem;
             }
         }
         input[type="text"], input[type="email"],textarea {
@@ -249,7 +249,7 @@
     * {
         font-family: 'Poppins';
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1.42rem;
         text-decoration: none;
         color: $blue;
     }
