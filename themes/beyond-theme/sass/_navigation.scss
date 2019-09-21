@@ -215,13 +215,6 @@ a {
 	}
 }
 
-// .main-navigation > .white-icon {
-// 	padding-left: 20px;
-// 	@include responsive-nav {
-// 		padding-left: 50px;
-// 	}
-// }
-
 /* Small menu. */
 .menu-toggle {
   color: white;
@@ -330,7 +323,7 @@ a {
 	position: relative;
 	font-size: 1.78rem;
 	&::before {
-		content: "\f002";  /* this is your text. You can also use UTF-8 character codes as I do here */
+		content: "\f002";
 		font-family: FontAwesome;
 		color: $white;
 	}
@@ -344,15 +337,28 @@ a {
 	cursor: pointer;
 	@include responsive-nav {
 		display: flex;
-		top: 40px;
+		align-items: baseline;
+		top: 30px;
 		right: 140px;
 	}
 	@include desktop-nav {
 		display: flex;
-		top: 40px;
+		align-items: baseline;
+		top: 30px;
 		right: 165px;
 	}
 	p {
 		padding: 0 4px;
+		text-decoration: underline;
+		font-weight: bold;
+	}
+	#small-font {
+		font-size: 1rem;
+	}
+	#normal-font {
+		font-size: 1.15rem;
+	}
+	#big-font {
+		font-size: 1.28rem;
 	}
 }
