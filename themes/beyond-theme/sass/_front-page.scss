@@ -14,14 +14,22 @@
             font-weight: 100;
           }
         }
+        .wp-block-media-text__media {
+          img {
+            height: 180px;
+            @include desktop {
+              height: 450px;
+            }
+          }
+        }
 
         p {
-          color: white;
+          color: $white;
           font-size: $body-fsize-mobile;
           font-family: $body-ffamily;
           font-weight: 100;
           @include desktop {
-            color: white;
+            color: $white;
             font-size: $body-fsize-desktop;
             font-family: $body-ffamily;
             font-weight: 100;
@@ -56,7 +64,7 @@
         }
       }
       .block3 {
-        background: linear-gradient(to bottom, $light-orange 50%, #ffff 50%);
+        background: linear-gradient(to bottom, $light-orange 50%, $white 50%);
         display: flex;
         flex-direction: column;
         @include desktop {
@@ -77,14 +85,14 @@
           }
         }
         p {
-          color: black;
+          color: $black;
           font-size: $body-fsize-mobile;
           font-family: $body-ffamily;
           padding: 20px 70px;
           padding-bottom: 0;
           font-weight: 100;
           @include desktop {
-            color: black;
+            color: $black;
             font-size: $body-fsize-desktop;
             font-family: $body-ffamily;
             padding: 0;
@@ -182,7 +190,7 @@
         .cfs-quote-test {
           font-size: $h3-fsize-mobile;
           font-family: $body-ffamily;
-          color: white;
+          color: $white;
           margin-left: 20px;
           margin-top: 65px;
           margin-right: 30px;
@@ -191,7 +199,7 @@
           @include desktop {
             font-size: $h3-fsize-desktop;
             font-family: $body-ffamily;
-            color: white;
+            color: $white;
             padding-top: 150px;
           }
         }
@@ -224,7 +232,7 @@
       }
       /* icon color */
       .flickity-button-icon {
-        fill: white;
+        fill: $white;
         width: 35%;
         @include desktop {
           width: 60%;
