@@ -31,26 +31,26 @@ get_header('events'); ?>
 				
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( $query_upcoming->have_posts() ) : $query_upcoming->the_post(); ?>
+			<div class="events-container">
+				<?php while ( $query_upcoming->have_posts() ) : $query_upcoming->the_post(); ?>
+								
+						<div class="event">
+							<?php $dateTime = DateTime::createFromFormat('Y-m-d', get_post_meta($query_upcoming->post->ID, 'date', true ));?>
+							<h2 class="event-date"><?php echo $dateTime->format('F j');?></h2>
+							<p class="event-time"><?php echo get_post_meta($query_upcoming->post->ID, 'time', true ); ?></p>
+							<p class="event-location"><?php echo get_post_meta($query_upcoming->post->ID, 'location', true ); ?></p>
+							<p class="event-type"><?php echo get_post_meta($query_upcoming->post->ID, 'event_type', true ); ?></p>
+							<p class="event-title"><?php echo $query_upcoming->post->post_title; ?></p>
+							<div class="event-description"><?php echo $query_upcoming->post->post_content; ?></div>
 
-					<div class="event">
-						<?php $dateTime = DateTime::createFromFormat('Y-m-d', get_post_meta($query_upcoming->post->ID, 'date', true ));?>
-						<h2 class="event-date"><?php echo $dateTime->format('F j');?></h2>
-						<p class="event-time"><?php echo get_post_meta($query_upcoming->post->ID, 'time', true ); ?></p>
-						<p class="event-location"><?php echo get_post_meta($query_upcoming->post->ID, 'location', true ); ?></p>
-						<p class="event-type"><?php echo get_post_meta($query_upcoming->post->ID, 'event_type', true ); ?></p>
-						<p class="event-title"><?php echo $query_upcoming->post->post_title; ?></p>
-						<div class="event-description"><?php echo $query_upcoming->post->post_content; ?></div>
+							<a class="event-rsvp" href="<?php echo get_post_meta($query_upcoming->post->ID, 'rsvp', true )['url']; ?>"
+							target="<?php echo get_post_meta($query_upcoming->post->ID, 'rsvp', true )['target']; ?>">
+							<?php echo get_post_meta($query_upcoming->post->ID, 'rsvp', true )['text']; ?></a>
+						</div>
+									
 
-						<a class="event-rsvp" href="<?php echo get_post_meta($query_upcoming->post->ID, 'rsvp', true )['url']; ?>"
-						 target="<?php echo get_post_meta($query_upcoming->post->ID, 'rsvp', true )['target']; ?>">
-						 <?php echo get_post_meta($query_upcoming->post->ID, 'rsvp', true )['text']; ?></a>
-					</div>
-
-
-			<?php endwhile; ?>
-
+				<?php endwhile; ?>
+			</div>				
 
 			<a href="#" id="loadMore1">Load More</a>
 
@@ -91,20 +91,20 @@ get_header('events'); ?>
 				
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( $query_past->have_posts() ) : $query_past->the_post(); ?>
+			<div class="past-events-container">
+				<?php while ( $query_past->have_posts() ) : $query_past->the_post(); ?>
 
-					<div class="past-event">
-						
-						<p class="event-title"><?php echo $query_past->post->post_title; ?></p>
-						<div class="event-description"><?php echo $query_past->post->post_content; ?></div>
-						
-						<?php $image_id = get_post_meta($query_past->post->ID, 'image', true );?>
-						<img class="event-image" src="<?php echo wp_get_attachment_url( $image_id ) ; ?>">
+						<div class="past-event">
+							
+							<p class="event-title"><?php echo $query_past->post->post_title; ?></p>
+							<div class="event-description"><?php echo $query_past->post->post_content; ?></div>
+							
+							<?php $image_id = get_post_meta($query_past->post->ID, 'image', true );?>
+							<img class="event-image" src="<?php echo wp_get_attachment_url( $image_id ) ; ?>">
 
-					</div>
-			<?php endwhile; ?>
-
+						</div>
+				<?php endwhile; ?>
+			</div>					
 			<a href="#" id="loadMore2">Load More</a>
 
 
