@@ -13,8 +13,8 @@
       text-align: center;
       color: $black;
       @include desktop {
-        font-size: 80px;
         color: $black;
+        font-size: 5.71rem;
       }
     }
     .content {

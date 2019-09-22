@@ -25,7 +25,7 @@
 			<header id="masthead" class="site-header" role="banner">
 			
 				<?php if( is_home() ): ?>
-					<?php the_title( sprintf( '<h1 class="text-header-blog">', esc_url( get_permalink() ) ), '</h1>' ); ?>
+					<h1 class=text-header-blog><?php echo esc_html( 'Blog' ); ?></h1>
 				<?php elseif( is_post_type_archive() ): ?>
 					<h1 class="text-header">What's On</h1>
 				<?php else: ?>
@@ -33,18 +33,29 @@
 				<?php endif ?>
 
 
-				<?php if( is_front_page() ): ?>
-						<?php echo '<style type="text/css"> .site-header { background-image:url('.get_stylesheet_directory_uri().'/Media/Images/Homepage/heroimage-homepage@2x.jpg) !important; width: 100% !important; background-size: 100% !important; background-position: center; background-repeat: no-repeat;}</style>';?>
-				<?php else: ?>
-						<?php echo '<style type="text/css"> .site-header { background-image:url('.get_stylesheet_directory_uri().'/Media/Images/Event/event-courselimage@2x.jpg) !important; width: 100% !important; background-size: 100% !important; background-position: center; background-repeat: no-repeat;}</style>';?>			
-				<?php endif ?>
+				<?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' ); ?>
+
+				<style>
+					.site-header {
+						background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('<?php echo $background[0]; ?>');
+						background-position: center;
+						background-size: 100%;
+						background-repeat: no-repeat;
+						width: 100%;
+					}
+				</style>
 
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<a href='<?php echo esc_url(home_url('/')); ?>'>
+					<a class="logo-container" href='<?php echo esc_url(home_url('/')); ?>'>
+						<?php echo '<style type="text/css">
+							// .logo-container {
+							// 	order: 1;
+							// }
+							</style>'; ?>
 						<div class="white-icon">
 							<?php echo '<style type="text/css">
 								.white-icon {
@@ -72,8 +83,27 @@
 						</div>
 					</a>
 					<button id="menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-						<?php echo '<style type="text/css"> .menu-toggle { background-image:url('.get_stylesheet_directory_uri().'/Media/icon/menu.svg) !important; width: 36px !important; height: 50% !important; background-size: 100% !important; background-position: center; background-repeat: no-repeat;}</style>';?>			
+						<?php echo '<style type="text/css">
+							.menu-toggle {
+								background-image: url('.get_stylesheet_directory_uri().'/Media/icon/menu.svg) !important;
+								width: 36px !important;
+								height: 50% !important;
+								background-size: 100% !important;
+								background-position: center;
+								background-repeat: no-repeat;
+								margin-right: 20px;
+								order: 3;
+							}
+							</style>';?>			
 					</button>
+					<div class="dynamic-nav">
+						<a class="search-icon" href="<?= site_url( '?s=' ); ?>"></a>
+					</div>
+					<div class="dynamic-fonts">
+						<p id="small-font" onclick="changeFontSize(this)">A</p>
+						<p id="normal-font" onclick="changeFontSize(this)">A</p>
+						<p id="big-font" onclick="changeFontSize(this)">A</p>
+					</div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 

@@ -105,6 +105,19 @@ function red_starter_scripts() {
 	wp_enqueue_script( 'red-starter-teamMembers', get_template_directory_uri() . '/build/js/teamMembers.min.js', array('jquery'), 1.1, true );
 	wp_enqueue_script( 'red-starter-news', get_template_directory_uri() . '/build/js/news.min.js', array('jquery'), 1.1, true );
 
+	wp_enqueue_script( 'red-starter-searchForm', get_template_directory_uri() . '/build/js/searchForm.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'red-starter-fontResize', get_template_directory_uri() . '/build/js/fontResize.min.js', array(), '20151215', true );
+	
+	$script_url = get_template_directory_uri() . '/build/js/singleEvent.min.js';
+  	wp_enqueue_script( 'jquery' );
+   	wp_enqueue_script( 'red_events', $script_url, array( 'jquery' ), false, true );
+	  
+	wp_localize_script( 'red_events', 'red_vars', array(
+      'rest_url' => esc_url_raw( rest_url() ),
+      'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
+      'post_id' => get_the_ID()
+  ) );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -145,3 +158,17 @@ require get_template_directory() . '/inc/extras.php';
 	}
 }
 add_action( 'pre_get_posts', 'query_ppp' );
+
+// Search form
+
+function beyond_search_form( $form ) {
+    $form = '<form role="search" method="get" id="searchform" class="search-form" action="' . home_url( '/' ) . '" >
+    <label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
+	<input class="search-input" onClick="this.setSelectionRange(0, this.value.length)" type="text" placeholder="Search here..." value="' . get_search_query() . '" name="s" id="s" />
+	<span id="clear-search">X</span>
+    <input type="submit" id="searchsubmit" class="search-submit" value="'. esc_attr__( 'Search' ) .'" />
+    </form>';
+ 
+    return $form;
+}
+add_filter( 'get_search_form', 'beyond_search_form' );

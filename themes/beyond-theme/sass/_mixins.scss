@@ -13,6 +13,12 @@
 
 // Breakpoints
 
+@mixin responsive-menu-items {
+	@media (min-width: 600px) and (max-width: 850px) {
+		@content;
+	}
+}
+
 @mixin responsive-nav {
 	@media (min-width: 800px) and (max-width: 1200px) {
 		@content;

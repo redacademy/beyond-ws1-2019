@@ -50,7 +50,7 @@
   @include desktop {
     border-radius: 20px;
     height: 70px;
-    font-size: 25px;
+    font-size: 1.8rem;
     width: 250px;
     &:hover {
       opacity: 0.2;
@@ -65,7 +65,7 @@
   height: 36px;
   width: 100px;
   font-family: $body-ffamily;
-  font-size: 13px;
+  font-size: 0.92rem;
   border: none;
   box-shadow: 0 0;
   margin: 30px 109px;
@@ -94,13 +94,13 @@
     border-radius: 50%;
     width: 32px;
     height: 32px;
-    font-size: 22px;
+    font-size: 1.57rem;
   }
   a,
   .current {
     font-family: 'Poppins';
     font-weight: regular;
-    font-size: 22px;
+    font-size: 1.57rem;
     color: $purple;
     text-decoration: none;
     margin: 0 20px;

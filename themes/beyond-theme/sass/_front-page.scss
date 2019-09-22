@@ -253,7 +253,7 @@
         @include desktop {
           border-radius: 20px;
           height: 88px;
-          font-size: 23px;
+          font-size: 1.6rem;
           width: 238px;
           margin-left: 60px;
         }
@@ -268,7 +268,7 @@
         .read-more {
           padding-top: 0;
           @include desktop {
-            font-size: 30px;
+            font-size: 2.14rem;
             text-align: right;
             margin-top: 30px;
           }
@@ -281,12 +281,12 @@
           .blog-title {
             font-family: 'Poppins';
             font-weight: initial;
-            font-size: 24px;
+            font-size: 1.71rem;
             max-width: 530px;
             margin: 0;
             @include desktop {
               max-width: 100%;
-              font-size: 30px;
+              font-size: 2.14rem;
             }
             a {
               color: $black;
@@ -300,10 +300,10 @@
           .blog-meta {
             font-family: 'Poppins';
             font-weight: lighter;
-            font-size: 16px;
+            font-size: 1.14rem;
             padding: 5px 0;
             @include desktop {
-              font-size: 20px;
+              font-size: 1.42rem;
             }
           }
         }
