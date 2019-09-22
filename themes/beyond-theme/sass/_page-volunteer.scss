@@ -15,15 +15,22 @@
             h1 {
               font-family: $h-ffamily;
               font-size: $h2-fsize-desktop;
+              font-weight: normal;
+              color: $black;
               @include desktop {
+                font-weight: normal;
+                color: $black;
                 font-size: 5.7rem;
               }
             }
             h2 {
               font-family: $body-ffamily;
               font-size: $h3-fsize-mobile;
+              color: $black;
               @include desktop {
                 font-size: $body-fsize-desktop;
+                font-weight: normal;
+                color: $black;
               }
             }
           }
@@ -49,8 +56,10 @@
               p {
                 text-align: center;
                 font-family: $body-ffamily;
+                color: $black;
                 font-size: 1.07rem;
                 @include desktop {
+                  color: $black;
                   font-size: 1.78rem;
                 }
               }
