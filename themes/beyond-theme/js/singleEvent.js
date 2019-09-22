@@ -11,6 +11,7 @@ jQuery(document).ready(function ($) {
             }
         }).done(function (response) {
             console.log(response);
+
             // if (response[0]._qod_quote_source_url !== '' && response[0]._qod_quote_source !== '') {
             //     quote = `<a class="quote-source-url" href="${response[0]._qod_quote_source_url}">
             // <span class="quote-source">${response[0]._qod_quote_source} </span></a>`;
