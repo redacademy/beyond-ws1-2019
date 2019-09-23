@@ -2,12 +2,168 @@
 	position: relative;
 	height: 92px;
 	@include desktop {
+		height: 240px;
+	}
+}
+
+.main-search-navigation {
+	clear: both;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	height: 92px;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.84) 50%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	z-index: 999;
+	@include responsive-nav {
+		height: 240px;
+        padding: 0 50px;
+        position: relative;
+	}
+	@include desktop-nav {
+		height: 240px;
+        padding: 0 80px;
+        position: relative;
+	}
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: $base__space-unit;
+			left: -999rem;
+			z-index: 99999;
+
+			ul {
+				left: -999rem;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+		}
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+
+	}
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.menu-menu-1-container {
+		display: none;
+		position: fixed;
+		bottom: 0;
+		top: 60px;
+		width: 100%;
 		height: 100vh;
+		opacity: 1;
+		z-index: 100;
+		@include desktop {
+			display: initial !important;
+			position: relative;
+			top: unset;
+			bottom: unset;
+			right: 50px;
+			height: auto;
+			width: auto;
+		}
+		.menu { // ul
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			line-height: 4;
+			background: linear-gradient(180deg,transparent 0,#ffffff 5%,#ffffff);
+			
+			@include responsive-menu-items {
+				background: linear-gradient(180deg,transparent 0,#ffffff 5%,#ffffff);
+			}
+			@include desktop {
+				background: transparent;
+				flex-direction: row;
+			}
+			@include desktop-nav {
+				background: transparent;
+			}
+
+			.menu-item { // li
+				@include responsive-nav {
+					margin: 0 8px;
+				}
+				@include desktop-nav {
+					margin: 0 15px;
+					height: 60px;
+					&:hover {
+						border-bottom: 2px solid $white;
+					}
+				}
+				a {
+					font-family: 'Poppins';
+					font-size: $h3-fsize-mobile + 0.35rem;
+					color: $purple;
+					&:visited {
+						color: $purple;
+					}
+					@include responsive-menu-items {
+						color: $purple;
+						&:visited {
+							color: $purple !important;
+						}
+					}
+					@include responsive-nav {
+						font-size: $h3-fsize-mobile + 0.17rem;
+						font-weight: lighter;
+						color: $white;
+						&:visited {
+							color: $white;
+						}
+						&:hover {
+							font-weight: 500;
+						}
+					}
+					@include desktop-nav {
+						font-size: $h3-fsize-mobile + 0.35rem;
+						font-weight: lighter;
+						color: $white;
+						&:visited {
+							color: $white;
+						}
+						&:hover {
+							font-weight: 500;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
 .search-main {
     padding: 50px 15px;
+    @include desktop {
+        padding: 50px 200px;
+    }
 }
 
 // Search form
@@ -21,6 +177,50 @@
         font-family: 'Poppins';
         font-size: $mobile-button;
         border: none;
+        @include desktop {
+            width: 85%;
+            font-size: 2.2rem;
+        }
+    }
+}
+
+.search-numbers {
+    font-family: $h-ffamily;
+    background-color: #EAEAEA;
+    padding: 5px 10px;
+    @include desktop {
+        font-size: 1.78rem;
+        margin: 15px 0;
+    }
+}
+
+.search-section-title {
+    font-family: $h-ffamily;
+    font-weight: 600;
+    @include desktop {
+        padding-top: 20px;
+    }
+}
+
+.search-title {
+    a {
+        font-family: $h-ffamily;
+        text-decoration: none;
+        color: #1C2FC6;
+        font-weight: 600;
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
+}
+
+.search-summary {
+    p {
+        font-family: $h-ffamily;
+        font-weight: lighter;
+        @include desktop {
+            font-size: 1.28rem;
+        }
     }
 }
 
@@ -28,6 +228,9 @@
     color: $grey;
     font-weight: 100;
     cursor: pointer;
+    @include desktop {
+        font-size: 1.57rem;
+    }
 }
 
 .search-submit {
@@ -35,4 +238,7 @@
     border: 0.5px solid #707070;
     font-family: 'Poppins';
     padding: 5px 20px;
+    @include desktop {
+        font-size: 1.28rem;
+    }
 }
