@@ -22,7 +22,7 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header parallax" role="banner">
+			<header id="masthead" class="site-header" role="banner">
 			
 				<?php if( is_home() ): ?>
 					<h1 class=text-header-blog><?php echo esc_html( 'Blog' ); ?></h1>
@@ -59,13 +59,14 @@
 						<div class="white-icon">
 							<?php echo '<style type="text/css">
 								.white-icon {
-									background-image: url('.get_stylesheet_directory_uri().'/Media/logo/logo-white.svg) !important;
+									background-image: url(wp-content/themes/beyond-theme/Media/logo/logo-white.svg);
 									width: 110px;
 									height: 31px;
 									background-size: 100% !important;
 									background-position: center;
 									background-repeat: no-repeat;
 								}
+
 									@media (min-width: 850px) {
 										.white-icon {
 											width: 200px;
@@ -97,7 +98,7 @@
 							</style>';?>			
 					</button>
 					<div class="dynamic-nav">
-						<a class="search-icon" href="<?= site_url( '?s=' ); ?>"></a>
+						<a class="search-icon" href="<?= site_url( '?s=' ); ?>"><i class="fa fa-search"></i></a>
 					</div>
 					<div class="dynamic-fonts">
 						<p id="small-font" onclick="changeFontSize(this)">A</p>

@@ -114,10 +114,12 @@ const sizedMenu = document.getElementsByClassName('menu-menu-1-container')[0];
 
 function show() {
   sizedMenu.style.display = "initial";
+  document.body.style.overflow="hidden"
 }
 
 function hide() {
   sizedMenu.style.display = "none";
+  document.body.style.overflow="scroll"
 }
 
 let menuCounter = 0;
