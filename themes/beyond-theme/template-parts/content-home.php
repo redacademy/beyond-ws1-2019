@@ -7,7 +7,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="card-article" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="resources-card">
 
 	<div class="card-background">
@@ -23,6 +23,13 @@
 				height: 215px;
 				border-top-left-radius: 5%;
 				border-top-right-radius: 5%;
+			}
+
+			@media (min-width: 850px) {
+				.card-background {
+					width: 100%;
+					height: 350px;
+				}
 			}
 		</style>
 	</div>
