@@ -207,6 +207,161 @@ a {
 	}
 }
 
+// Alt class
+
+// .main-navigation-alt, .main-search-navigation-alt {
+// 	clear: both;
+// 	position: fixed;
+// 	top: 0;
+// 	display: flex;
+// 	justify-content: space-between;
+// 	flex-wrap: wrap;
+// 	align-items: center;
+// 	width: 100%;
+// 	height: 92px;
+// 	background-color: white;
+// 	z-index: 999;
+// 	@include responsive-nav {
+// 		height: 240px;
+// 		padding: 0 50px;
+// 	}
+// 	@include desktop-nav {
+// 		height: 240px;
+// 		padding: 0 80px;
+// 	}
+// 	ul {
+// 		display: none;
+// 		list-style: none;
+// 		margin: 0;
+// 		padding-left: 0;
+
+// 		ul {
+// 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+// 			float: left;
+// 			position: absolute;
+// 			top: $base__space-unit;
+// 			left: -999rem;
+// 			z-index: 99999;
+
+// 			ul {
+// 				left: -999rem;
+// 				top: 0;
+// 			}
+
+// 			li {
+// 				&:hover > ul,
+// 				&.focus > ul {
+// 					left: 100%;
+// 				}
+// 			}
+// 		}
+// 		li:hover > ul,
+// 		li.focus > ul {
+// 			left: auto;
+// 		}
+// 	}
+// 	li {
+// 		float: left;
+// 		position: relative;
+
+// 	}
+// 	a {
+// 		display: block;
+// 		text-decoration: none;
+// 	}
+
+// 	.menu-menu-1-container {
+// 		display: none;
+// 		position: fixed;
+// 		bottom: 0;
+// 		top: 60px;
+// 		width: 100%;
+// 		height: 100vh;
+// 		opacity: 1;
+// 		z-index: 100;
+// 		@include desktop {
+// 			display: initial !important;
+// 			position: fixed;
+// 			top: unset;
+// 			bottom: unset;
+// 			right: 50px;
+// 			height: auto;
+// 			width: auto;
+// 		}
+// 		.menu { // ul
+// 			display: flex;
+// 			flex-direction: column;
+// 			justify-content: center;
+// 			align-items: center;
+// 			height: 100%;
+// 			line-height: 4;
+// 			background: linear-gradient(180deg,transparent 0,#ffffff 5%,#ffffff);
+			
+// 			@include responsive-menu-items {
+// 				background: linear-gradient(180deg,transparent 0,#ffffff 5%,#ffffff);
+// 			}
+// 			@include desktop {
+// 				background: transparent;
+// 				flex-direction: row;
+// 			}
+// 			@include desktop-nav {
+// 				background: transparent;
+// 			}
+
+// 			.menu-item { // li
+// 				@include responsive-nav {
+// 					margin: 0 8px;
+// 				}
+// 				@include desktop-nav {
+// 					margin: 0 15px;
+// 					height: 60px;
+// 					&:hover {
+// 						border-bottom: 2px solid $white;
+// 					}
+// 				}
+// 				a {
+// 					font-family: 'Poppins';
+// 					font-size: $h3-fsize-mobile + 0.35rem;
+// 					color: $purple;
+// 					&:visited {
+// 						color: $purple;
+// 					}
+// 					@include responsive-menu-items {
+// 						color: $purple;
+// 						&:visited {
+// 							color: $purple !important;
+// 						}
+// 					}
+// 					@include responsive-nav {
+// 						font-size: $h3-fsize-mobile + 0.17rem;
+// 						font-weight: lighter;
+// 						color: $white;
+// 						&:visited {
+// 							color: $white;
+// 						}
+// 						&:hover {
+// 							font-weight: 500;
+// 						}
+// 					}
+// 					@include desktop-nav {
+// 						font-size: $h3-fsize-mobile + 0.35rem;
+// 						font-weight: lighter;
+// 						color: $white;
+// 						&:visited {
+// 							color: $white;
+// 						}
+// 						&:hover {
+// 							font-weight: 500;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+//
+
 .logo-container {
 	padding-left: 20px;
 	@include desktop {

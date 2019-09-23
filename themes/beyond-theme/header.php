@@ -22,7 +22,7 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header parallax" role="banner">
+			<header id="masthead" class="site-header" role="banner">
 			
 				<?php if( is_home() ): ?>
 					<h1 class=text-header-blog><?php echo esc_html( 'Blog' ); ?></h1>
