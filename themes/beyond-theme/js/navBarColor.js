@@ -13,7 +13,7 @@ jQuery(function($) {
         if( $(window).width() > 1000) {
                 $win.on("scroll", function () {
                     if ($(this).scrollTop() > $win.height()) {
-                        $(navigation).css({ 'background': 'linear-gradient(#fff, #fff, #fff)' });
+                        $(navigation).css({ 'background': 'linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%)' });
                         $(smallFont).css({ 'color': '#62284e' });
                         $(normalFont).css({ 'color': '#62284e' });
                         $(bigFont).css({ 'color': '#62284e' });
