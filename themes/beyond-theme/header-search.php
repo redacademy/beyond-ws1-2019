@@ -30,11 +30,6 @@
 
 				<nav id="site-navigation" class="main-search-navigation" role="navigation">
 					<a class="logo-container" href='<?php echo esc_url(home_url('/')); ?>'>
-						<?php echo '<style type="text/css">
-							// .logo-container {
-							// 	order: 1;
-							// }
-							</style>'; ?>
 						<div class="white-icon">
 							<?php echo '<style type="text/css">
 								.white-icon {
@@ -76,7 +71,12 @@
 							</style>';?>			
 					</button>
 					<div class="dynamic-nav">
-						<a class="search-icon" href="<?= site_url( '?s=' ); ?>"></a>
+						<a class="search-icon" href="<?= site_url( '?s=' ); ?>"><i class="fa fa-search"></i></a>
+					</div>
+					<div class="dynamic-fonts">
+						<p id="small-font" onclick="changeFontSize(this)">A</p>
+						<p id="normal-font" onclick="changeFontSize(this)">A</p>
+						<p id="big-font" onclick="changeFontSize(this)">A</p>
 					</div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
