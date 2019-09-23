@@ -45,17 +45,19 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<a href='<?php echo esc_url(home_url('/')); ?>'>
+					<a class="logo-container" href='<?php echo esc_url(home_url('/')); ?>'>
 						<div class="white-icon">
 							<?php echo '<style type="text/css">
 								.white-icon {
-									background-image: url('.get_stylesheet_directory_uri().'/Media/logo/logo-white.svg) !important;
+									background-image: url(wp-content/themes/beyond-theme/Media/logo/logo-white.svg);
+									// background-image: url('.get_stylesheet_directory_uri().'/Media/logo/logo-white.svg) !important;
 									width: 110px;
 									height: 31px;
 									background-size: 100% !important;
 									background-position: center;
 									background-repeat: no-repeat;
 								}
+
 									@media (min-width: 850px) {
 										.white-icon {
 											width: 200px;
@@ -75,6 +77,14 @@
 					<button id="menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 						<?php echo '<style type="text/css"> .menu-toggle { background-image:url('.get_stylesheet_directory_uri().'/Media/icon/menu.svg) !important; width: 36px !important; height: 50% !important; background-size: 100% !important; background-position: center; background-repeat: no-repeat;}</style>';?>			
 					</button>
+					<div class="dynamic-nav">
+						<a class="search-icon" href="<?= site_url( '?s=' ); ?>"><i class="fa fa-search"></i></a>
+					</div>
+					<div class="dynamic-fonts">
+						<p id="small-font" onclick="changeFontSize(this)">A</p>
+						<p id="normal-font" onclick="changeFontSize(this)">A</p>
+						<p id="big-font" onclick="changeFontSize(this)">A</p>
+					</div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 

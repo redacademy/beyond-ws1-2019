@@ -25,25 +25,35 @@
 			<header id="masthead" class="site-header" role="banner">
 			
 				<?php if( is_home() ): ?>
-					<h1 class=text-header-blog><?php echo esc_html( 'Blog' ); ?></h1>
+					<h1 class='text-header-blog'><?php echo esc_html( 'Blog' ); ?></h1>
+					<?php echo '<style type="text/css">
+							.site-header {
+								background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('.get_stylesheet_directory_uri().'/Media/Images/Blog-Post/hero-blog.jpg);
+								background-position: center;
+								background-size: 100%;
+								background-repeat: no-repeat;
+								width: 100%;
+							}
+					</style>'; ?>
 				<?php elseif( is_post_type_archive() ): ?>
 					<h1 class="text-header">What's On</h1>
 				<?php else: ?>
 					<?php the_title( sprintf( '<h1 class="text-header">', esc_url( get_permalink() ) ), '</h1>' ); ?>
+
+					<?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' ); ?>
+
+						<style>
+							.site-header {
+								background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('<?php echo $background[0]; ?>');
+								background-position: center;
+								background-size: 100%;
+								background-repeat: no-repeat;
+								width: 100%;
+							}
+						</style>
+
 				<?php endif ?>
 
-
-				<?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' ); ?>
-
-				<style>
-					.site-header {
-						background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('<?php echo $background[0]; ?>');
-						background-position: center;
-						background-size: 100%;
-						background-repeat: no-repeat;
-						width: 100%;
-					}
-				</style>
 
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -51,13 +61,9 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<a class="logo-container" href='<?php echo esc_url(home_url('/')); ?>'>
-						<?php echo '<style type="text/css">
-							// .logo-container {
-							// 	order: 1;
-							// }
-							</style>'; ?>
 						<div class="white-icon">
 							<?php echo '<style type="text/css">
+							
 								.white-icon {
 									background-image: url(wp-content/themes/beyond-theme/Media/logo/logo-white.svg);
 									width: 110px;
@@ -71,19 +77,18 @@
 										.white-icon {
 											width: 200px;
 											height: 80px;
-											transition: all 0.25s ease-in-out 0.25s;
 									}
 									@media (min-width: 1200px) {
 										.white-icon {
 											width: 350px;
 											height: 110px;
-											transition: all 0.25s ease-in-out 0.25s;
 										}
 									}
 								</style>';?>			
 						</div>
 					</a>
 					<button id="menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+						
 						<?php echo '<style type="text/css">
 							.menu-toggle {
 								background-image: url('.get_stylesheet_directory_uri().'/Media/icon/menu.svg) !important;
