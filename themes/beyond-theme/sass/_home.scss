@@ -16,10 +16,13 @@
 }
 
 .card-desktop {
+  padding: 35px 0;
   @include desktop {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    // grid-template-rows: repeat(3, 1fr);
+    width: 1120px;
+    margin: 0 auto;
   }
 }
 
@@ -27,16 +30,24 @@
   padding: 5px 20px;
 }
 
+.card-article {
+  width: auto;
+  @include desktop {
+    width: 510px;
+  }
+}
+
 .resources-card {
   color: $purple;
   border-radius: 20px;
   width: 342px;
   height: 416px;
-  margin: 0 auto;
+  margin: 30px auto;
   border: 1px solid #cbcbcb;
   @include desktop {
-    width: 674px;
-    height: 657px;
+    width: 510px;
+    height: auto;
+    margin: 50px auto;
     &:hover {
       background-color: #a3a3a3;
       filter: opacity(0.2);
