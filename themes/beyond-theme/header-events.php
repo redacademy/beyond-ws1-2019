@@ -46,15 +46,11 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<a class="logo-container" href='<?php echo esc_url(home_url('/')); ?>'>
-						<?php echo '<style type="text/css">
-							// .logo-container {
-							// 	order: 1;
-							// }
-							</style>'; ?>
 						<div class="white-icon">
 							<?php echo '<style type="text/css">
 								.white-icon {
 									background-image: url(wp-content/themes/beyond-theme/Media/logo/logo-white.svg);
+									// background-image: url('.get_stylesheet_directory_uri().'/Media/logo/logo-white.svg) !important;
 									width: 110px;
 									height: 31px;
 									background-size: 100% !important;

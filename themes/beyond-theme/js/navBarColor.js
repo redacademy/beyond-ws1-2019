@@ -7,7 +7,7 @@ jQuery(function($) {
     const menuList = document.querySelectorAll('.menu .menu-item');
     const menuItems = document.querySelectorAll('.menu li a');
     const searchIcon = document.querySelector('.search-icon');
-    const siteLogo = document.querySelector('.white-icon');
+    const siteLogo = document.querySelectorAll('.white-icon');
 
     let $win = $(window);
 

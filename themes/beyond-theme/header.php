@@ -51,11 +51,6 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<a class="logo-container" href='<?php echo esc_url(home_url('/')); ?>'>
-						<?php echo '<style type="text/css">
-							// .logo-container {
-							// 	order: 1;
-							// }
-							</style>'; ?>
 						<div class="white-icon">
 							<?php echo '<style type="text/css">
 								.white-icon {
@@ -71,13 +66,11 @@
 										.white-icon {
 											width: 200px;
 											height: 80px;
-											transition: all 0.25s ease-in-out 0.25s;
 									}
 									@media (min-width: 1200px) {
 										.white-icon {
 											width: 350px;
 											height: 110px;
-											transition: all 0.25s ease-in-out 0.25s;
 										}
 									}
 								</style>';?>			
