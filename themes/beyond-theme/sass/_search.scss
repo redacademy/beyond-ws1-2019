@@ -24,6 +24,33 @@
     }
 }
 
+.search-numbers {
+    font-family: $h-ffamily;
+    background-color: #EAEAEA;
+    padding: 5px 10px;
+}
+
+.search-section-title {
+    font-family: $h-ffamily;
+    font-weight: 600;
+}
+
+.search-title {
+    a {
+        font-family: $h-ffamily;
+        text-decoration: none;
+        color: #1C2FC6;
+        font-weight: 600;
+    }
+}
+
+.search-summary {
+    p {
+        font-family: $h-ffamily;
+        font-weight: lighter;
+    }
+}
+
 #clear-search {
     color: $grey;
     font-weight: 100;
