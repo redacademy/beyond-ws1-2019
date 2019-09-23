@@ -1,0 +1,26 @@
+.content-area {
+  .site-main-find-us {
+    width: 1120px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @include desktop {
+      display: flex;
+    }
+    .entry-content {
+      .text-find {
+        width: 70%;
+      }
+    }
+    .widget-area {
+      @include desktop {
+        width: 50%;
+      }
+      .social-widget {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}
