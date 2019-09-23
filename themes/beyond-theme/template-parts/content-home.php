@@ -9,6 +9,24 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="resources-card">
+
+	<div class="card-background">
+	<?php $background_post = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' ); ?>
+	
+		<style>
+			.card-background {
+				background: url('<?php echo $background_post[0]; ?>');
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 215px;
+				border-top-left-radius: 5%;
+				border-top-right-radius: 5%;
+			}
+		</style>
+	</div>
+
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
