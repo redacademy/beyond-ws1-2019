@@ -9,11 +9,6 @@ jQuery(function($) {
     const searchIcon = document.querySelector('.search-icon');
     const siteLogo = document.querySelector('.white-icon');
 
-// searchIcon.addEventListener('click', () => {
-//     alert("hehhehe")
-// })
-
-    // let $nav = $('header');
     let $win = $(window);
 
         if( $(window).width() > 1000) {
