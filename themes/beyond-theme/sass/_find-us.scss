@@ -1,25 +1,65 @@
 .content-area {
   .site-main-find-us {
-    width: 1120px;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
     @include desktop {
       display: flex;
+      width: 1120px;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
     .entry-content {
+      .title-find {
+        font-size: $h2-fsize-mobile;
+        font-family: $h-ffamily;
+      }
       .text-find {
-        width: 70%;
+        width: 100%;
+        font-size: $body-fsize-mobile;
+        font-family: $body-ffamily;
+        text-align: justify;
+      }
+      .group-text {
+        display: none;
+        @include desktop {
+          display: block;
+        }
+      }
+      .our-group-title {
+        font-size: $h2-fsize-mobile;
+        font-family: $h-ffamily;
       }
     }
     .widget-area {
+      margin-left: 30px;
+      margin-right: 30px;
+      display: flex;
+      justify-content: center;
       @include desktop {
-        width: 50%;
-      }
-      .social-widget {
+        width: 100%;
+        margin-top: 90px;
+        background-color: $light-orange;
+        height: 290px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+      }
+      .widget {
+        width: 80%;
+        .social-widget {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          p {
+            a {
+              text-decoration: none;
+              color: black;
+              i {
+                font-size: 30px;
+              }
+            }
+          }
+        }
       }
     }
   }
