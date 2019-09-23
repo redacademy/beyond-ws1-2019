@@ -7,10 +7,10 @@
 
 .single-header {
     position: relative;
-    height: 184px;
-    @include desktop {
-        height: 480px;
-    }
+	height: 260px;
+	@include desktop {
+		height: 100vh;
+	}
 }
 
 .single-navigation {
@@ -39,6 +39,23 @@
         width: 100%;
         object-fit: cover;
     }
+}
+
+.text-header-blog {
+    position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: $white;
+	font-family: 'Poppins';
+	font-weight: lighter;
+	font-size: 2.85rem;
+	text-transform: uppercase;
+	@include desktop {
+		font-size: $h1-fsize-desktop;
+		font-weight: lighter;
+		text-transform: capitalize;
+	}
 }
 
 .singleblog-header {
