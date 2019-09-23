@@ -12,7 +12,7 @@ jQuery(function($) {
     let $win = $(window);
 
         if( $(window).width() > 1000) {
-                $win.on("scroll", function () {
+                $win.on('scroll', function () {
                     if ($(this).scrollTop() > $win.height()) {
                         $(navigation).css({ 'background': 'linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%)' });
                         $(smallFont).css({ 'color': '#62284e' });
@@ -41,8 +41,5 @@ jQuery(function($) {
                         $(siteLogo).css({ 'background-image': 'url(wp-content/themes/beyond-theme/Media/logo/logo-white.svg)' });
                     }
                 })
-        
         }
-    
-
 });
