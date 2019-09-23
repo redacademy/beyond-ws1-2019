@@ -18,6 +18,15 @@ get_header('search'); ?>
 						<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 					</header><!-- .page-header -->
 
+					<?php echo get_search_form(); ?>
+
+					<?php $allsearch = new WP_Query("s=$s&showposts=0"); ?>
+					<div class="search-numbers">
+						<?php echo 'About '.$allsearch ->found_posts.' result(s) for ' . '"' . get_search_query() . '"'; ?>
+					</div>
+
+					<h1>Top Results</h1>
+
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 
