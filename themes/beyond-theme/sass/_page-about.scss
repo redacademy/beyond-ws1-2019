@@ -36,7 +36,7 @@
 .members-container {
     
     div:nth-child(6) {
-        height: 320px;
+        height: 340px;
      }
     @include desktop {
         display: grid;
@@ -93,11 +93,11 @@
         display: none;
     }
     .cfs-quote {
-        font-size: 1.42rem;
+        font-size: 1.3rem;
         font-style: italic;
         font-weight: 300; 
-        text-align: center;
-        padding: 0 20px;
+        text-align: left;
+        padding: 0 30px;
     }
     }
 }    
@@ -110,7 +110,7 @@
     flex-direction: row;
     margin-top: 80px;
     margin-bottom: 50px;
-    height: 258px;
+    height: 270px;
     justify-content: center;
     @include desktop {
       .fa-times {
@@ -144,7 +144,7 @@
         width: 156px;
         background-color: $sky-blue;
         text-align: left;
-        padding: 10px 35px 10px 15px;
+        padding: 10px 15px 10px 15px;
         @include desktop {
             background-color: transparent;
             width: 257px;
@@ -179,7 +179,7 @@
         .cfs-quote {
             font-size: $h3-fsize-mobile;
             font-weight: 300;
-            line-height: 1.1rem;
+            line-height: 1.2rem;
             @include desktop {
                 display: none;
             }
@@ -222,10 +222,12 @@
   h3 {
     color: $orange;
     text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
     @include desktop {
         padding-left: 50px;
+        font-weight: 400;
     }
   }
   .history-content {
@@ -236,13 +238,13 @@
     }
     p {
       padding-left: 20px;
-      font-weight: 300;
+      font-weight: 100;
+      line-height: 1.4;
       text-align: left;
       flex-basis: 50%;
       @include desktop {
-          font-size: 2.5rem;
+          font-size: 2rem;
           padding-left: 100px;
-          line-height: 49px;
           font-weight: 100;
           margin-top: 0;
           flex-basis: 70%
@@ -270,7 +272,11 @@
     color: $purple;
     text-align: right;
     margin-top: 10px;
-    // margin-right: 275px;
+    font-weight: 300;
+    @include desktop {
+      font-weight: 400;
+    }
+
   }
   h4 {
     font-weight: 300;
@@ -288,12 +294,12 @@
     .goals-text {
       padding-right: 20px;
       flex-basis: 50%;
-      font-weight: 300;
+      font-weight: 100;
+      line-height: 1.4;
       @include desktop {
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding-left: 50px;
-        padding-right: 140px;
-        line-height: 49px;
+        padding-right: 180px;
         font-weight: 100;
         margin-top: 0;
         flex-basis: 70%
@@ -308,7 +314,7 @@
     }
     img {
       flex-basis: 50%;
-      width: 200px;
+      width: 180px;
       height: 230px;
       @include desktop {
           height: 600px;
@@ -319,31 +325,38 @@
 }
 
 .services-block {
-  padding: 10px 40px 0 40px;
+  padding: 10px 35px 0 40px;
   background-color: lighten($sky-blue, 50%);
-  height: 403px;
+  height: 420px;
   @include desktop {
-    height: 1050px;
+    height: 1080px;
     padding: 20px 150px;
   }
 
   h3 {
     color: $sky-blue;
     text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 300;
     @include desktop {
         padding-left: 50px;
+        font-weight: 400;
     }
   }
   .services-content {
     display: flex;
     flex-direction: row;
+    padding-bottom: 10px;
     @include desktop {
         padding-left: 50px;
     }
     .services-images {
       flex-basis: 50%;
+      figure {
+        margin-bottom: 5px;
+        margin-top: 15px;
+      }
       
       img {
         @include desktop {
@@ -356,23 +369,26 @@
     }
     .services-text {
       padding-left: 10px;
-      font-weight: 300;
+      font-weight: 100;
       text-align: left;
       flex-basis: 50%;
-      line-height: 13px;
+      line-height: 1.2;
       @include desktop {
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding-left: 100px;
-        line-height: 45px;
+        line-height: 1.4;
         font-weight: 100;
         margin-top: 0;
         flex-basis: 70%
       }
       p {
         margin-bottom: 0;
+        width: 149px;
         @include desktop {
+            width: 500px;
             margin-top: 0;
             padding-bottom: 30px;
+            margin-right: 0 ;
         }
       }
     }
