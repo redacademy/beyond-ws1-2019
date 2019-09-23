@@ -11,23 +11,14 @@ jQuery(document).ready(function ($) {
             }
         }).done(function (response) {
             console.log(response);
+            // $('.singleEvent').html
+            alert(`<p class="event-title">${response[0].title.rendered}</p>
+            <div class="event-description">${response[0].content.rendered}</div>
+            <img class="event-image">${response[0]._links['wp:attachment'][0].href}`)
 
-            // if (response[0]._qod_quote_source_url !== '' && response[0]._qod_quote_source !== '') {
-            //     quote = `<a class="quote-source-url" href="${response[0]._qod_quote_source_url}">
-            // <span class="quote-source">${response[0]._qod_quote_source} </span></a>`;
-            //     comma = ',';
-            // } else if (response[0]._qod_quote_source_url === '' && response[0]._qod_quote_source !== '') {
-            //     quote = `<span class="quote-source">${response[0]._qod_quote_source} </span>`;
-            //     comma = ',';
-            // } else {
-            //     quote = '';
-            //     comma = '';
-            // }
-            //     $homeQuotes.html(`<div class="quote-para">${response[0].content.rendered}</div>
-            // <div class="entry-meta">
-            //     <div class="quote-author"> - ${response[0].title.rendered}</div>
-            //     ${comma}${quote}
-            // </div>`);
+
+
+
 
 
         });
