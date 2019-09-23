@@ -6,6 +6,11 @@ jQuery(function($) {
     const bigFont = document.getElementById('big-font');
     const menuList = document.querySelectorAll('.menu .menu-item');
     const menuItems = document.querySelectorAll('.menu li a');
+    const searchIcon = document.querySelector('.search-icon');
+
+// searchIcon.addEventListener('click', () => {
+//     alert("hehhehe")
+// })
 
     // let $nav = $('header');
     let $win = $(window);
@@ -23,6 +28,7 @@ jQuery(function($) {
                         }).mouseout(function() {
                             $(this).css({ 'border-bottom': 'none' });
                         })
+                        $(searchIcon).css({ 'color': '#62284e' });
                     } else {
                         $(navigation).css('background', 'linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.84) 50%, rgba(0, 0, 0, 0) 100%)');
                         $(smallFont).css({ 'color': '#fff' });
@@ -34,6 +40,7 @@ jQuery(function($) {
                         }).mouseout(function() {
                             $(this).css({ 'border-bottom': 'none' });
                         })
+                        $(searchIcon).css({ 'color': '#fff' });
                     }
                 })
         

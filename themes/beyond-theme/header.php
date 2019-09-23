@@ -97,7 +97,7 @@
 							</style>';?>			
 					</button>
 					<div class="dynamic-nav">
-						<a class="search-icon" href="<?= site_url( '?s=' ); ?>"></a>
+						<a class="search-icon" href="<?= site_url( '?s=' ); ?>"><i class="fa fa-search"></i></a>
 					</div>
 					<div class="dynamic-fonts">
 						<p id="small-font" onclick="changeFontSize(this)">A</p>

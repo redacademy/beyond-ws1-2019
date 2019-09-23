@@ -476,9 +476,8 @@ a {
 .search-icon {
 	position: relative;
 	font-size: 1.78rem;
-	&::before {
-		content: "\f002";
-		font-family: FontAwesome;
+	color: $white;
+	&:hover {
 		color: $white;
 	}
 }
