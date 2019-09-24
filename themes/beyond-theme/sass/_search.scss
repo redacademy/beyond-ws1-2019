@@ -118,6 +118,14 @@
 						border-bottom: 2px solid $white;
 					}
 				}
+				.sub-menu {
+					@include responsive-nav {
+						display: initial;
+					}
+					@include desktop-nav {
+						display: initial;
+					}
+				}
 				a {
 					font-family: 'Poppins';
 					font-size: $h3-fsize-mobile + 0.35rem;
