@@ -13,13 +13,12 @@
 	transform: translate(-50%, -50%);
 	color: $white;
 	font-family: 'Poppins';
-	font-weight: lighter;
+	font-weight: bold;
 	font-size: 2.85rem;
 	text-transform: uppercase;
 	@include desktop {
 		font-size: $h1-fsize-desktop;
-		font-weight: 600;
-    text-transform: capitalize;
+    	text-transform: capitalize;
 	}
 }
 

@@ -34,7 +34,7 @@
                 .site-header {
                     background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('.get_stylesheet_directory_uri().'/Media/Images/Event/hero-whatson.jpg);
                     width: 100% !important;
-                    background-size: 100% !important;
+                    background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
                     }
@@ -75,7 +75,18 @@
 						</div>
 					</a>
 					<button id="menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-						<?php echo '<style type="text/css"> .menu-toggle { background-image:url('.get_stylesheet_directory_uri().'/Media/icon/menu.svg) !important; width: 36px !important; height: 50% !important; background-size: 100% !important; background-position: center; background-repeat: no-repeat;}</style>';?>			
+						<?php echo '<style type="text/css">
+							.menu-toggle {
+								background-image:url('.get_stylesheet_directory_uri().'/Media/icon/menu.svg) !important;
+								width: 36px !important;
+								height: 50% !important;
+								background-size: 100% !important;
+								background-position: center;
+								background-repeat: no-repeat;
+								margin-right: 20px;
+								order: 3;
+							}
+							</style>';?>			
 					</button>
 					<div class="dynamic-nav">
 						<a class="search-icon" href="<?= site_url( '?s=' ); ?>"><i class="fa fa-search"></i></a>
