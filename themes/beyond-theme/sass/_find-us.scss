@@ -85,7 +85,10 @@
       }
       .widget {
         width: 80%;
-        margin-top: 60px;
+        @include desktop {
+          margin-top: 50px;
+        }
+
         .social-widget {
           display: flex;
           flex-direction: row;
@@ -99,6 +102,13 @@
                 font-size: 30px;
               }
             }
+          }
+        }
+      }
+      p {
+        i {
+          @include desktop {
+            font-size: 30px;
           }
         }
       }
