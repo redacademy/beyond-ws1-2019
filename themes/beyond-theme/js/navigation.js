@@ -134,42 +134,16 @@ hamburger.addEventListener('click', () => {
   }
 })
 
-// Search menu
+jQuery(function($) {
 
-// const iconSearch = document.getElementsByClassName('icon-search')[0];
-// const searchForm = document.getElementsByClassName('the-search-form')[0];
+  const disableResources = document.querySelector('#menu-item-43 a');
+  const disableGetInvolved = document.querySelector('#menu-item-47 a');
 
-// function toggleSearch() {
-//   searchForm.style.width = "0";
-// }
+  window.addEventListener('load', () => {
+    $(disableResources).attr("href", "#");
+    $(disableGetInvolved).attr("href", "#");
+  })
 
-// function hideSearch() {
-//   searchForm.style.width = "50px";
-// }
-
-// let searchCounter = 0;
-
-// iconSearch.addEventListener('click', () => {
-//   if (searchCounter === 0 ) {
-//     searchCounter = 1;
-//     toggleSearch();
-//   } else {
-//     searchCounter = 0;
-//     hideSearch();
-//   }
-// })
-
-// function classClick() {
-
-//   const classSelect = document.getElementById('icon-search');
-//   const toggle = document.getElementById('s-toggle');
-
-//   classSelect.addEventListener("click", function() {
-    
-//     toggle.classList.add('search-toggle-click');
-//     toggle.classList.remove('search-toggle-click');
-
-//   });
-// };
+});
 
 })();

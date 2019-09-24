@@ -267,6 +267,10 @@ a {
 	background-color: $grey;
 }
 
+#menu-item-43 a, #menu-item-47 a {
+	cursor: default;
+}
+
 .sub-menu {
 	.menu-item {
 		&:hover {
