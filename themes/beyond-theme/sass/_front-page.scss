@@ -261,12 +261,22 @@
       }
     }
     .cards-content {
-      @include desktop {
+      @include responsive-nav {
+        display: flex;
+        justify-content: space-around;
+      }
+      @include desktop-nav {
         display: flex;
         justify-content: space-around;
       }
       .resources-card {
         margin-bottom: 50px;
+        @include responsive-nav {
+          width: 400px;
+        }
+        @include desktop-nav {
+          width: 510px;
+        }
         .read-more {
           padding-top: 0;
           @include desktop {
