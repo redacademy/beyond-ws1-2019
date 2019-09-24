@@ -20,27 +20,31 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" class="site-header-404" role="banner">
 							
 					<h1 class="header-404">404</h1>
 					<p class="text-404">The page you are looking for doesn't exist.</p>
 				
                 <?php echo '<style type="text/css">
-                .site-header {
-                    background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('.get_stylesheet_directory_uri().'/Media/Images/404/404-background.jpg
-                    );
+                .site-header-404 {
+                    background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('.get_stylesheet_directory_uri().'/Media/Images/404/404-background.jpg);
                     width: 100% !important;
-                    background-size: 100% !important;
+                    background-size: 100%;
                     background-position: center;
                     background-repeat: no-repeat;
-                    }
+					}
+					@media (max-width: 800px) {
+						.site-header-404 {
+							height: 100vh;
+							background-size: cover;
+					}
                 </style>'; ?>
 
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<nav id="site-navigation" class="main-404-navigation" role="navigation">
 					<a class="logo-container" href='<?php echo esc_url(home_url('/')); ?>'>
 						<div class="white-icon">
 							<?php echo '<style type="text/css">
@@ -52,25 +56,33 @@
 									background-position: center;
 									background-repeat: no-repeat;
 								}
-
 									@media (min-width: 850px) {
 										.white-icon {
 											width: 200px;
 											height: 80px;
-											transition: all 0.25s ease-in-out 0.25s;
 									}
 									@media (min-width: 1200px) {
 										.white-icon {
 											width: 350px;
 											height: 110px;
-											transition: all 0.25s ease-in-out 0.25s;
 										}
 									}
 								</style>';?>			
 						</div>
 					</a>
 					<button id="menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-						<?php echo '<style type="text/css"> .menu-toggle { background-image:url('.get_stylesheet_directory_uri().'/Media/icon/menu.svg) !important; width: 36px !important; height: 50% !important; background-size: 100% !important; background-position: center; background-repeat: no-repeat;}</style>';?>			
+						<?php echo '<style type="text/css">
+							.menu-toggle {
+								background-image: url('.get_stylesheet_directory_uri().'/Media/icon/menu.svg) !important;
+								width: 36px !important;
+								height: 50% !important;
+								background-size: 100% !important;
+								background-position: center;
+								background-repeat: no-repeat;
+								margin-right: 20px;
+								order: 3;
+							}
+							</style>';?>			
 					</button>
 					<div class="dynamic-nav">
 						<a class="search-icon" href="<?= site_url( '?s=' ); ?>"><i class="fa fa-search"></i></a>
