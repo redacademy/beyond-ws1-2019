@@ -11,7 +11,7 @@ jQuery(function($) {
 
     let $win = $(window);
 
-        if( $(window).width() > 1000) {
+        if( $(window).width() > 800) {
                 $win.on('scroll', function () {
                     if ($(this).scrollTop() > $win.height()) {
                         $(navigation).css({ 'background': 'linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%)' });
@@ -25,7 +25,7 @@ jQuery(function($) {
                             $(this).css({ 'border-bottom': 'none' });
                         })
                         $(searchIcon).css({ 'color': '#62284e' });
-                        $(siteLogo).css({ 'background-image': 'url(wp-content/themes/beyond-theme/Media/logo/svg/logo-header.svg)' });
+                        $(siteLogo).css({ 'background-image': `url(${red_vars.template_uri}/Media/logo/svg/logo-header.svg)` });
                     } else {
                         $(navigation).css('background', 'linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.84) 50%, rgba(0, 0, 0, 0) 100%)');
                         $(smallFont).css({ 'color': '#fff' });
@@ -38,7 +38,7 @@ jQuery(function($) {
                             $(this).css({ 'border-bottom': 'none' });
                         })
                         $(searchIcon).css({ 'color': '#fff' });
-                        $(siteLogo).css({ 'background-image': 'url(wp-content/themes/beyond-theme/Media/logo/logo-white.svg)' });
+                        $(siteLogo).css({ 'background-image': `url(${red_vars.template_uri}/Media/logo/logo-white.svg)` });
                     }
                 })
         }

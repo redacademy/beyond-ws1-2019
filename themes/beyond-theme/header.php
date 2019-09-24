@@ -65,7 +65,7 @@
 							<?php echo '<style type="text/css">
 							
 								.white-icon {
-									background-image: url(wp-content/themes/beyond-theme/Media/logo/logo-white.svg);
+									background-image: url('.get_stylesheet_directory_uri().'/Media/logo/logo-white.svg);
 									width: 110px;
 									height: 31px;
 									background-size: 100% !important;
