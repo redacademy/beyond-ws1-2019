@@ -26,7 +26,7 @@
 
 				<style>
 					.single-header {
-						background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('<?php echo $background_single[0]; ?>');
+						background: url('<?php echo $background_single[0]; ?>');
 						background-position: center;
 						background-size: cover;
 						background-repeat: no-repeat;

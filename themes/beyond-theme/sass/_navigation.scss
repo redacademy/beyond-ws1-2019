@@ -313,11 +313,11 @@ a {
 	right: 80px;
 	@include responsive-nav {
 		top: 40px;
-		right: 220px;
+		right: 155px;
 	}
 	@include desktop-nav {
 		top: 40px;
-		right: 250px;
+		right: 165px;
 	}
 }
 
@@ -343,13 +343,13 @@ a {
 		display: flex;
 		align-items: baseline;
 		top: 30px;
-		right: 140px;
+		right: 60px;
 	}
 	@include desktop-nav {
 		display: flex;
 		align-items: baseline;
 		top: 30px;
-		right: 165px;
+		right: 65px;
 	}
 	p {
 		padding: 0 4px;

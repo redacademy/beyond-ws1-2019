@@ -25,7 +25,7 @@
 			<header id="masthead" class="site-header" role="banner">
 			
 				<?php if( is_home() ): ?>
-					<h1 class='text-header-blog'><?php echo esc_html( 'Blog' ); ?></h1>
+					<h1 class='text-header'>Blog</h1>
 					<?php echo '<style type="text/css">
 							.site-header {
 								background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('.get_stylesheet_directory_uri().'/Media/Images/Blog-Post/hero-blog.jpg);

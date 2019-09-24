@@ -41,23 +41,6 @@
     }
 }
 
-.text-header-blog {
-    position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: $white;
-	font-family: 'Poppins';
-	font-weight: lighter;
-	font-size: 2.85rem;
-	text-transform: uppercase;
-	@include desktop {
-		font-size: $h1-fsize-desktop;
-		font-weight: lighter;
-		text-transform: capitalize;
-	}
-}
-
 .singleblog-header {
     @include desktop {
         padding-top: 50px;
