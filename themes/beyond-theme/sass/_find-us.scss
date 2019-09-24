@@ -4,21 +4,40 @@
     margin-right: 30px;
     @include desktop {
       display: flex;
-      width: 1120px;
+      width: 100%;
       margin: 0 auto;
       margin-top: 40px;
       margin-bottom: 40px;
+    }
+    .entry-header {
+      .entry-title {
+        display: none;
+      }
     }
     .entry-content {
       .title-find {
         font-size: $h2-fsize-mobile;
         font-family: $h-ffamily;
+        @include desktop {
+          width: 150%;
+          position: relative;
+          font-weight: normal;
+          font-size: $h3-fsize-desktop;
+          font-family: $h-ffamily;
+        }
       }
       .text-find {
         width: 100%;
         font-size: $body-fsize-mobile;
         font-family: $body-ffamily;
         text-align: justify;
+        @include desktop {
+          font-size: $h2-fsize-mobile;
+          font-family: $body-ffamily;
+          margin-left: 100px;
+          width: 86%;
+          margin-top: 35px;
+        }
       }
       .group-text {
         display: none;
@@ -29,6 +48,12 @@
       .our-group-title {
         font-size: $h2-fsize-mobile;
         font-family: $h-ffamily;
+        @include desktop {
+          text-align: center;
+          margin-top: 170px;
+          width: 100%;
+          margin-left: 50%;
+        }
       }
     }
     .widget-area {
@@ -38,19 +63,21 @@
       justify-content: center;
       @include desktop {
         width: 100%;
-        margin-top: 90px;
+        margin-top: 70px;
         background-color: $light-orange;
-        height: 290px;
+        height: 450px;
         display: flex;
         justify-content: center;
       }
       .widget {
         width: 80%;
+        margin-top: 60px;
         .social-widget {
           display: flex;
           flex-direction: row;
           justify-content: space-evenly;
           p {
+            font-family: $body-ffamily;
             a {
               text-decoration: none;
               color: black;
