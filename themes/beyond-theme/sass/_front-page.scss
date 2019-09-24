@@ -262,6 +262,7 @@
     .cards-content {
       @include desktop {
         display: flex;
+        justify-content: space-around;
       }
       .resources-card {
         margin-bottom: 50px;
