@@ -6,7 +6,7 @@ jQuery(function($) {
     const bigFont = document.getElementById('big-font');
     const menuList = document.querySelectorAll('.menu .menu-item');
     const menuItems = document.querySelectorAll('.menu li a');
-    const searchIcon = document.querySelector('.search-icon');
+    const searchIcon = document.querySelector('.fa-search');
     const siteLogo = document.querySelector('.white-icon');
 
     let $win = $(window);
