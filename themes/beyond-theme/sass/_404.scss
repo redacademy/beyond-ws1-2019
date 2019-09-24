@@ -1,24 +1,16 @@
-.text-404 {
-  position: absolute;
-
-  left: 50%;
-  bottom: 10%;
-  transform: translate(-50%, -30%);
-  color: $white;
-  font-family: 'Poppins';
-  font-weight: lighter;
-  font-size: 2.85rem;
-  text-transform: uppercase;
-
-  @include desktop {
-    font-size: $h3-fsize-desktop;
-    font-weight: lighter;
+.header-404 {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: $white;
+	font-family: 'Poppins';
+	font-weight: lighter;
+	font-size: 2.85rem;
+	text-transform: uppercase;
+	@include desktop {
+		font-size: $h1-fsize-desktop;
+		font-weight: 600;
     text-transform: capitalize;
-    width: 100%;
-    left: 70%;
-    bottom: 20%;
-  }
-}
-.text-header {
-  font-weight: bold;
+	}
 }

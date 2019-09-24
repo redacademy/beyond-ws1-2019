@@ -169,15 +169,15 @@ a {
 					font-family: 'Poppins';
 					font-size: $h3-fsize-mobile + 0.35rem;
 					color: $purple;
-					&:visited {
-						color: $purple;
-					}
-					@include responsive-menu-items {
-						color: $purple;
 						&:visited {
-							color: $purple !important;
+							color: $purple;
 						}
-					}
+						@include responsive-menu-items {
+							color: $purple;
+							&:visited {
+								color: $purple !important;
+							}
+						}
 					@include responsive-nav {
 						font-size: $h3-fsize-mobile + 0.17rem;
 						font-weight: lighter;
