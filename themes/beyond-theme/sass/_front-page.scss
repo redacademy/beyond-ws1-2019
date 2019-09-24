@@ -148,7 +148,7 @@
     }
 
     .main-carousel {
-      height: 230px;
+      height: 250px;
       align-content: center;
       padding-bottom: 25px;
       padding-top: 25px;
@@ -209,12 +209,13 @@
             margin-top: 130px;
           }
         }
-        .flickity-page-dots {
-          bottom: 21px;
-          @include desktop {
-            position: unset;
-            bottom: 85px;
-          }
+      }
+
+      .flickity-page-dots {
+        bottom: 21px;
+        @include desktop {
+          position: unset;
+          bottom: 85px;
         }
       }
 
@@ -314,9 +315,7 @@
       font-size: $h3-fsize-mobile;
       font-family: $h-ffamily;
       font-weight: normal;
-      margin-left: 90px;
-      margin-top: 60px;
-      margin-bottom: 60px;
+      padding: 50px 25px 0 25px;
       color: $black;
       @include desktop {
         font-size: $h3-fsize-desktop;
