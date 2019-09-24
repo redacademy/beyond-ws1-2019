@@ -351,9 +351,8 @@
   img {
     height: 180px;
     @include responsive-nav {
-      width: 500px !important;
       height: 100%;
-      max-width: 100% !important;
+      max-width: 100%;
     }
     @include desktop-nav {
       width: 800px;
@@ -361,4 +360,19 @@
     }
 
   }
+}
+
+.wp-block-media-text.block3 {
+  .wp-block-media-text__media {
+  img {
+    height: 180px;
+    @include responsive-nav {
+      width: 500px !important;
+      height: 100%;
+    }
+    @include desktop-nav {
+      width: 800px;
+      height: auto;
+    }
+  }}
 }
