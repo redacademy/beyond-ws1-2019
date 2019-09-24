@@ -21,14 +21,10 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-			
-				
+							
 					<h1 class="header-404">404</h1>
-					<div>
 					<p class="text-404">The page you are looking for doesn't exist.</p>
-					</div>
 				
-
                 <?php echo '<style type="text/css">
                 .site-header {
                     background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('.get_stylesheet_directory_uri().'/Media/Images/404/404-background.jpg
