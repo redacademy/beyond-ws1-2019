@@ -94,15 +94,26 @@ get_header('events'); ?>
 			<div class="past-events-container">
 				<?php while ( $query_past->have_posts() ) : $query_past->the_post(); ?>
 
-						<div class="past-event">
-							
-							<p class="event-title"><?php echo $query_past->post->post_title; ?></p>
-							<div class="event-description"><?php echo $query_past->post->post_content; ?></div>
-							
-							<?php $image_id = get_post_meta($query_past->post->ID, 'image', true );?>
-							<img class="event-image" src="<?php echo wp_get_attachment_url( $image_id ) ; ?>">
+					
+							<div class="past-event initial-box" id="<?php echo $query_past->post->ID; ?>">
+								<p class="event-title"><?php echo $query_past->post->post_title; ?></p>
+								
+								<?php $image_id = get_post_meta($query_past->post->ID, 'image', true );?>
+								<img class="event-image" src="<?php echo wp_get_attachment_url( $image_id ) ; ?>">
+							</div>
+		
+							<div class="popup-box" data-popup="<?php echo $query_past->post->ID; ?>">
+								<div class="popup-inner">
+									<a href="#" class="close-popup">&times;</a>
+									<p class="event-title"><?php echo $query_past->post->post_title; ?></p>
+									<div class="event-description"><?php echo $query_past->post->post_content; ?></div>
+									
+									<?php $image_id = get_post_meta($query_past->post->ID, 'image', true );?>
+									<img class="event-image" src="<?php echo wp_get_attachment_url( $image_id ) ; ?>">
+								</div>
+							</div>
 
-						</div>
+						
 				<?php endwhile; ?>
 			</div>					
 			<a href="#" id="loadMore2">Load More</a>
