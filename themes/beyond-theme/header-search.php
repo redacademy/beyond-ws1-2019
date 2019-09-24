@@ -33,7 +33,7 @@
 						<div class="white-icon">
 							<?php echo '<style type="text/css">
 								.white-icon {
-									background-image: url('.get_stylesheet_directory_uri().'/Media/logo/logo-white.svg) !important;
+									background-image: url('.get_stylesheet_directory_uri().'/Media/logo/logo-white.svg);
 									width: 110px;
 									height: 31px;
 									background-size: 100% !important;

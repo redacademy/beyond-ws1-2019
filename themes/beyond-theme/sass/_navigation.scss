@@ -323,6 +323,9 @@ a {
 	position: relative;
 	font-size: 1.78rem;
 	color: $white;
+	i {
+		color: $white;
+	}
 	&:hover {
 		color: $white;
 	}
