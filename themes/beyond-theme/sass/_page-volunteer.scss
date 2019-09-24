@@ -12,13 +12,19 @@
           .entry-content-volunteer {
             display: flex;
             flex-direction: column;
+            padding: 0 15px;
+            p {
+              font-family: $body-ffamily;
+              font-weight: 300;
+              font-size: 1.07rem;
+            }
           }
           .title-vol {
             text-align: center;
             margin-bottom: 50px;
             h1 {
               font-family: $h-ffamily;
-              font-size: $h2-fsize-desktop;
+              font-size: $h1-fsize-mobile;
               font-weight: normal;
               color: $black;
               @include desktop {
@@ -60,6 +66,7 @@
               p {
                 text-align: center;
                 font-family: $body-ffamily;
+                font-weight: 300;
                 color: $black;
                 font-size: 1.07rem;
                 @include desktop {
