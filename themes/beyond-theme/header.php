@@ -30,7 +30,7 @@
 							.site-header {
 								background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('.get_stylesheet_directory_uri().'/Media/Images/Blog-Post/hero-blog.jpg);
 								background-position: center;
-								background-size: 100%;
+								background-size: cover;
 								background-repeat: no-repeat;
 								width: 100%;
 							}
@@ -46,7 +46,7 @@
 							.site-header {
 								background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('<?php echo $background[0]; ?>');
 								background-position: center;
-								background-size: 100%;
+								background-size: cover;
 								background-repeat: no-repeat;
 								width: 100%;
 							}

@@ -34,7 +34,7 @@
                 .site-header {
                     background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .5)), url('.get_stylesheet_directory_uri().'/Media/Images/Event/hero-whatson.jpg);
                     width: 100% !important;
-                    background-size: 100% !important;
+                    background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
                     }
