@@ -19,7 +19,7 @@ get_header(); ?>
 
 <div class="img-links">
 <div class="donation-links">
-<a href="#"> <div class="img-donation">
+<a href="https://www.paypal.com/donate/?token=7fvInfjpn1nfIqFmAVEwXlzvHlnRPGSAqLbY3CftKgkeqkaSZsmd38Vi8YfkRNbNVfRQ2m&country.x=CA&locale.x=CA"> <div class="img-donation">
 <img src="<?php echo get_stylesheet_directory_uri();?>/Media/icon/icon-donation.svg" alt="fundraising team">
 <p>Contribute to donation</p> 
 </div></a>

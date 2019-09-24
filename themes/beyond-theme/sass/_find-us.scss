@@ -1,0 +1,117 @@
+.content-area {
+  .site-main-find-us {
+    margin-left: 30px;
+    margin-right: 30px;
+    @include desktop {
+      position: relative;
+      display: flex;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .entry-header {
+      .entry-title {
+        display: none;
+      }
+    }
+    .entry-content {
+      .title-find {
+        font-size: $h2-fsize-mobile;
+        font-family: $h-ffamily;
+        @include desktop {
+          //   width: 150%;
+          position: relative;
+          font-weight: normal;
+          font-size: $h3-fsize-desktop;
+          font-family: $h-ffamily;
+        }
+      }
+      .text-find {
+        width: 100%;
+        font-size: $body-fsize-mobile;
+        font-family: $body-ffamily;
+        text-align: justify;
+        @include desktop {
+          font-size: $h2-fsize-mobile;
+          font-family: $body-ffamily;
+          margin-left: 100px;
+          width: 40%;
+          margin-top: 35px;
+          height: 350px;
+        }
+      }
+      .group-text {
+        display: none;
+        @include desktop {
+          text-align: left !important;
+          display: block;
+          width: 100%;
+          font-size: $h2-fsize-mobile;
+          font-family: $body-ffamily;
+          padding: 0 100px;
+        }
+      }
+      .our-group-title {
+        font-size: $h2-fsize-mobile;
+        font-family: $h-ffamily;
+        @include desktop {
+          text-align: center;
+          padding-top: 50px;
+          //   width: 100%;
+          //   margin-left: 50%;
+          font-size: $h2-fsize-mobile;
+          font-family: $h-ffamily;
+          font-weight: normal;
+        }
+      }
+    }
+    .widget-area {
+      margin-left: 30px;
+      margin-right: 30px;
+      display: flex;
+      justify-content: center;
+      @include desktop {
+        position: absolute;
+        width: 40%;
+        top: 3px;
+        right: 10px;
+        z-index: -1;
+        margin-top: 70px;
+        background-color: $light-orange;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+      }
+      .widget {
+        width: 80%;
+        @include desktop {
+          margin-top: 50px;
+        }
+
+        .social-widget {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          p {
+            font-family: $body-ffamily;
+            a {
+              text-decoration: none;
+              color: black;
+              i {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+      p {
+        i {
+          @include desktop {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
