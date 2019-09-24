@@ -9,6 +9,10 @@
           margin: 0 auto;
         }
         .site-main-volunteer {
+          .entry-content-volunteer {
+            display: flex;
+            flex-direction: column;
+          }
           .title-vol {
             text-align: center;
             margin-bottom: 50px;

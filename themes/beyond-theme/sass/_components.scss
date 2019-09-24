@@ -40,13 +40,18 @@
   background-color: $orange;
   color: $white;
   border-radius: 10px;
-  height: 40px;
-  width: 110px;
+  height: 50px;
+  width: 150px;
   font-family: 'Poppins Medium';
   font-size: $mobile-started-btn;
   border: none;
   box-shadow: 0 0;
   filter: blur(6);
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @include desktop {
     border-radius: 20px;
     height: 70px;
