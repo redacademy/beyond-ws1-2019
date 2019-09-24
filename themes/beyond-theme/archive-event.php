@@ -44,8 +44,9 @@ get_header('events'); ?>
 							<div class="event-description"><?php echo $query_upcoming->post->post_content; ?></div>
 
 							<a class="event-rsvp" href="<?php echo get_post_meta($query_upcoming->post->ID, 'rsvp', true )['url']; ?>"
-							target="<?php echo get_post_meta($query_upcoming->post->ID, 'rsvp', true )['target']; ?>">
+							target="_blank">
 							<?php echo get_post_meta($query_upcoming->post->ID, 'rsvp', true )['text']; ?></a>
+							<div class="event-background"></div>
 						</div>
 									
 
