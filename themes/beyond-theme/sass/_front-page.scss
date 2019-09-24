@@ -14,14 +14,7 @@
             font-weight: 100;
           }
         }
-        .wp-block-media-text__media {
-          img {
-            height: 180px;
-            @include desktop {
-              height: 450px;
-            }
-          }
-        }
+
 
         p {
           color: $white;
@@ -351,5 +344,21 @@
         }
       }
     }
+  }
+}
+
+.wp-block-media-text__media {
+  img {
+    height: 180px;
+    @include responsive-nav {
+      width: 500px !important;
+      height: 100%;
+      max-width: 100% !important;
+    }
+    @include desktop-nav {
+      width: 800px;
+      height: auto;
+    }
+
   }
 }
