@@ -1,14 +1,14 @@
-jQuery(function($) {
+jQuery(function ($) {
   $.ajax({
     method: 'GET',
     url:
       'https://api.nytimes.com/svc/topstories/v2/' +
       'technology' +
       '.json?api-key=MCJhGoJthqCkQuDvJvgX3isw1LxKIpgO'
-  }).done(function(data) {
+  }).done(function (data) {
     let cont = 0;
     $('.news').html('');
-    $.each(data.results, function(key, value) {
+    $.each(data.results, function (key) {
       if (data.results[key].multimedia.length >= 5 && cont < 12) {
         try {
           cont = cont + 1;
