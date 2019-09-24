@@ -63,7 +63,6 @@
 					<a class="logo-container" href='<?php echo esc_url(home_url('/')); ?>'>
 						<div class="white-icon">
 							<?php echo '<style type="text/css">
-							
 								.white-icon {
 									background-image: url('.get_stylesheet_directory_uri().'/Media/logo/logo-white.svg);
 									width: 110px;
@@ -72,7 +71,6 @@
 									background-position: center;
 									background-repeat: no-repeat;
 								}
-
 									@media (min-width: 850px) {
 										.white-icon {
 											width: 200px;
@@ -88,7 +86,6 @@
 						</div>
 					</a>
 					<button id="menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-						
 						<?php echo '<style type="text/css">
 							.menu-toggle {
 								background-image: url('.get_stylesheet_directory_uri().'/Media/icon/menu.svg) !important;
