@@ -115,3 +115,17 @@
     }
   }
 }
+
+// Map
+
+.map-container {
+  background: none;
+  padding: 0;
+  margin: 0;
+  iframe {
+    position: relative;
+    top: -50px;
+    border: none;
+    height: 300px;
+  }
+}
