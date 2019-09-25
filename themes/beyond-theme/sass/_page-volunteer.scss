@@ -2,23 +2,44 @@
   .hfeed {
     .site-content {
       .content-area-volunteer {
-        // width: 450px;
         margin: 0 auto;
-        @include desktop {
-          width: 1120px;
-          margin: 0 auto;
+        @include responsive-nav {
+          width: 100%
+        }
+        @include desktop-nav {
+          width: 100%;
         }
         .site-main-volunteer {
+          @include responsive-nav {
+            width: 100%
+          }
+          @include desktop-nav {
+            width: 100%;
+          }
           .entry-content-volunteer {
             display: flex;
             flex-direction: column;
+            padding: 0 15px;
+            p {
+              font-family: $body-ffamily;
+              font-weight: 300;
+              font-size: 1.07rem;
+              @include responsive-nav {
+                padding: 0 50px;
+                font-size: 1.78rem;
+              }
+              @include desktop-nav {
+                padding: 0 100px;
+                font-size: 1.78rem;
+              }
+            }
           }
           .title-vol {
             text-align: center;
             margin-bottom: 50px;
             h1 {
               font-family: $h-ffamily;
-              font-size: $h2-fsize-desktop;
+              font-size: $h1-fsize-mobile;
               font-weight: normal;
               color: $black;
               @include desktop {
@@ -43,16 +64,23 @@
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 30px;
             width: 350px;
-
             margin: 0 auto;
             margin-bottom: 40px;
-
-            @include desktop {
-              width: 1120px;
+            @include responsive-nav {
+              width: 100%;
               height: 700px;
               margin: 0 auto;
               grid-template-columns: repeat(3, 1fr);
               grid-gap: 80px;
+              padding: 0 50px;
+            }
+            @include desktop-nav {
+              width: 100%;
+              height: 700px;
+              margin: 0 auto;
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 80px;
+              padding: 0 100px;
             }
             .grid-container {
               display: flex;
@@ -60,6 +88,7 @@
               p {
                 text-align: center;
                 font-family: $body-ffamily;
+                font-weight: 300;
                 color: $black;
                 font-size: 1.07rem;
                 @include desktop {

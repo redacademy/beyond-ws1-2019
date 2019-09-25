@@ -1,9 +1,14 @@
 .content-area-donation {
-  width: 450px;
   margin: 0 auto;
-  @include desktop {
-    width: 1120px;
+  padding: 0 15px;
+  @include responsive-nav {
+    height: 100%;
     margin: 0 auto;
+    padding: 0 50px;
+  }
+  @include desktop-nav {
+    margin: 0 auto;
+    padding: 0 100px;
   }
   .site-main {
     h1 {
@@ -30,11 +35,13 @@
       }
       p {
         font-family: $body-ffamily;
-        font-size: $body-fsize-mobile;
-
-        @include desktop {
-          font-size: $body-fsize-desktop;
-          line-height: 1.22;
+        font-weight: 300;
+        font-size: 1.07rem;
+        @include responsive-nav {
+          font-size: 1.78rem;
+        }
+        @include desktop-nav {
+          font-size: 1.78rem;
         }
       }
     }
@@ -84,9 +91,12 @@
               margin-bottom: 20px;
               color: white;
               font-family: $body-ffamily;
-              font-size: $body-fsize-mobile;
-              @include desktop {
-                font-size: $body-fsize-desktop;
+              font-size: 1.07rem;
+              @include responsive-nav {
+                font-size: 1.78rem;
+              }
+              @include desktop-nav {
+                font-size: 1.78rem;
               }
             }
           }
@@ -116,10 +126,14 @@
               margin-bottom: 20px;
               color: white;
               font-family: $body-ffamily;
-              font-size: $body-fsize-mobile;
-              @include desktop {
-                font-size: $body-fsize-desktop;
+              font-size: 1.07rem;
+              @include responsive-nav {
+                font-size: 1.78rem;
               }
+              @include desktop-nav {
+                font-size: 1.78rem;
+              }
+              
             }
           }
         }
