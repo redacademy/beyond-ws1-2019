@@ -9,6 +9,7 @@ jQuery(function($) {
     const searchIcon = document.querySelector('.fa-search');
     const siteLogo = document.querySelector('.white-icon');
     const subMenu = document.querySelectorAll('.menu-menu-1-container ul ul');
+    const hoverLine = document.querySelector('.active');
 
     let $win = $(window);
 
@@ -28,7 +29,7 @@ jQuery(function($) {
                         $(searchIcon).css({ 'color': '#62284e' });
                         $(siteLogo).css({ 'background-image': `url(${red_vars.template_uri}/Media/logo/svg/logo-header.svg)` });
                         $(subMenu).css({ 'background-color': '#F2F2F2' });
-
+                        $(hoverLine).css({ 'font-weight': 'bold', 'border-bottom': '2px solid #62284e' });
                     } else {
                         $(navigation).css('background', 'linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.84) 50%, rgba(0, 0, 0, 0) 100%)');
                         $(smallFont).css({ 'color': '#fff' });
@@ -43,7 +44,7 @@ jQuery(function($) {
                         $(searchIcon).css({ 'color': '#fff' });
                         $(siteLogo).css({ 'background-image': `url(${red_vars.template_uri}/Media/logo/logo-white.svg)` });
                         $(subMenu).css({ 'background-color': '#323232' });
-
+                        $(hoverLine).css({ 'font-weight': 'bold', 'border-bottom': '2px solid #fff' });
                     }
                 })
         }
