@@ -27,4 +27,12 @@
    <p><label for="<?php echo $this->get_field_id('instagram'); ?>">instagram:</label>
 		<input class="widefat" id="<?php echo $this->get_field_id('instagram'); ?>" name="<?php echo $this->get_field_name('instagram'); ?>" type="text" value="<?php echo $instagram; ?>">
    </p>
+
+   <p><label for="<?php echo $this->get_field_id('linkdin'); ?>">linkdin:</label>
+		<input class="widefat" id="<?php echo $this->get_field_id('linkdin'); ?>" name="<?php echo $this->get_field_name('linkdin'); ?>" type="text" value="<?php echo $linkdin; ?>">
+   </p>
+
+   <p><label for="<?php echo $this->get_field_id('twitter'); ?>">twitter:</label>
+		<input class="widefat" id="<?php echo $this->get_field_id('twitter'); ?>" name="<?php echo $this->get_field_name('twitter'); ?>" type="text" value="<?php echo $twitter; ?>">
+   </p>
 </div>

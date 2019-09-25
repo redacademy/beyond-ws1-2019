@@ -103,6 +103,8 @@ class Contact_info extends WP_Widget {
 		$email= empty($instance['email']) ? '': apply_filters('email', $instance['email']);
 		$facebook= empty($instance['facebook']) ? '': apply_filters('facebook', $instance['facebook']);
 		$instagram= empty($instance['instagram']) ? '': apply_filters('instagram', $instance['instagram']);
+		$linkdin= empty($instance['linkdin']) ? '': apply_filters('linkdin', $instance['linkdin']);
+		$twitter= empty($instance['twitter']) ? '': apply_filters('twitter', $instance['twitter']);
 		// TODO: other fields go here...
 
 		ob_start();
@@ -137,6 +139,8 @@ class Contact_info extends WP_Widget {
 		$instance['email'] = strip_tags( $new_instance['email'] );
 		$instance['facebook'] = strip_tags( $new_instance['facebook'] );
 		$instance['instagram'] = strip_tags( $new_instance['instagram'] );
+		$instance['linkdin'] = strip_tags( $new_instance['linkdin'] );
+		$instance['twitter'] = strip_tags( $new_instance['twitter'] );
 		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
@@ -160,6 +164,8 @@ class Contact_info extends WP_Widget {
 				'email' => '',
 				'facebook' => '',
 				'instagram' => '',
+				'linkdin' => '',
+				'twitter' => ''
 			)
 		);
 
@@ -169,6 +175,8 @@ class Contact_info extends WP_Widget {
 		$email = strip_tags( $instance['email'] );
 		$facebook = strip_tags( $instance['facebook'] );
 		$instagram = strip_tags( $instance['instagram'] );
+		$linkdin = strip_tags( $instance['linkdin'] );
+		$twitter = strip_tags( $instance['twitter'] );
 
 		// TODO: Store the rest of values of the widget in their own variables
 

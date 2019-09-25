@@ -40,4 +40,24 @@
 
 <?php endif; ?>
 
+<?php if ( strlen ( trim ( $linkdin) ) > 0 ) : ?>  
+    <p>
+        <a href="<?php echo $linkdin; ?>">
+        <i class="fab fa-linkedin"></i>
+        </a>
+    
+</p>
+
+<?php endif; ?>
+
+<?php if ( strlen ( trim ( $twitter) ) > 0 ) : ?>  
+    <p>
+        <a href="<?php echo $twitter; ?>">
+        <i class="fab fa-twitter-square"></i>
+        </a>
+    
+</p>
+
+<?php endif; ?>
+
 </div>
