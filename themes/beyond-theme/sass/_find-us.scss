@@ -113,7 +113,7 @@
             margin-right: 50px;
             a {
               text-decoration: none;
-              color: black;
+              color: $black;
               i {
                 font-size: 35px;
               }
@@ -121,22 +121,26 @@
           }
         }
         .email-widget {
+          color: $black;
           a {
             text-decoration: none;
-            color: black;
+            color: $black;
           }
         }
         .tel-widget {
+          color: $black;
           a {
             text-decoration: none;
-            color: black;
+            color: $black;
           }
         }
       }
       p {
+        color: $black;
         i {
           @include desktop {
             font-size: 30px;
+            color: $black;
           }
         }
       }
