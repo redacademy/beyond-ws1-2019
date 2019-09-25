@@ -6,16 +6,16 @@
  *
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
- * @package   contact_form
+ * @package   Contact_info
  * @author    Jose <jmvr37@hotmail.com>
  * @license   GPL-2.0+
  * @link      http://redacademy.com
  * @copyright 2015 Your Name or Company Name
  *
  * @wordpress-plugin
- * Plugin Name:       Contact_info_form
+ * Plugin Name:       Contact Info Widget
  * Plugin URI:        http://redacademy.com
- * Description:       A nifty contact form widget built custom for beyond the conversation website.
+ * Description:       A nifty business hours widget built custom for inhabitent theme.
  * Version:           1.0.0
  * Author:            jose
  * Author URI:        http://redacademy.com
@@ -29,7 +29,7 @@ if ( ! defined ( 'ABSPATH' ) ) {
 }
 
 // TODO: change 'Widget_Name' to the name of your plugin
-class contact_info extends WP_Widget {
+class Contact_info extends WP_Widget {
 
     /**
      * @TODO - Rename "widget-name" to the name your your widget
@@ -40,7 +40,7 @@ class contact_info extends WP_Widget {
      *
      * @var      string
      */
-    protected $widget_slug = 'contact-form';
+    protected $widget_slug = 'contact-info';
 
 	/*--------------------------------------------------*/
 	/* Constructor
@@ -54,10 +54,10 @@ class contact_info extends WP_Widget {
 		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
-			'contact-form',
+			'Contact Info',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'add the contact info.'
+				'description' => 'add the stores bussines hours.'
 			)
 		);
 
@@ -158,14 +158,14 @@ class contact_info extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-				'title' => 'Contact info form',
+				'title' => 'Contact Info',
 				'tel' => '',
 				'address' => '',
 				'email' => '',
 				'facebook' => '',
 				'instagram' => '',
 				'linkdin' => '',
-				'twitter' => '',
+				'twitter' => ''
 			)
 		);
 
@@ -189,5 +189,5 @@ class contact_info extends WP_Widget {
 
 // TODO: Remember to change 'Widget_Name' to match the class name definition
 add_action( 'widgets_init', function(){
-     register_widget( 'contact_info' );
+     register_widget( 'Contact_info' );
 });

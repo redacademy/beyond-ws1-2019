@@ -34,6 +34,7 @@
           font-weight: normal;
           font-size: $h3-fsize-desktop;
           font-family: $h-ffamily;
+          z-index: 2000;
         }
       }
       .text-find {
@@ -50,6 +51,7 @@
           width: 50%;
           margin-top: 35px;
           height: 350px;
+          z-index: -1000;
         }
       }
       .group-text {
@@ -71,7 +73,7 @@
           padding-top: 50px;
           //   width: 100%;
           //   margin-left: 50%;
-          font-size: $h2-fsize-mobile;
+          font-size: $h3-fsize-desktop;
           font-family: $h-ffamily;
           font-weight: normal;
         }
@@ -87,7 +89,7 @@
         width: 40%;
         top: 3px;
         right: 10px;
-        z-index: -1;
+        z-index: 500;
         margin-top: 70px;
         background-color: $light-orange;
         height: 450px;
@@ -96,6 +98,7 @@
       }
       .widget {
         width: 80%;
+        margin-left: 40px;
         @include desktop {
           margin-top: 50px;
         }
@@ -103,16 +106,29 @@
         .social-widget {
           display: flex;
           flex-direction: row;
-          justify-content: space-evenly;
+          justify-content: left;
           p {
             font-family: $body-ffamily;
+            margin-right: 50px;
             a {
               text-decoration: none;
               color: black;
               i {
-                font-size: 30px;
+                font-size: 35px;
               }
             }
+          }
+        }
+        .email-widget {
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+        .tel-widget {
+          a {
+            text-decoration: none;
+            color: black;
           }
         }
       }
@@ -143,7 +159,7 @@
     height: 300px;
     @include desktop {
       height: 500px;
-      width: 95%
+      width: 95%;
     }
   }
 }
