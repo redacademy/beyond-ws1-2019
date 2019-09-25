@@ -176,6 +176,7 @@ function beyond_search_form( $form ) {
 }
 add_filter( 'get_search_form', 'beyond_search_form' );
 
+
 // Submenu "active" classes
 
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
@@ -186,3 +187,9 @@ function special_nav_class ($classes, $item) {
     }
     return $classes;
 }
+
+function wpdocs_custom_excerpt_length( $length ) {
+    return 5;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
