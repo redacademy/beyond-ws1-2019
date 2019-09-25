@@ -102,6 +102,7 @@ class Contact_info extends WP_Widget {
 		$address= empty($instance['address']) ? '': apply_filters('address', $instance['address']);
 		$email= empty($instance['email']) ? '': apply_filters('email', $instance['email']);
 		$facebook= empty($instance['facebook']) ? '': apply_filters('facebook', $instance['facebook']);
+		$instagram= empty($instance['instagram']) ? '': apply_filters('instagram', $instance['instagram']);
 		// TODO: other fields go here...
 
 		ob_start();
@@ -135,6 +136,7 @@ class Contact_info extends WP_Widget {
 		$instance['address'] = strip_tags( $new_instance['address'] );
 		$instance['email'] = strip_tags( $new_instance['email'] );
 		$instance['facebook'] = strip_tags( $new_instance['facebook'] );
+		$instance['instagram'] = strip_tags( $new_instance['instagram'] );
 		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
@@ -157,6 +159,7 @@ class Contact_info extends WP_Widget {
 				'address' => '',
 				'email' => '',
 				'facebook' => '',
+				'instagram' => '',
 			)
 		);
 
@@ -165,6 +168,7 @@ class Contact_info extends WP_Widget {
 		$address = strip_tags( $instance['address'] );
 		$email = strip_tags( $instance['email'] );
 		$facebook = strip_tags( $instance['facebook'] );
+		$instagram = strip_tags( $instance['instagram'] );
 
 		// TODO: Store the rest of values of the widget in their own variables
 

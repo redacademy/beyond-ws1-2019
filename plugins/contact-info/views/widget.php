@@ -30,4 +30,14 @@
 
 <?php endif; ?>
 
+<?php if ( strlen ( trim ( $instagram) ) > 0 ) : ?>  
+    <p>
+        <a href="<?php echo $instagram; ?>">
+        <i class="fab fa-instagram"></i>
+        </a>
+    
+</p>
+
+<?php endif; ?>
+
 </div>

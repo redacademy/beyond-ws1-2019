@@ -23,4 +23,8 @@
    <p><label for="<?php echo $this->get_field_id('facebook'); ?>">Facebook:</label>
 		<input class="widefat" id="<?php echo $this->get_field_id('facebook'); ?>" name="<?php echo $this->get_field_name('facebook'); ?>" type="text" value="<?php echo $facebook; ?>">
    </p>
+
+   <p><label for="<?php echo $this->get_field_id('instagram'); ?>">instagram:</label>
+		<input class="widefat" id="<?php echo $this->get_field_id('instagram'); ?>" name="<?php echo $this->get_field_name('instagram'); ?>" type="text" value="<?php echo $instagram; ?>">
+   </p>
 </div>
