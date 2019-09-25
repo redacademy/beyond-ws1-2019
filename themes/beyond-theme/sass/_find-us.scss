@@ -63,6 +63,7 @@
           font-size: $h2-fsize-mobile;
           font-family: $body-ffamily;
           font-weight: 200;
+          margin-left: 30px;
         }
       }
       .our-group-title {
@@ -100,7 +101,7 @@
         width: 80%;
         margin-left: 40px;
         @include desktop {
-          margin-top: 50px;
+          margin-top: 90px;
         }
 
         .social-widget {
