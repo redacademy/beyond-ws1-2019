@@ -156,6 +156,18 @@ a {
 				background: transparent;
 			}
 
+			// Active class
+			.active {
+				@include responsive-nav {
+					font-weight: bold;
+					border-bottom: 2px solid $white;
+				}
+				@include desktop-nav {
+					font-weight: bold;
+					border-bottom: 2px solid $white;
+				}
+			}
+
 			.menu-item { // li
 				@include responsive-nav {
 					margin: 0 8px;
@@ -267,6 +279,14 @@ a {
 	top: 60px;
 	width: 100%;
 	background-color: $grey;
+	@include responsive-nav {
+		background-color: #323232;
+		height: 10rem;
+	}
+	@include desktop-nav {
+		background-color: #323232;
+		height: 10rem;
+	}
 }
 
 #menu-item-43 a, #menu-item-47 a {
