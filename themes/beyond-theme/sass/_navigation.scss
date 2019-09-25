@@ -156,6 +156,18 @@ a {
 				background: transparent;
 			}
 
+			// Active class
+			.active {
+				@include responsive-nav {
+					font-weight: bold;
+					border-bottom: 2px solid $white;
+				}
+				@include desktop-nav {
+					font-weight: bold;
+					border-bottom: 2px solid $white;
+				}
+			}
+
 			.menu-item { // li
 				@include responsive-nav {
 					margin: 0 8px;
