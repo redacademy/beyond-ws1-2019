@@ -91,9 +91,12 @@
               margin-bottom: 20px;
               color: white;
               font-family: $body-ffamily;
-              font-size: $body-fsize-mobile;
-              @include desktop {
-                font-size: $body-fsize-desktop;
+              font-size: 1.07rem;
+              @include responsive-nav {
+                font-size: 1.78rem;
+              }
+              @include desktop-nav {
+                font-size: 1.78rem;
               }
             }
           }
@@ -123,10 +126,14 @@
               margin-bottom: 20px;
               color: white;
               font-family: $body-ffamily;
-              font-size: $body-fsize-mobile;
-              @include desktop {
-                font-size: $body-fsize-desktop;
+              font-size: 1.07rem;
+              @include responsive-nav {
+                font-size: 1.78rem;
               }
+              @include desktop-nav {
+                font-size: 1.78rem;
+              }
+              
             }
           }
         }
