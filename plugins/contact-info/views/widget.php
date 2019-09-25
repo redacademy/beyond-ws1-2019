@@ -13,7 +13,7 @@
 <?php endif; ?>
 
 <?php if ( strlen ( trim ( $email ) ) > 0 ) : ?>  
-<p><i class="fas fa-envelope"></i> <?php echo $email; ?>
+<p><i class="fas fa-envelope"></i> <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a> 
 </p>
 
 <?php endif; ?>

@@ -87,6 +87,7 @@
       }
       .widget {
         width: 80%;
+        margin-left: 40px;
         @include desktop {
           margin-top: 50px;
         }
@@ -94,14 +95,15 @@
         .social-widget {
           display: flex;
           flex-direction: row;
-          justify-content: space-evenly;
+          justify-content: left;
           p {
             font-family: $body-ffamily;
+            margin-right: 50px;
             a {
               text-decoration: none;
               color: black;
               i {
-                font-size: 30px;
+                font-size: 35px;
               }
             }
           }
