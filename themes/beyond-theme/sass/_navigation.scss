@@ -281,11 +281,11 @@ a {
 	background-color: $grey;
 	@include responsive-nav {
 		background-color: #323232;
-		height: auto;
+		height: 10rem;
 	}
 	@include desktop-nav {
 		background-color: #323232;
-		height: auto;
+		height: 10rem;
 	}
 }
 
