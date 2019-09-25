@@ -17,7 +17,13 @@
           font-family: $h-ffamily;
           font-size: $h1-fsize-mobile;
           font-weight: initial;
-          background: linear-gradient(to right, rgba(232,133,53,1) 0%, rgba(30,166,203,1) 51%, rgba(103,29,67,1) 94%, rgba(103,29,67,1) 100%);
+          background: linear-gradient(
+            to right,
+            rgba(232, 133, 53, 1) 0%,
+            rgba(30, 166, 203, 1) 51%,
+            rgba(103, 29, 67, 1) 94%,
+            rgba(103, 29, 67, 1) 100%
+          );
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           @include desktop {
@@ -31,7 +37,7 @@
         .submit-btn {
           font-size: $mobile-button;
         }
-        .social {
+        .social-widget {
           display: flex;
           flex-direction: row;
           justify-content: space-around;
@@ -147,7 +153,7 @@
     margin: 0;
     align-items: flex-start;
     padding: 10px 0;
-    input[type="checkbox"] {
+    input[type='checkbox'] {
       height: 24px;
       width: 24px;
     }
