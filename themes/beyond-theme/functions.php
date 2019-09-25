@@ -175,3 +175,8 @@ function beyond_search_form( $form ) {
     return $form;
 }
 add_filter( 'get_search_form', 'beyond_search_form' );
+
+function wpdocs_custom_excerpt_length( $length ) {
+    return 5;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

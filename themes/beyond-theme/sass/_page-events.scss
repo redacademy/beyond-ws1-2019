@@ -208,11 +208,32 @@
                 font-size: 50px;
                 font-weight: 500;
                 padding-left: 20px;
+                line-height: 1.1;
+                bottom: 50px;
                 display: none;
             }
         }
     }
     .past-event:hover .event-title {
+        @include desktop {
+        display: block;
+        }
+    }
+
+    .event-excerpt {
+        display: none;
+        @include desktop {
+        display: none;
+        position: absolute;
+        bottom: 10px;
+        left: 35px;
+        color: $white;
+        font-size: 1.5rem;
+        font-family: $body-ffamily;
+        z-index: 1;
+        }
+    }
+    .past-event:hover > .event-excerpt {
         @include desktop {
         display: block;
         }

@@ -98,9 +98,10 @@ get_header('events'); ?>
 					
 							<div class="past-event initial-box" id="<?php echo $query_past->post->ID; ?>">
 								<p class="event-title"><?php echo $query_past->post->post_title; ?></p>
-								
+								<div class="event-excerpt"><?php the_excerpt() ?></div>
 								<?php $image_id = get_post_meta($query_past->post->ID, 'image', true );?>
 								<img class="event-image" src="<?php echo wp_get_attachment_url( $image_id ) ; ?>">
+
 							</div>
 		
 							<div class="popup-box" data-popup="<?php echo $query_past->post->ID; ?>">
