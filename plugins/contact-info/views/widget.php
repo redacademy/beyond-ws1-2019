@@ -1,7 +1,7 @@
 <!-- This file is used to markup the public-facing widget. -->
 
 <?php if ( strlen ( trim ( $tel ) ) > 0 ) : ?>  
-<p><i class="fas fa-phone"></i> <?php echo $tel; ?>
+<p class="tel-widget"><i class="fas fa-phone"></i> <a href="tel:<?php echo $tel; ?>"><?php echo $tel; ?></a>
 </p>
 
 <?php endif; ?>
@@ -13,7 +13,7 @@
 <?php endif; ?>
 
 <?php if ( strlen ( trim ( $email ) ) > 0 ) : ?>  
-<p><i class="fas fa-envelope"></i> <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a> 
+<p class="email-widget"><i class="fas fa-envelope"></i> <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a> 
 </p>
 
 <?php endif; ?>
