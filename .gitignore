@@ -30,6 +30,7 @@ access_log
 plugins/*
 !plugins/beyond-functionality/
 !plugins/contact-info/
+!plugins/social-media/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
