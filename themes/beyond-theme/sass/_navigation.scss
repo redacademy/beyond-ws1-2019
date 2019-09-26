@@ -168,6 +168,14 @@ a {
 				}
 			}
 
+			#menu-item-43 a, #menu-item-47 a {
+				cursor: default;
+			}
+
+			#menu-item-34 a, #menu-item-38 a, #menu-item-37 a, #menu-item-33 a {
+				cursor: pointer;
+			}
+
 			.menu-item { // li
 				@include responsive-nav {
 					margin: 0 8px;
@@ -289,10 +297,6 @@ a {
 	}
 }
 
-#menu-item-43 a, #menu-item-47 a {
-	cursor: default;
-}
-
 .sub-menu {
 	.menu-item {
 		&:hover {
@@ -309,6 +313,7 @@ a {
 			color: $orange;
 			@include responsive-nav {
 				color: $white;
+				cursor: pointer;
 			}
 			&:visited {
 				color: $orange !important;

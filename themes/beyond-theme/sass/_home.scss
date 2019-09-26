@@ -63,10 +63,6 @@
       height: auto;
       margin: 50px auto;
       position: relative;
-      // &:hover {
-      //   background-color: #a3a3a3;
-      //   filter: opacity(0.2);
-      // }
     }
 
     @include desktop-nav {
@@ -74,10 +70,6 @@
       height: auto;
       margin: 50px auto;
       position: relative;
-      // &:hover {
-      //   background-color: #a3a3a3;
-      //   filter: opacity(0.2);
-      // }
     }
     
     img {
@@ -94,7 +86,6 @@
     border-radius: 20px;
     width: 510px;
     height: 100%;
-    // margin: 50px auto;
     border: 1px solid #cbcbcb;
     background: transparent;
     display: block;
@@ -169,7 +160,6 @@
   font-weight: bold;
   font-size: 0.92rem;
   padding-top: 10px;
-  // z-index: 1000;
   @include desktop {
     font-size: 2.14rem;
     text-align: right;
@@ -177,7 +167,6 @@
     z-index: 1000;
     margin: 0 0 0 auto;
     position: relative;
-    // z-index: 1000;
   }
   a {
     color: $sky-blue;
