@@ -344,6 +344,15 @@ tbody {
     }
 }
 
+.gform_next_button {
+    @include desktop {
+        border-radius: 20px;
+        height: 70px;
+        font-size: 1.8rem;
+        width: 250px;
+    }
+}
+
 .gform_page_footer {
     border: 0 !important;
     margin: 0 !important;
