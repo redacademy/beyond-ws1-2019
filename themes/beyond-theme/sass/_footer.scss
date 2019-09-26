@@ -17,7 +17,13 @@
           font-family: $h-ffamily;
           font-size: $h1-fsize-mobile;
           font-weight: initial;
-          background: linear-gradient(to right, rgba(232,133,53,1) 0%, rgba(30,166,203,1) 51%, rgba(103,29,67,1) 94%, rgba(103,29,67,1) 100%);
+          background: linear-gradient(
+            to right,
+            rgba(232, 133, 53, 1) 0%,
+            rgba(30, 166, 203, 1) 51%,
+            rgba(103, 29, 67, 1) 94%,
+            rgba(103, 29, 67, 1) 100%
+          );
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           @include desktop {
@@ -31,18 +37,23 @@
         .submit-btn {
           font-size: $mobile-button;
         }
-        .social {
+        .social-widget {
           display: flex;
           flex-direction: row;
           justify-content: space-around;
           margin-top: 100px;
           margin-bottom: 100px;
           @include desktop {
-            padding: 35px 0;
+            padding: 70px 0;
             margin: 0;
+            position: absolute;
+            margin-top: 70px;
+            margin-left: 40px;
+            display: flex;
+            width: 30%;
           }
           i {
-            font-size: 1.57rem;
+            font-size: 2.57rem;
             color: $purple;
           }
         }
@@ -62,6 +73,7 @@
 .logo-social-footer {
   @include desktop {
     width: auto;
+    position: relative;
   }
   .footer-logo {
     @include mobile {
@@ -147,7 +159,7 @@
     margin: 0;
     align-items: flex-start;
     padding: 10px 0;
-    input[type="checkbox"] {
+    input[type='checkbox'] {
       height: 24px;
       width: 24px;
     }
