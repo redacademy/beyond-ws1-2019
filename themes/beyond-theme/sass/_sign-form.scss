@@ -239,7 +239,7 @@ tbody {
     justify-content: space-between !important;
     align-items: center !important;
     border: 0 !important;
-    background-color: #D7D1D5;
+    background-color: #62284E1A;
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -287,10 +287,11 @@ tbody {
         }
     }
     .gf_step_pending {
+        color: #272727 !important;
         .gf_step_number {
             width: 15px;
             height: 15px;
-            border: 0.5px solid $grey;
+            border: 0.5px solid #272727;
             border-radius: 50%;
             font-size: 0.85rem !important;
             @include resp-form {
