@@ -33,6 +33,15 @@
 
 .class-content {
   padding: 5px 20px;
+  z-index: 1000;
+  @include responsive-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  @include desktop-nav {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .card-article {
@@ -53,26 +62,47 @@
       width: 450px;
       height: auto;
       margin: 50px auto;
-      &:hover {
-        background-color: #a3a3a3;
-        filter: opacity(0.2);
-      }
+      position: relative;
+      // &:hover {
+      //   background-color: #a3a3a3;
+      //   filter: opacity(0.2);
+      // }
     }
-    img {
-      width: 100%;
-    }
+
     @include desktop-nav {
       width: 510px;
       height: auto;
       margin: 50px auto;
-      &:hover {
-        background-color: #a3a3a3;
-        filter: opacity(0.2);
-      }
+      position: relative;
+      // &:hover {
+      //   background-color: #a3a3a3;
+      //   filter: opacity(0.2);
+      // }
     }
+    
     img {
       width: 100%;
     }
+}
+
+.blog-hover {
+  display: none;
+  @include desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    width: 510px;
+    height: 100%;
+    // margin: 50px auto;
+    border: 1px solid #cbcbcb;
+    background: transparent;
+    display: block;
+    &:hover {
+        background-color: #a3a3a3;
+        opacity: 0.2;
+    }
+  }
 }
 
 .blog-title {
@@ -84,6 +114,7 @@
   @include desktop {
     max-width: 100%;
     font-size: 2.14rem;
+    z-index: 1000;
   }
   a {
     color: $black;
@@ -99,6 +130,7 @@
   @include desktop {
     display: flex;
     align-items: center;
+    z-index: 1000;
   }
 }
 
@@ -137,9 +169,15 @@
   font-weight: bold;
   font-size: 0.92rem;
   padding-top: 10px;
+  // z-index: 1000;
   @include desktop {
     font-size: 2.14rem;
     text-align: right;
+    display: inline-block;
+    z-index: 1000;
+    margin: 0 0 0 auto;
+    position: relative;
+    // z-index: 1000;
   }
   a {
     color: $sky-blue;
