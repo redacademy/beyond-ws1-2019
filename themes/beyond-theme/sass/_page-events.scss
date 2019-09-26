@@ -194,6 +194,8 @@
             @include desktop {
                 width: 450px;
                 height: 450px;
+                cursor: pointer;
+
             }
         }
         .event-title {
@@ -211,6 +213,7 @@
                 line-height: 1.1;
                 bottom: 50px;
                 display: none;
+                cursor: pointer;
             }
         }
     }
@@ -231,11 +234,14 @@
         font-size: 1.5rem;
         font-family: $body-ffamily;
         z-index: 1;
+        cursor: pointer;
+
         }
     }
     .past-event:hover > .event-excerpt {
         @include desktop {
         display: block;
+
         }
     }
     .past-event::after {
@@ -250,6 +256,7 @@
         opacity: 0.5;
         @include desktop {
             display: none;
+            cursor: pointer;
         }
     }
     
